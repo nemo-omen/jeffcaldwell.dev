@@ -1,3 +1,4 @@
+@import 'reset';
 /* Write your global styles here, in SCSS syntax */
 :root {
   --serif: 'Domine', Georgia, serif;
@@ -27,15 +28,7 @@
   --space: clamp(2rem, 4vw, 5rem);
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 body {
-  // background: var(--whitish);
-  // color: var(--blackish);
   background: var(--verydarkblue);
   color: var(--whitish);
 }

@@ -1,22 +1,18 @@
 <script>
-
+  import Logo from './Logo.svelte';
 </script>
 
 <header>
-  <div class="header-content">
-    <h1 id="site-header">
-    <a href="https://trainingmontage.dev">
-      T<span class="h-dot">.</span>
-    </a>
-    </h1>
-    <nav>
+    <nav labeledby="#nav-label">
+      <a href="/">
+        <Logo />
+      </a>
       <menu>
-        <li><a href="/">Home</a></li>
-        <li><a href="/blog">Blog</a></li>
+        <li><a href="/work">Work</a></li>
+        <li><a href="/blog">Writing</a></li>
         <li><a href="/about">About</a></li>
       </menu>
     </nav>
-  </div>
 </header>
 
 <style lang="scss">
@@ -31,7 +27,7 @@
     // border-top: 0.5rem solid var(--green); 
   }
   
-  .header-content {
+  nav {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
