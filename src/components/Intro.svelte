@@ -3,19 +3,23 @@
 </script>
 
 <article id="intro">
-    <section class="info">
+    <header class="intro-header">
         <h2>I'm Jeff Caldwell,</h2>
+        <Avatar />
+    </header>
+    <section class="info">
         <p>a web developer who loves making accessible and inclusive sites.</p>
     </section>
-    <Avatar />
 </article>
 
 <style>
     #intro {
-        position: relative;
-        display: flex;
-        align-items: flex-start;
         background-color: var(--red);
+    }
+    .intro-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
     }
     .info {
         margin: 1rem;
