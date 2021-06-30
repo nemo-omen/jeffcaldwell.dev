@@ -18,8 +18,13 @@
 
 <style lang="scss">
   header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: var(--darkblue);
     padding: 2vmin;
     font-family: var(--sans);

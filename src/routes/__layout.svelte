@@ -13,6 +13,6 @@
   main {
     width: clamp(16rem, 90vw, 70rem);
     margin-inline: auto;
-    margin-block: var(--space);
+    margin-block: calc(var(--space) + 6vmin);
   }
 </style>
