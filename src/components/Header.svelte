@@ -18,27 +18,30 @@
 
 <style lang="scss">
   header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--darkblue);
-    padding: 2vmin;
+    padding: 1rem;
     font-family: var(--sans);
   }
   
   nav {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
     width: clamp(16rem, 90vw, 70rem);
+
+    a {
+      line-height: 1;
+    }
   }
 
   #site-logo {
     transition: all 300ms ease-out;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
   }
   #site-logo:focus {
     outline: 3px dashed var(--red);
@@ -53,12 +56,16 @@
     li {
       list-style-type: none;
       display: inline-block;
+      margin: 0;
+      padding: 0;
       a {
         color: var(--red);
         font-weight: 600;
         text-transform: uppercase;
         text-decoration: none;
         transition: all 300ms ease-out;
+        font-size: clamp(var(--size-400), 4vw, var(--size-600));
+        line-height: 1;
       }
 
       a:hover {

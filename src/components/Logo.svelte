@@ -25,16 +25,14 @@
       <circle cx="100" cy="84" r="17"/>
     </g>
   </svg>
-    
 </div>
 
 <style lang="scss">
   .logo {
     transition: all 300ms ease-out;
   }
-
   .logo-svg {
-    height: 5vw;
+    height: clamp(2rem, 4vw, 5rem);
   }
 
   .logo-t, .logo-dot {

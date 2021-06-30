@@ -26,6 +26,8 @@
   --size-900: 4.2rem;
 
   --space: clamp(2rem, 4vw, 5rem);
+  --space-small: clamp(1rem, 3vw, 2rem);
+  --space-xsmall: clamp(0.5rem, 1.5vw, 1rem);
 }
 
 body {
@@ -180,7 +182,9 @@ h3 {
   clip-path: inset(50%);
   height: 1px;
   overflow: hidden;
-  position: absolute;
+  position: absolute !important;
   white-space: nowrap;
   width: 1px;
+  margin: 0;
+  padding: 0;line-height: 0;
 }
