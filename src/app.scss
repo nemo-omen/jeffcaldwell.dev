@@ -54,7 +54,8 @@ main:focus {
 }
 
 [href]:hover {
-  text-decoration: none;
+  // text-decoration: none;
+  color: var(--red);
 }
 
 h1,
