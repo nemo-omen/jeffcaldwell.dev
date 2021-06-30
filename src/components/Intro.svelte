@@ -3,11 +3,11 @@
 </script>
 
 <article id="intro">
-	<h2 class="greeting">I'm Jeff Caldwell.</h2>
+	<h2 class="greeting">I'm Jeff Caldwell,</h2>
 	<section class="avatar">
 		<Avatar />
 	</section>
-	<p class="info">I'm a web developer who loves making fast, accessible websites.</p>
+	<p class="info">a web developer who loves making fast, accessible websites.</p>
 </article>
 
 <style lang="scss">
