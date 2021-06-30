@@ -4,7 +4,8 @@
 
 <header>
     <nav labeledby="#nav-label">
-      <a href="/">
+      <h2 id="nav-label" class="visually-hidden">Site</h2>
+      <a href="/" id="site-logo">
         <Logo />
       </a>
       <menu>
@@ -22,47 +23,28 @@
     background-color: var(--darkblue);
     padding: 2vmin;
     font-family: var(--sans);
-    // border-top: 0.5rem solid var(--lightgreen); 
-    // border-top: 0.5rem solid var(--yellow);
-    // border-top: 0.5rem solid var(--green); 
   }
   
   nav {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: flex-end;
     width: clamp(16rem, 90vw, 70rem);
-    padding: 0 auto;
   }
 
-  #site-header {
-    font-size: 5vw;
-    line-height: 1;
-    
-    a {
-      color: var(--whitish);
-      text-decoration: none;
-      transition: all 300ms ease-out;
-    }
-    
-    a:hover {
-      color: var(--red);
-    }
-    
-    .h-dot {
-      transition: all 300ms ease-out;
-      color: var(--red);
-    }
-
-    a:hover > .h-dot {
-      color: var(--whitish);
-    }
+  #site-logo {
+    transition: all 300ms ease-out;
+  }
+  #site-logo:focus {
+    outline: 3px dashed var(--red);
+    outline-offset: 0.25rem; 
   }
 
 
   menu {
     display: flex;
     gap: 2rem;
+    margin: 0;
     li {
       list-style-type: none;
       display: inline-block;
@@ -80,5 +62,4 @@
       }
     }
   }
-
 </style>
