@@ -1,1 +1,182 @@
 /* Write your global styles here, in SCSS syntax */
+:root {
+  --serif: 'Domine', Georgia, serif;
+  --sans: 'Work Sans', -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue,
+  helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+
+  /*Colors*/
+  --red: #ff6347;
+  --yellow: #ece899;
+  --paleyellow: #fdfac2;
+  --lightgreen: #74dda5;
+  --green: #388376;
+  --darkblue: #373043;
+  --verydarkblue: #1c1922;
+  --blackish: #131216;
+  --whitish: #ffeae6;
+
+  /*Font sizes*/
+  --size-300: 0.75rem;
+  --size-400: 1rem;
+  --size-500: 1.33rem;
+  --size-600: 1.77rem;
+  --size-700: 2.36rem;
+  --size-800: 3.15rem;
+  --size-900: 4.2rem;
+
+  --space: clamp(2rem, 4vw, 5rem);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  // background: var(--whitish);
+  // color: var(--blackish);
+  background: var(--verydarkblue);
+  color: var(--whitish);
+}
+
+a:not([class]) {
+  color: currentColor;
+}
+
+:focus {
+  outline: 3px dashed;
+  outline-offset: 0.25rem;
+}
+
+main:focus {
+  outline: none;
+}
+
+[href]:hover {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--sans);
+  line-height: 1.3;
+  color: var(--paleyellow);
+}
+
+h1,
+h2 {
+  font-weight: 900;
+}
+
+h1 {
+  font-size: var(--size-700);
+}
+
+h2 {
+  font-size: var(--size-600);
+}
+
+h3 {
+  font-size: var(--size-600);
+}
+
+
+img {
+  max-width: min(55rem, 100%);
+}
+
+figcaption {
+  font-size: var(--size-300);
+
+  font-style: italic;
+  margin-top: 1rem;
+}
+
+blockquote {
+  padding-left: var(--size-600);
+  border-left: 5px solid;
+  font-style: italic;
+}
+
+::selection {
+  color: #fff;
+  background: var(--darkblue);
+}
+
+
+.flow > * + * {
+  margin-top: var(--flow-space, 1em);
+}
+
+p,
+li {
+  max-width: 60ch;
+}
+
+h1 {
+  max-width: 15ch;
+}
+
+h2,
+h3 {
+  max-width: 25ch;
+}
+
+.post {
+  --flow-space: var(--size-700);
+
+  width: 90vw;
+  width: clamp(16rem, 90vw, 70rem);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.post time {
+  --flow-space: var(--size-400);
+  display: block;
+}
+
+.post :is(h2, h3) {
+  --flow-space: var(--size-900);
+}
+
+.post :is(h2, h3) + * {
+  --flow-space: var(--size-400);
+}
+
+.post figure,
+.post figure + * {
+  --flow-space: var(--size-900);
+}
+
+@media (min-width: 45em) {
+  h1 {
+    font-size: var(--size-900);
+  }
+
+  h2 {
+    font-size: var(--size-700);
+  }
+
+  p {
+    font-size: var(--size-500);
+  }
+
+  figcaption {
+    font-size: var(--size-400);
+  }
+
+  blockquote p {
+    font-size: var(--size-600);
+    max-width: 40ch;
+  }
+
+  .post time {
+    font-size: var(--size-600);
+  }
+}
