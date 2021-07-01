@@ -14,9 +14,5 @@
         transform: scaleX(-100%);
         border: clamp(3px, 0.5vw, 6px) solid var(--whitish);
         filter: grayscale(0%) contrast(120%) saturate(105%) brightness(90%);
-        transition: all 300ms ease-out;
-    }
-    .avatar:hover {
-        border-color: var(--yellow);
     }
 </style>
