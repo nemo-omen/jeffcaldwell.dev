@@ -8,7 +8,7 @@
   /*Colors*/
   --red: #ff6347;
   --yellow: #ece899;
-  --paleyellow: #fdfac2;
+  --paleyellow: #dbf3cf;
   --lightgreen: #74dda5;
   --green: #388376;
   --darkblue: #373043;
@@ -28,6 +28,8 @@
   --space: clamp(2rem, 4vw, 5rem);
   --space-small: clamp(1rem, 3vw, 2rem);
   --space-xsmall: clamp(0.5rem, 1.5vw, 1rem);
+
+  --width-body: clamp(16rem, 90vw, 65rem);
 }
 
 body {

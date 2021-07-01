@@ -76,7 +76,7 @@
         
         a:hover {
           text-decoration: underline;
-          color: var(--yellow);
+          color: var(--whitish);
           text-decoration-thickness: 3px;
           text-underline-offset: 6px;
         }

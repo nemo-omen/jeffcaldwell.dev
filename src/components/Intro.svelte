@@ -1,26 +1,37 @@
 <script>
 	import Avatar from './Avatar.svelte';
 </script>
-
-<article id="intro">
-    <h2 class="greeting">I'm <a href="#">Jeff</a> and I make fast, accessible, good-looking websites.</h2>
-    <div class="avatar" aria-hidden="true">
-        <Avatar />
-    </div>
+<article class="home_intro">
+    <section id="intro">
+        <h2 class="greeting">I'm <a href="#">Jeff</a> and I make fast, accessible, good-looking websites.</h2>
+        <!-- <div class="avatar" aria-hidden="true">
+            <Avatar />
+        </div> -->
+    </section>
 </article>
+<section class="home_message">
+    <section class="message">
+        <p>I'm a web developer based in Texas who specializes in the design and development of sites and apps for small businesses, nonprofits, and people like you.</p>
+    </section>
+</section>
 
 <style lang="scss">
+    .home_intro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: var(--red);
+    }
 	#intro {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: var(--space-small);
-        width: clamp(16rem, 90vw, 65rem);
+        width: var(--width-body);
         margin-inline: auto;
 		background-color: var(--red);
 		padding: var(--space-small) 0;
-		// grid-gap: var(--space-xsmall);
 	}
 	.greeting {
         font-family: var(--sans);
@@ -44,6 +55,20 @@
         width: clamp(20vw, 80px, 30vw);
         order: 1;
 	}
+
+    .home_message {
+        background: var(--whitish);
+    }
+    .message {
+        color: var(--darkblue);
+        width: var(--width-body);
+        margin-inline: auto;
+        padding: var(--space) 0;
+    }
+
+    .message p {
+        max-width: 75ch;
+    }
 
     a {
         color: var(--darkblue);
