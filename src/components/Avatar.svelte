@@ -3,7 +3,7 @@
 </script>
 
 <article class="avatar">
-    <img src="/Optimized-me.jpg">
+    <img src="/Optimized-me.jpg" alt="Jeff Caldwell, web developer.">
 </article>
 
 <style>
