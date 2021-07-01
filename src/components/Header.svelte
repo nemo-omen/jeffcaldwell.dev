@@ -77,6 +77,8 @@
         a:hover {
           text-decoration: underline;
           color: var(--yellow);
+          text-decoration-thickness: 3px;
+          text-underline-offset: 6px;
         }
       }
     }

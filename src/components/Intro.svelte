@@ -3,7 +3,7 @@
 </script>
 
 <article id="intro">
-    <h2 class="greeting">I'm Jeff Caldwell, a web developer who loves making fast, accessible websites.</h2>
+    <h2 class="greeting">I'm <a href="#">Jeff</a> and I make fast, accessible, good-looking websites.</h2>
     <div class="avatar" aria-hidden="true">
         <Avatar />
     </div>
@@ -31,6 +31,7 @@
         grid-area: Greeting;
         text-align: center;
         order: 2;
+        color: var(--whitish);
 	}
 	.info {
 		font-size: clamp(var(--size-500), 3vw, var(--size-600));
@@ -43,6 +44,19 @@
         width: clamp(20vw, 80px, 30vw);
         order: 1;
 	}
+
+    a {
+        color: var(--darkblue);
+        text-decoration-thickness: 3px;
+        text-underline-offset: 1uto;
+        transition: all 300ms ease-out;
+    }
+
+    a:hover {
+        color: var(--darkblue);
+        text-decoration-thickness: 6px;
+        // text-underline-offset: 10px;
+    }
 
     @media screen and (min-width: 768px) {
         #intro {
