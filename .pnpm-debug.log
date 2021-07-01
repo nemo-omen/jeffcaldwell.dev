@@ -1,0 +1,67 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1
+  },
+  "1 debug pnpm:package-manifest": {
+    "initial": {
+      "name": "~TODO~",
+      "version": "0.0.1",
+      "scripts": {
+        "dev": "svelte-kit dev",
+        "build": "svelte-kit build",
+        "preview": "svelte-kit preview",
+        "lint": "prettier --check --plugin-search-dir=. .",
+        "format": "prettier --write --plugin-search-dir=. ."
+      },
+      "devDependencies": {
+        "@sveltejs/kit": "next",
+        "prettier": "~2.2.1",
+        "prettier-plugin-svelte": "^2.2.0",
+        "svelte": "^3.34.0",
+        "mdsvex": "^0.9.7",
+        "sass": "^1.35.1",
+        "svelte-preprocess": "^4.7.3"
+      },
+      "type": "module"
+    },
+    "prefix": "/home/trainingmontage/dev/projects/trainingmontage-site"
+  },
+  "2 debug pnpm:context": {
+    "currentLockfileExists": false,
+    "storeDir": "/home/trainingmontage/.pnpm-store/v3",
+    "virtualStoreDir": "/home/trainingmontage/dev/projects/trainingmontage-site/node_modules/.pnpm"
+  },
+  "3 info pnpm": {
+    "message": "Lockfile is up-to-date, resolution step is skipped",
+    "prefix": "/home/trainingmontage/dev/projects/trainingmontage-site"
+  },
+  "4 debug pnpm:stats": {
+    "prefix": "/home/trainingmontage/dev/projects/trainingmontage-site",
+    "removed": 0
+  },
+  "5 debug pnpm:stage": {
+    "prefix": "/home/trainingmontage/dev/projects/trainingmontage-site",
+    "stage": "importing_started"
+  },
+  "6 warn pnpm:install-check": {
+    "message": "Unsupported engine for /@sveltejs/vite-plugin-svelte/1.0.0-next.11_svelte@3.38.3+vite@2.3.8: wanted: {\"node\":\"^12.20 || ^14.13.1 || >= 16\"} (current: {\"node\":\"v15.11.0\",\"pnpm\":\"6.2.5\"})",
+    "prefix": "/home/trainingmontage/dev/projects/trainingmontage-site"
+  },
+  "7 error pnpm": {
+    "code": "ERR_PNPM_UNSUPPORTED_ENGINE",
+    "packageId": "/@sveltejs/vite-plugin-svelte/1.0.0-next.11_svelte@3.38.3+vite@2.3.8",
+    "wanted": {
+      "node": "^12.20 || ^14.13.1 || >= 16"
+    },
+    "current": {
+      "node": "v15.11.0",
+      "pnpm": "6.2.5"
+    },
+    "err": {
+      "name": "Error",
+      "message": "Unsupported engine for /@sveltejs/vite-plugin-svelte/1.0.0-next.11_svelte@3.38.3+vite@2.3.8: wanted: {\"node\":\"^12.20 || ^14.13.1 || >= 16\"} (current: {\"node\":\"v15.11.0\",\"pnpm\":\"6.2.5\"})",
+      "code": "ERR_PNPM_UNSUPPORTED_ENGINE",
+      "stack": "Error: Unsupported engine for /@sveltejs/vite-plugin-svelte/1.0.0-next.11_svelte@3.38.3+vite@2.3.8: wanted: {\"node\":\"^12.20 || ^14.13.1 || >= 16\"} (current: {\"node\":\"v15.11.0\",\"pnpm\":\"6.2.5\"})\n    at Object.checkEngine [as default] (/home/trainingmontage/.nvm/versions/node/v15.11.0/pnpm-global/5/node_modules/.pnpm/pnpm@6.2.5/node_modules/pnpm/dist/pnpm.cjs:38449:14)\n    at checkPackage (/home/trainingmontage/.nvm/versions/node/v15.11.0/pnpm-global/5/node_modules/.pnpm/pnpm@6.2.5/node_modules/pnpm/dist/pnpm.cjs:38589:97)\n    at Object.packageIsInstallable [as default] (/home/trainingmontage/.nvm/versions/node/v15.11.0/pnpm-global/5/node_modules/.pnpm/pnpm@6.2.5/node_modules/pnpm/dist/pnpm.cjs:38559:18)\n    at pkgAllDeps (/home/trainingmontage/.nvm/versions/node/v15.11.0/pnpm-global/5/node_modules/.pnpm/pnpm@6.2.5/node_modules/pnpm/dist/pnpm.cjs:88005:91)\n    at pkgAllDeps (/home/trainingmontage/.nvm/versions/node/v15.11.0/pnpm-global/5/node_modules/.pnpm/pnpm@6.2.5/node_modules/pnpm/dist/pnpm.cjs:88030:7)\n    at pickPkgsWithAllDeps (/home/trainingmontage/.nvm/versions/node/v15.11.0/pnpm-global/5/node_modules/.pnpm/pnpm@6.2.5/node_modules/pnpm/dist/pnpm.cjs:87976:5)\n    at Object.filterByImportersAndEngine [as filterLockfileByImportersAndEngine] (/home/trainingmontage/.nvm/versions/node/v15.11.0/pnpm-global/5/node_modules/.pnpm/pnpm@6.2.5/node_modules/pnpm/dist/pnpm.cjs:87945:50)\n    at Object.exports2.default (/home/trainingmontage/.nvm/versions/node/v15.11.0/pnpm-global/5/node_modules/.pnpm/pnpm@6.2.5/node_modules/pnpm/dist/pnpm.cjs:105488:48)\n    at async _install (/home/trainingmontage/.nvm/versions/node/v15.11.0/pnpm-global/5/node_modules/.pnpm/pnpm@6.2.5/node_modules/pnpm/dist/pnpm.cjs:108904:13)\n    at async mutateModules (/home/trainingmontage/.nvm/versions/node/v15.11.0/pnpm-global/5/node_modules/.pnpm/pnpm@6.2.5/node_modules/pnpm/dist/pnpm.cjs:108874:20)"
+    }
+  }
+}

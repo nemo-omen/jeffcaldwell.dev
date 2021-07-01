@@ -1,39 +1,48 @@
 <script>
 	import Avatar from './Avatar.svelte';
 </script>
-<article class="home_intro">
-    <section id="intro">
+
+<article id="intro">
+    <section class="intro_greeting">
         <h2 class="greeting">I'm <a href="#">Jeff</a> and I make fast, accessible, good-looking websites.</h2>
         <!-- <div class="avatar" aria-hidden="true">
             <Avatar />
         </div> -->
     </section>
-</article>
-<section class="home_message">
-    <section class="message">
-        <p>I'm a web developer based in Texas who specializes in the design and development of sites and apps for small businesses, nonprofits, and people like you.</p>
+    <section class="intro_message">
+        <section class="message">
+            <p>I'm a web developer based in Texas who specializes in the design and development of sites and apps for small businesses, nonprofits, and people like you.</p>
+        </section>
     </section>
+</article>
+<section id="cta">
+    <a href="/hire" class="cta-button">Check Out My Services</a>
 </section>
 
+
+
 <style lang="scss">
-    .home_intro {
+    #intro {
         display: flex;
         flex-direction: column;
         align-items: center;
         background: var(--red);
+        gap: var(--space);
+        padding-block: var(--space);
+        margin-bottom: var(--space);
     }
-	#intro {
+	.intro_greeting {
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: var(--space-small);
-        width: var(--width-body);
         margin-inline: auto;
 		background-color: var(--red);
-		padding: var(--space-small) 0;
 	}
 	.greeting {
+        width: var(--width-body);
         font-family: var(--sans);
         font-weight: 900;
         max-width: 40ch;
@@ -44,26 +53,19 @@
         order: 2;
         color: var(--whitish);
 	}
-	.info {
-		font-size: clamp(var(--size-500), 3vw, var(--size-600));
-		grid-area: Info;
-		font-weight: 600;
-        margin-top: var(--space-xsmall);
-        letter-spacing: 0.25rem;
-	}
 	.avatar {
         width: clamp(20vw, 80px, 30vw);
         order: 1;
 	}
 
-    .home_message {
-        background: var(--whitish);
+    .intro_message {
+        width: 100%;
     }
     .message {
-        color: var(--darkblue);
+        color: var(--blackish);
         width: var(--width-body);
         margin-inline: auto;
-        padding: var(--space) 0;
+        text-align: center;
     }
 
     .message p {
@@ -83,8 +85,36 @@
         // text-underline-offset: 10px;
     }
 
+    #cta {
+        display: flex;
+        justify-content: center;
+    }
+    .cta-button {
+        background-color: var(--green);
+        color: var(--white);
+        text-decoration: none;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        font-family: var(--sans);
+        font-weight: 900;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        border: 2px solid transparent;
+        transition: all 300ms ease-out;
+    }
+
+    .cta-button:hover {
+        background: var(--darkblue);
+        color: var(--whitish);
+        border-color: var(--whitish);
+    }
+
+    .cta-button:active {
+        transform: scale(1.0);
+    }
+
     @media screen and (min-width: 768px) {
-        #intro {
+        .intro_greeting {
             flex-direction: row;
         }
 

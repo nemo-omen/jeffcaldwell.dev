@@ -12,9 +12,9 @@
     <nav id="primary-nav" aria-label="primary" tabindex="-1">
       <ul role="list">
         <li><a href="/work">Work</a></li>
-        <li><a href="/blog">Writing</a></li>
+        <li><a href="/writing">Writing</a></li>
         <li><a href="/about">About</a></li>
-        <li><a href="/about">Hire</a></li>
+        <li><a href="/hire">Hire</a></li>
       </ul>
     </nav>
   </div>
