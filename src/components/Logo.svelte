@@ -17,7 +17,7 @@
 
 </script>
 <div class="logo" on:mouseenter={setHoverStyles} on:mouseleave={setHoverStyles}>
-  <svg viewBox="0 0 121 102" xmlns="http://www.w3.org/2000/svg" class="logo-svg">
+  <svg viewBox="0 0 121 102" xmlns="http://www.w3.org/2000/svg" class="logo-svg" aria-hidden="true" focusable="false">
     <g fill={tColor} class="logo-t">
       <path d="M100 1V26.9091H68.4303V101H32.7229V26.9091H1V1H100Z" />
     </g>

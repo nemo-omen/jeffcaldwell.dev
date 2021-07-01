@@ -3,38 +3,58 @@
 </script>
 
 <article id="intro">
-	<h2 class="greeting">I'm Jeff Caldwell,</h2>
-	<section class="avatar">
-		<Avatar />
-	</section>
-	<p class="info">a web developer who loves making fast, accessible websites.</p>
+    <h2 class="greeting">I'm Jeff Caldwell, a web developer who loves making fast, accessible websites.</h2>
+    <div class="avatar" aria-hidden="true">
+        <Avatar />
+    </div>
 </article>
 
 <style lang="scss">
 	#intro {
-		display: grid;
-		grid-template-columns: 2fr 1fr;
-		grid-template-rows: 1fr auto;
-		grid-template-areas:
-			'Greeting Avatar'
-			'Info Info';
-		align-items: stretch;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: var(--space-small);
+        width: clamp(16rem, 90vw, 65rem);
+        margin-inline: auto;
 		background-color: var(--red);
-		padding: var(--space-small);
+		padding: var(--space-small) 0;
 		// grid-gap: var(--space-xsmall);
 	}
 	.greeting {
-		font-size: clamp(2.5rem, 11vw, 9rem);
-		letter-spacing: 1.5px;
+        font-family: var(--sans);
+        font-weight: 900;
+        max-width: 40ch;
+		font-size: clamp(var(--size-600), 5vw, var(--size-900));
+		letter-spacing: 0.5rem;
         grid-area: Greeting;
+        text-align: center;
+        order: 2;
 	}
 	.info {
 		font-size: clamp(var(--size-500), 3vw, var(--size-600));
 		grid-area: Info;
 		font-weight: 600;
         margin-top: var(--space-xsmall);
+        letter-spacing: 0.25rem;
 	}
 	.avatar {
-		grid-area: Avatar;
+        width: clamp(20vw, 80px, 30vw);
+        order: 1;
 	}
+
+    @media screen and (min-width: 768px) {
+        #intro {
+            flex-direction: row;
+        }
+
+        .greeting {
+            order: 1;
+            flex-basis: 60vw;
+        }
+        .avatar {
+            order: 2;
+        }
+    }
 </style>
