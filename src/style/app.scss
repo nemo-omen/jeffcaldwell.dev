@@ -1,6 +1,7 @@
 @import 'reset';
 /* Write your global styles here, in SCSS syntax */
 :root {
+  --body: 'Atkinson Hyperlegible';
   --serif: 'Merriweather', Georgia, serif;
   --sans: 'Work Sans', -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue,
   helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
@@ -35,6 +36,8 @@
 body {
   background: var(--verydarkblue);
   color: var(--whitish);
+  font-family: var(--body);
+  font-size: clamp(var(--size-400), 2vw, var(--size-600));
 }
 
 a:not([class]) {
