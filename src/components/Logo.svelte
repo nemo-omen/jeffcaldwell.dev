@@ -38,8 +38,19 @@
 </div>
 
 <style lang="scss">
+  .logo {
+    background: var(--darkdarkblue);
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    border: 2px solid transparent;
+    transition: border-color 300ms ease-out;
+  }
+
+  .logo:hover {
+    border-color: var(--whitish);
+  }
   .logo-svg {
-    height: clamp(2rem, 4vw, 4rem);
+    height: clamp(2rem, 4vw, 3rem);
   }
 
   .logo-t, .logo-dot {

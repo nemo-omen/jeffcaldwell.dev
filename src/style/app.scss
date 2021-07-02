@@ -13,9 +13,15 @@
   --lightgreen: #74dda5;
   --green: #388376;
   --darkblue: #373043;
-  --verydarkblue: #1c1922;
+  --darkdarkblue: #1c1922;
   --blackish: #131216;
   --whitish: #ffeae6;
+
+  /*Background*/
+  --bg_primary: var(--darkblue);
+  --bg_primary_dark: var(--darkblue);
+  --bg_secondary: var(--red);
+  --bg_tertiary: var(--yellow);
 
   /*Font sizes*/
   --size-300: 0.75rem;
@@ -31,10 +37,11 @@
   --space-xsmall: clamp(0.5rem, 1.5vw, 1rem);
 
   --width-body: clamp(16rem, 90vw, 65rem);
+
 }
 
 body {
-  background: var(--verydarkblue);
+  background: var(--darkblue);
   color: var(--whitish);
   font-family: var(--body);
   font-size: clamp(var(--size-400), 2vw, var(--size-600));
@@ -64,7 +71,7 @@ h3,
 h4 {
   font-family: var(--sans);
   line-height: 1.3;
-  color: var(--paleyellow);
+  color: var(--whitish);
 }
 
 h1,
@@ -108,8 +115,18 @@ blockquote {
 
 
 .flow > * + * {
-  margin-top: var(--flow-space, 1em);
+  margin-top: var(--space);
 }
+
+.flow-small > * + * {
+  margin-top: var(--space-small);
+}
+
+.flow-xsmall > * + * {
+  margin-top: var(--space-xsmall);
+}
+
+
 
 p,
 li {
@@ -190,4 +207,51 @@ h3 {
   width: 1px;
   margin: 0;
   padding: 0;line-height: 0;
+}
+
+/*Content widths*/
+.width__body {
+  width: var(--width-body);
+}
+
+// margins and padding
+
+.space__inner {
+  padding: var(--space);
+}
+
+.space__outer {
+  margin: var(--space);
+}
+
+.space__inner_block {
+  padding-block: var(--space);
+}
+
+.space__outer_block {
+  margin-block: var(--space);
+}
+
+.space__inner_inline {
+  padding-inline: var(--space);
+}
+
+.space__outer_inline {
+  margin-inline: var(--space);
+}
+
+.space__outer_top {
+  margin-top: var(--space);
+}
+
+.space__outer_bottom {
+  margin-bottom: var(--space);
+}
+
+.space__inner_top {
+  padding-top: var(--space);
+}
+
+.space__inner_bottom {
+  padding-bottom: var(--space);
 }

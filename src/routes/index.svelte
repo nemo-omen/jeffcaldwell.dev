@@ -1,5 +1,8 @@
 <script>
-    import Intro from '../components/Intro.svelte';
+    import Intro from '../components/partials/home/IntroSection.svelte';
+    import Work from '../components/partials/home/WorkSection.svelte';
 </script>
-
-<Intro />
+<section class="flow">
+  <Intro />
+  <Work />
+</section>

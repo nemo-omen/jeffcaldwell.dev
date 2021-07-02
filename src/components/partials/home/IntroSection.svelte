@@ -1,18 +1,19 @@
 <script>
-	import Avatar from './Avatar.svelte';
+	import Avatar from '../../Avatar.svelte';
 </script>
 
-<article id="intro">
-    <section class="intro_greeting">
-        <h2 class="greeting">I'm <a href="https://twitter.com/trainingm0ntage">Jeff</a>.<br/> I make fast, accessible, good-looking websites.</h2>
+<section id="intro" class="space__outer_top flow">
+    <section class="intro_greeting width__body flow-xsmall">
+        <h2 class="greeting">I'm <a href="https://twitter.com/trainingm0ntage">Jeff</a>.</h2>
+        <h3 class="sub-greeting">I make fast, accessible, good-looking websites.</h3>
     </section>
-    <section class="intro_message">
+    <section class="intro_message width__body">
         <p class="message">I'm a web developer in Texas who specializes in the design and development of sites and apps for small businesses, nonprofits, and people like you.</p>
     </section>
     <section id="cta">
         <a href="/hire" class="cta-button">Check Out My Services</a>
     </section>
-</article>
+</section>
 
 
 
@@ -22,30 +23,29 @@
         flex-direction: column;
         align-items: center;
         background: var(--darkblue);
-        gap: var(--space);
-        padding-bottom: var(--space);
-        margin-bottom: var(--space);
     }
 	.intro_greeting {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        text-align: center;
 	}
 	.greeting {
-        font-family: var(--sans);
-        font-weight: 900;
-		font-size: clamp(var(--size-600), 5vw, var(--size-800));
+		font-size: clamp(var(--size-700), 5vw, var(--size-900));
 		letter-spacing: 0.5rem;
-        text-align: center;
-        color: var(--whitish);
 	}
+    .sub-greeting {
+        font-size: clamp(var(--size-600), 5vw, var(--size-800));
+        font-weight: 500;
+        letter-spacing: 0.25rem;
+        color: var(--whitish);
+    }
     .intro_message {
         width: 100%;
     }
     .message {
         color: var(--whitish);
-        width: var(--width-body);
         margin-inline: auto;
         text-align: center;
         font-size: clamp(var(--size-500), 3vw, var(--size-600));
@@ -82,7 +82,7 @@
     }
 
     .cta-button:hover {
-        background: var(--darkblue);
+        background: var(--darkdarkblue);
         color: var(--whitish);
         border-color: var(--whitish);
     }

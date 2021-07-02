@@ -11,11 +11,6 @@
 
 <style>
   main {
-    /* width: clamp(16rem, 90vw, 70rem);
-    margin-inline: auto; */
     width: 100vw;
-    /* background-color: var(--red); */
-    /* padding: var(--space-small); */
-    /* margin-block: var(--space-small); */
   }
 </style>
