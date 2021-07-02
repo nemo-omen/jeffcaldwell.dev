@@ -5,7 +5,8 @@
 <header class="site-head" role="banner" >
   <div class="site-head_inner">
     <div class="site-head_logo">
-      <a href="/" id="site-logo" aria-label="TrainingMontage - home">
+      <h1 id="site-label" class="visually-hidden">Jeff Caldwell - web designer and developer</h1>
+      <a href="/" id="site-logo" aria-labelledby="site-label">
         <Logo />
       </a>
     </div>
@@ -42,7 +43,6 @@
   }
 
   #site-logo {
-    transition: all 300ms ease-out;
     margin: 0;
     padding: 0;
     text-decoration: none;
@@ -69,7 +69,7 @@
           font-weight: 600;
           text-transform: uppercase;
           text-decoration: none;
-          transition: all 300ms ease-out;
+          transition: color 300ms ease-out;
           font-size: clamp(var(--size-400), 4vw, var(--size-600));
           line-height: 1;
         }

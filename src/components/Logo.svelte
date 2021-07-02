@@ -38,9 +38,6 @@
 </div>
 
 <style lang="scss">
-  .logo {
-    transition: all 300ms ease-out;
-  }
   .logo-svg {
     height: clamp(2rem, 4vw, 4rem);
   }

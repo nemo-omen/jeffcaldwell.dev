@@ -21,7 +21,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        // background: var(--red);
         background: var(--darkblue);
         gap: var(--space);
         padding-bottom: var(--space);
@@ -57,7 +56,7 @@
         color: var(--red);
         text-decoration-thickness: 1px;
         text-underline-offset: auto;
-        transition: all 300ms ease-out;
+        transition: text-decoration-thickness 300ms ease-out;
     }
 
     a:hover {
@@ -69,8 +68,8 @@
         justify-content: center;
     }
     .cta-button {
-        background-color: var(--red);
-        color: var(--white);
+        background-color: var(--whitish);
+        color: var(--darkblue);
         text-decoration: none;
         padding: 1rem;
         border-radius: 0.5rem;
@@ -79,7 +78,7 @@
         letter-spacing: 2px;
         text-transform: uppercase;
         border: 2px solid transparent;
-        transition: all 300ms ease-out;
+        transition: background 300ms ease-out, border-color 300ms ease-out, color 300ms ease-out;
     }
 
     .cta-button:hover {

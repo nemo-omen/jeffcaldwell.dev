@@ -91,7 +91,6 @@ img {
 
 figcaption {
   font-size: var(--size-300);
-
   font-style: italic;
   margin-top: 1rem;
 }
@@ -128,7 +127,6 @@ h3 {
 
 .post {
   --flow-space: var(--size-700);
-
   width: 90vw;
   width: clamp(16rem, 90vw, 70rem);
   margin-left: auto;
