@@ -8,7 +8,7 @@
         <h3 class="sub-greeting">I make fast, accessible, great-looking websites.</h3>
     </section>
     <section class="intro_message width__body">
-        <p class="message">I'm a web developer in Texas who specializes in the design and development of sites and apps for small businesses, nonprofits, and people like you.</p>
+        <p class="message">I'm a web developer who specializes in the design and development of sites and apps for small businesses, nonprofits, and people like you.</p>
     </section>
     <section id="cta">
         <a href="/hire" class="cta-button">Check Out My Services</a>
@@ -36,6 +36,7 @@
     .message {
         font-size: clamp(var(--size-500), 3vw, var(--size-600));
         max-width: 50ch;
+        letter-spacing: 0.25rem;
     }
 
     a {
