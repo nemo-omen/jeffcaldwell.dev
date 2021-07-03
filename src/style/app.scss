@@ -34,7 +34,7 @@
 
   --space: clamp(2rem, 4vw, 5rem);
   --space-small: clamp(1rem, 3vw, 2rem);
-  --space-xsmall: clamp(0.5rem, 1.5vw, 1rem);
+  --space-xsmall: clamp(0.5rem, 2vw, 1rem);
 
   --width-body: clamp(16rem, 90vw, 65rem);
 
@@ -216,6 +216,8 @@ h3 {
 
 // margins and padding
 
+// normal spacing
+
 .space__inner {
   padding: var(--space);
 }
@@ -254,4 +256,46 @@ h3 {
 
 .space__inner_bottom {
   padding-bottom: var(--space);
+}
+
+// small spacing
+
+.space_small__inner {
+  padding: var(--space-small);
+}
+
+.space_small__outer {
+  margin: var(--space-small);
+}
+
+.space_small__inner_block {
+  padding-block: var(--space-small);
+}
+
+.space_small__outer_block {
+  margin-block: var(--space-small);
+}
+
+.space_small__inner_inline {
+  padding-inline: var(--space-small);
+}
+
+.space_small__outer_inline {
+  margin-inline: var(--space-small);
+}
+
+.space_small__outer_top {
+  margin-top: var(--space-small);
+}
+
+.space_small__outer_bottom {
+  margin-bottom: var(--space-small);
+}
+
+.space_small__inner_top {
+  padding-top: var(--space-small);
+}
+
+.space_small__inner_bottom {
+  padding-bottom: var(--space-small);
 }

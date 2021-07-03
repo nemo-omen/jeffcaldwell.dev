@@ -2,10 +2,10 @@
 	import Avatar from '../../Avatar.svelte';
 </script>
 
-<section id="intro" class="space__outer_top flow">
-    <section class="intro_greeting width__body flow-xsmall">
+<section id="intro" class="flow">
+    <section class="intro_greeting width__body flow">
         <h2 class="greeting">I'm <a href="https://twitter.com/trainingm0ntage">Jeff</a>.</h2>
-        <h3 class="sub-greeting">I make fast, accessible, good-looking websites.</h3>
+        <h3 class="sub-greeting">I make fast, accessible, great-looking websites.</h3>
     </section>
     <section class="intro_message width__body">
         <p class="message">I'm a web developer in Texas who specializes in the design and development of sites and apps for small businesses, nonprofits, and people like you.</p>
@@ -52,15 +52,17 @@
     #cta {
         display: flex;
         justify-content: center;
+        margin-top: var(--space);
     }
     .cta-button {
         background-color: var(--whitish);
         color: var(--darkblue);
         text-decoration: none;
-        padding: 1rem;
+        padding: var(--space-xsmall);
         border-radius: 0.5rem;
         font-family: var(--sans);
-        font-weight: 900;
+        font-weight: 700;
+        font-size: clamp(var(--size-400), 4vw, var(--size-500));
         letter-spacing: 2px;
         text-transform: uppercase;
         border: 2px solid transparent;

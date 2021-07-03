@@ -27,9 +27,12 @@
   .logo {
     height: clamp(3rem, 4vw, 5rem);
     width: clamp(3rem, 4vw, 5rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .logo-svg {
-    height: clamp(3rem, 4vw, 5rem);
+    height: clamp(2.5rem, 3.5vw, 4.5rem);
   }
 
   .rect, .letter {

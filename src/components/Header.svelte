@@ -2,7 +2,7 @@
   import Logo from './Logo.svelte';
 </script>
 
-<header class="site-head" role="banner" >
+<header class="site-head" role="banner">
   <div class="site-head_inner">
     <div class="site-head_logo">
       <h1 id="site-label" class="visually-hidden">Jeff Caldwell - web designer and developer</h1>
@@ -25,7 +25,6 @@
   header {
     display: flex;
     justify-content: center;
-    align-items: center;
     background-color: var(--darkblue);
     padding: 1rem;
     font-family: var(--sans);
@@ -34,7 +33,7 @@
   .site-head_inner {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
     width: clamp(16rem, 90vw, 65rem);
 
     a {
@@ -70,7 +69,7 @@
           text-transform: uppercase;
           text-decoration: none;
           transition: color 300ms ease-out;
-          font-size: clamp(var(--size-400), 4vw, var(--size-600));
+          font-size: clamp(var(--size-400), 4vw, var(--size-500));
           line-height: 1;
         }
         

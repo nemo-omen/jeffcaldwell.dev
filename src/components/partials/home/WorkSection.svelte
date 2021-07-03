@@ -3,9 +3,9 @@
 </script>
 
 <section id="work" class="width__body">
-  <h2 class="title_section">
+  <!-- <h2 class="title_section">
     My Work
-  </h2>
+  </h2> -->
 </section>
 
 <style>

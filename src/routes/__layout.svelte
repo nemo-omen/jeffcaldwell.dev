@@ -12,6 +12,6 @@
 <style>
   main {
     width: var(--width-body);
-    margin: 0 auto;
+    margin: var(--space-small) auto;
   }
 </style>
