@@ -25,15 +25,11 @@
 
 <style lang="scss">
   .logo {
-    position: relative;
-    height: clamp(4rem, 4vw, 6rem);
-    width: clamp(4rem, 4vw, 6rem);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: clamp(3rem, 4vw, 5rem);
+    width: clamp(3rem, 4vw, 5rem);
   }
   .logo-svg {
-    height: clamp(4rem, 4vw, 6rem);
+    height: clamp(3rem, 4vw, 5rem);
   }
 
   .rect, .letter {
