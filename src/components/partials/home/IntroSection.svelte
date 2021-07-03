@@ -70,13 +70,9 @@
     }
 
     .cta-button:hover {
-        background: var(--darkdarkblue);
+        background: var(--darkblue);
         color: var(--whitish);
         border-color: var(--whitish);
-    }
-
-    .cta-button:active {
-        transform: scale(1.0);
     }
 
     @media screen and (max-width: 437px) {
