@@ -34,7 +34,7 @@
   .site-head_inner {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
     width: clamp(16rem, 90vw, 65rem);
 
     a {
@@ -84,9 +84,10 @@
     }
   }
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 436px) {
     .site-head_inner {
       flex-direction: column;
+      align-items: center;
     }
   }
 </style>

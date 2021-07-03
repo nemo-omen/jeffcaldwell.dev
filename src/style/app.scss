@@ -3,7 +3,7 @@
 :root {
   --body: 'Atkinson Hyperlegible';
   --serif: 'Merriweather', Georgia, serif;
-  --sans: 'Work Sans', -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue,
+  --sans: 'Urbanist', -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue,
   helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
 
   /*Colors*/
@@ -76,7 +76,7 @@ h4 {
 
 h1,
 h2 {
-  font-weight: 900;
+  font-weight: 700;
 }
 
 h1 {
@@ -110,7 +110,7 @@ blockquote {
 
 ::selection {
   color: #fff;
-  background: var(--darkblue);
+  background: var(--green);
 }
 
 

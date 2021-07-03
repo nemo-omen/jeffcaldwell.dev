@@ -24,30 +24,16 @@
         align-items: center;
         background: var(--darkblue);
     }
-	.intro_greeting {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-	}
 	.greeting {
 		font-size: clamp(var(--size-700), 5vw, var(--size-900));
-		letter-spacing: 0.5rem;
+		letter-spacing: 0.25rem;
 	}
     .sub-greeting {
-        font-size: clamp(var(--size-600), 5vw, var(--size-800));
+        font-size: clamp(var(--size-600), 4vw, var(--size-800));
         font-weight: 500;
         letter-spacing: 0.25rem;
-        color: var(--whitish);
-    }
-    .intro_message {
-        width: 100%;
     }
     .message {
-        color: var(--whitish);
-        margin-inline: auto;
-        text-align: center;
         font-size: clamp(var(--size-500), 3vw, var(--size-600));
         max-width: 50ch;
     }
@@ -90,4 +76,10 @@
     .cta-button:active {
         transform: scale(1.0);
     }
+
+    @media screen and (max-width: 437px) {
+    #intro {
+      text-align: center;
+    }
+  }
 </style>

@@ -11,6 +11,7 @@
 
 <style>
   main {
-    width: 100vw;
+    width: var(--width-body);
+    margin: 0 auto;
   }
 </style>
