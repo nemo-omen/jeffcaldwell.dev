@@ -36,15 +36,17 @@
     flex-direction: column;
     justify-content: space-between;
     aspect-ratio: 9 / 16;
-    background-color: var(--whitish);
+    background: linear-gradient(var(--darkblue) 30%, var(--whitish) 65%);
     border-radius: 0.5rem;
   }
 
   .card-image {
-    aspect-ratio: 1 / 1;
+    flex: 1;
+    border: 1px solid var(--whitish);
   }
 
   .card-body {
+    flex: 2;
     padding-block: var(--space-xsmall);
     display: grid;
     grid-template-rows: repeat(3 1fr);
@@ -56,7 +58,9 @@
     padding-inline: var(--space-xsmall);
   }
   h3 {
-    color: var(--darkblue);
+    /* background: linear-gradient(20deg, var(--whitish), var(--darkblue)); */
+    /* background-clip: text; */
+    color: #fff;
     text-align: center;
   }
   p {

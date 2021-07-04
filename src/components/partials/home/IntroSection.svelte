@@ -11,7 +11,7 @@
         <p class="message">I'm a web developer who specializes in the design and development of sites and apps for small businesses, nonprofits, and people like you.</p>
     </section>
     <section id="cta">
-        <a href="/hire" class="cta-button">Check Out My Work</a>
+        <a href="/work" class="cta-button">Check Out My Work</a>
     </section>
 </section>
 
