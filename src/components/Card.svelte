@@ -8,15 +8,22 @@
 
 <a href={card?.link} class="parent-link">
   <article class="card">
-    <header>
-      <h3>{card?.title}</h3>
-    </header>
-    <section>
-      {card?.content}
+    <section class="card-image">
+
     </section>
-    <footer>
-      <a href={card?.link} class="button">Take a Look</a>
-    </footer>
+    <section class="card-body">
+      <header>
+        <h3>{card?.title}</h3>
+      </header>
+      <section class="content-text">
+        <p>
+          {card?.content}
+        </p>
+      </section>
+      <footer>
+        <a href={card?.link} class="button">Take a Look</a>
+      </footer>
+    </section>
   </article>
 </a>
 
@@ -28,7 +35,31 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: var(--space-xsmall);
+    aspect-ratio: 9 / 16;
     background-color: var(--whitish);
+    border-radius: 0.5rem;
+  }
+
+  .card-image {
+    aspect-ratio: 1 / 1;
+  }
+
+  .card-body {
+    padding-block: var(--space-xsmall);
+    display: grid;
+    grid-template-rows: repeat(3 1fr);
+    align-items: end;
+  }
+
+  .card-body > * + *{
+    margin-top: var(--space-xsmall);
+    padding-inline: var(--space-xsmall);
+  }
+  h3 {
+    color: var(--darkblue);
+    text-align: center;
+  }
+  p {
+    color: var(--blackish);
   }
 </style>

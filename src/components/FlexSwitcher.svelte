@@ -15,6 +15,7 @@
     flex-wrap: wrap;
     gap: var(--space);
   }
+  
 
   :global(.switcher > * ) {
     flex-grow: 1;

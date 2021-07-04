@@ -3,7 +3,7 @@
 
   const cards = [
   {
-    title: 'Placeholder Title',
+    title: 'Front-End Web Development',
     content: "This is a moderate amount of content that I'll use to take up some space temporarily.",
     link: '/hire',
   },
