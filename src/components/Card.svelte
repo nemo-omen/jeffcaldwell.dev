@@ -6,7 +6,7 @@
   };
 </script>
 
-<a href={card?.link}>
+<a href={card?.link} class="parent-link">
   <article class="card">
     <header>
       <h3>{card?.title}</h3>
@@ -21,10 +21,14 @@
 </a>
 
 <style>
+  .parent-link {
+    text-decoration: none;
+  }
   .card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: var(--space-xsmall);
+    background-color: var(--whitish);
   }
 </style>
