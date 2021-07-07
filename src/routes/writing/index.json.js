@@ -14,10 +14,12 @@ export const get = async() => {
       slug: parse(file).dir,
       subtitle: metadata.subtitle,
       title: metadata.title,
+      excerpt: metadata.excerpt,
+      tags: metadata.tags
     });
   }));
 
-  posts.sort((a,b) => (a.created > b.created) ? -1 : 1);
+  posts.sort((a,b) => (a.created > b.created) ? 1 : -1);
 
   return {
     body: {

@@ -11,7 +11,7 @@
     <section class="card-image">
 
     </section>
-    <section class="card-body">
+    <section class="card-body flow">
       <header>
         <h3>{card?.title}</h3>
       </header>
@@ -30,37 +30,41 @@
 <style>
   .parent-link {
     text-decoration: none;
+    display: flex;
   }
   .card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    aspect-ratio: 9 / 16;
-    background: linear-gradient(var(--darkblue) 30%, var(--whitish) 65%);
-    border-radius: 0.5rem;
+    aspect-ratio: 4 / 5;
+    background: var(--red);
   }
 
   .card-image {
-    flex: 1;
-    border: 1px solid var(--whitish);
+    border-bottom: 1px solid var(--whitish);
+    aspect-ratio: 16 / 9;
+    flex: 2;
   }
 
   .card-body {
-    flex: 2;
-    padding-block: var(--space-xsmall);
-    display: grid;
-    grid-template-rows: repeat(3 1fr);
-    align-items: end;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex: 3;
+    padding: var(--space-xsmall);
   }
 
   .card-body > * + *{
     margin-top: var(--space-xsmall);
-    padding-inline: var(--space-xsmall);
   }
   h3 {
-    /* background: linear-gradient(20deg, var(--whitish), var(--darkblue)); */
-    /* background-clip: text; */
     color: #fff;
+    text-align: center;
+    letter-spacing: 0.2em;
+    font-weight: 900;
+    font-size: clamp(var(--size-500), 3vw, var(--size-600));
+    font-weight: 700;
     text-align: center;
   }
   p {

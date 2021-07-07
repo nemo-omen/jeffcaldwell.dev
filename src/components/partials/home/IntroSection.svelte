@@ -2,36 +2,53 @@
 	import Avatar from '../../Avatar.svelte';
 </script>
 
-<section id="intro" class="flow">
-    <section class="intro_greeting width__body flow">
-        <h2 class="greeting">I'm <a href="https://twitter.com/trainingm0ntage">Jeff</a>.</h2>
-        <h3 class="sub-greeting">I make fast, accessible, great-looking websites.</h3>
+<section id="intro" class="flow space__outer_bottom">
+    <section class="intro_greeting">
+        <h2 class="greeting">Jeff<br>Caldwell</h2>
+        <h3 class="sub-greeting">Makes Websites.</h3>
+        <!-- <h3 class="sub-greeting">I make fast, accessible, great-looking websites.</h3> -->
     </section>
-    <section class="intro_message width__body">
+    <section class="flex-absolute-graphic">
+        <img src="/MeIllustration.svg" alt="Illustration of Jeff Caldwell.">
+    </section>
+    <!-- <section class="intro_message width__body">
         <p class="message">I'm a web developer who specializes in the design and development of sites and apps for small businesses, nonprofits, and people like you.</p>
-    </section>
-    <section id="cta">
+    </section> -->
+    <!-- <section id="cta">
         <a href="/work" class="cta-button">Check Out My Work</a>
-    </section>
+    </section> -->
 </section>
 
 
 
 <style lang="scss">
     #intro {
+        position: relative;
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        background: var(--darkblue);
+        z-index: 125;
+    }
+    .intro_greeting {
+        z-index: 100;
     }
 	.greeting {
-		font-size: clamp(var(--size-700), 5vw, var(--size-900));
-		letter-spacing: 0.25rem;
+        // font-size: clamp(var(--size-900), 6vw, 7.478rem);
+        font-size: clamp(var(--size-900), 10vw, 9.969rem);
+        font-weight: 900;
+        letter-spacing: .05em;
+        color: var(--red);
 	}
     .sub-greeting {
-        font-size: clamp(var(--size-600), 4vw, var(--size-800));
-        font-weight: 500;
+        font-size: clamp(var(--size-600), 5vw, var(--size-900));
+        font-weight: 900;
         letter-spacing: 0.25rem;
+    }
+    .flex-absolute-graphic {
+        margin: 0;
+        z-index: 50;
+        position: absolute;
+        bottom: calc(var(--space) * -1);
+        right: 0;
+        max-width: 31vw;
     }
     .message {
         font-size: clamp(var(--size-500), 3vw, var(--size-600));
@@ -76,9 +93,20 @@
         border-color: var(--whitish);
     }
 
-    @media screen and (max-width: 437px) {
-    #intro {
-      text-align: center;
+    @media screen and (max-width: 463px) {
+        #intro {
+            justify-content: center;
+            align-items: end;
+            margin-inline: auto;
+        }
+        .flex-absolute-graphic {
+            position: absolute;
+            top: -1rem;
+            right: 18vw;
+            max-width: 35vw;
+        }
+        .sub-greeting {
+            text-align: center;
+        }
     }
-  }
 </style>

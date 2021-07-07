@@ -3,17 +3,17 @@
 
   const cards = [
   {
-    title: 'Front-End Web Development',
+    title: 'Web Development',
     content: "This is a moderate amount of content that I'll use to take up some space temporarily.",
     link: '/hire',
   },
   {
-    title: 'Placeholder Title',
+    title: 'Web Design',
     content: "This is a moderate amount of content that I'll use to take up some space temporarily.",
     link: '/hire',
   },
   {
-    title: 'Placeholder Title',
+    title: 'WordPress Development',
     content: "This is a moderate amount of content that I'll use to take up some space temporarily.",
     link: '/hire',
   },
@@ -26,5 +26,7 @@
 </section>
 
 <style>
-
+  section {
+    z-index: 150;
+  }
 </style>

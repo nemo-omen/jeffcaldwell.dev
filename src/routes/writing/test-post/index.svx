@@ -3,10 +3,11 @@ title: Test Post
 author: Jeff Caldwell
 created: July, 4, 2021
 slug: test-post
-subtitle: testing, testing
+subtitle: Testing, testing!
+excerpt: "This is a test post that we'll use to judge what the layout and design looks like when there's some content."
+tags: [SvelteKit, Web Dev, CSS, JavaScript, HTML]
 ---
 
-## This is the first test post!
+Okay, this is a paragraph so I can see what's what. I'll be writing more and more in this space as time goes on, so I want to make sure it looks good.
 
-## Let's see how it loads!!!!
-
+There are going to be paragraphs, lists, images, figures, headings, etc, etc.

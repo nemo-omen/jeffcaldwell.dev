@@ -3,7 +3,7 @@
   export let cards = [];
 </script>
 
-<section class="switcher space__outer_top">
+<section class="switcher">
   {#each cards as card}
     <Card {card} />
   {/each}

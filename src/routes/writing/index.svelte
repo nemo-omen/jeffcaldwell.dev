@@ -13,9 +13,16 @@
 </script>
 
 <script>
+  import PostItem from '../../components/PostItem.svelte'
   export let posts;
 </script>
 
-{#each posts as post}
-  <h3>{post.title}</h3>
-{/each}
+<section class="flow">
+  {#each posts as post}
+  <PostItem {post} />
+  {/each}
+</section>
+
+<style>
+  
+</style>
