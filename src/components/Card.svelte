@@ -8,21 +8,18 @@
 
 <a href={card?.link} class="parent-link">
   <article class="card">
-    <section class="card-image">
-
-    </section>
     <section class="card-body flow">
       <header>
         <h3>{card?.title}</h3>
       </header>
+      <section class="card-image">
+  
+      </section>
       <section class="content-text">
         <p>
           {card?.content}
         </p>
       </section>
-      <footer>
-        <a href={card?.link} class="button">Take a Look</a>
-      </footer>
     </section>
   </article>
 </a>
@@ -41,9 +38,13 @@
   }
 
   .card-image {
-    border-bottom: 1px solid var(--whitish);
+    min-height: 200px;
+    max-height: 200px;
+    width: 100%;
+    border: 1px solid var(--whitish);
     aspect-ratio: 16 / 9;
     flex: 2;
+    padding: 0.5rem;
   }
 
   .card-body {

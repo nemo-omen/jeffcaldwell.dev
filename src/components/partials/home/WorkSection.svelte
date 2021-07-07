@@ -3,12 +3,12 @@
 
   const cards = [
   {
-    title: 'Web Development',
+    title: 'Web\nDevelopment',
     content: "This is a moderate amount of content that I'll use to take up some space temporarily.",
     link: '/hire',
   },
   {
-    title: 'Web Design',
+    title: 'Web\nDesign',
     content: "This is a moderate amount of content that I'll use to take up some space temporarily.",
     link: '/hire',
   },
