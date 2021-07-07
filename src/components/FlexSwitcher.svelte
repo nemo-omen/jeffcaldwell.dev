@@ -11,14 +11,10 @@
 
 <style>
   .switcher {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--space);
-  }
-  
-
-  :global(.switcher > * ) {
-    flex-grow: 1;
-    flex-basis: calc((30rem - 100%) * 999);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    justify-content: space-between;
+    justify-items: space-between;
+    grid-gap: var(--space-small);
   }
 </style>

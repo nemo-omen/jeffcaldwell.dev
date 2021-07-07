@@ -11,12 +11,6 @@
     <section class="flex-absolute-graphic">
         <img src="/MeIllustration.svg" alt="Illustration of Jeff Caldwell.">
     </section>
-    <!-- <section class="intro_message width__body">
-        <p class="message">I'm a web developer who specializes in the design and development of sites and apps for small businesses, nonprofits, and people like you.</p>
-    </section> -->
-    <!-- <section id="cta">
-        <a href="/work" class="cta-button">Check Out My Work</a>
-    </section> -->
 </section>
 
 
@@ -32,10 +26,11 @@
     }
 	.greeting {
         // font-size: clamp(var(--size-900), 6vw, 7.478rem);
-        font-size: clamp(var(--size-900), 10vw, 9.969rem);
+        font-size: clamp(var(--size-900), 8vw, 9.969rem);
         font-weight: 900;
         letter-spacing: .05em;
         color: var(--red);
+        line-height: 1;
 	}
     .sub-greeting {
         font-size: clamp(var(--size-600), 5vw, var(--size-900));
@@ -48,7 +43,7 @@
         position: absolute;
         bottom: calc(var(--space) * -1);
         right: 0;
-        max-width: 31vw;
+        max-width: clamp(155px, 26vw, 595px);
     }
     .message {
         font-size: clamp(var(--size-500), 3vw, var(--size-600));
@@ -102,7 +97,7 @@
         .flex-absolute-graphic {
             position: absolute;
             top: -1rem;
-            right: 18vw;
+            right: 15vw;
             max-width: 35vw;
         }
         .sub-greeting {
