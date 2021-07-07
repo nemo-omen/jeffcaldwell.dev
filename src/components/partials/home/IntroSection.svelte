@@ -1,12 +1,11 @@
 <script>
-	import Avatar from '../../Avatar.svelte';
+	
 </script>
 
 <section id="intro" class="flow space__outer_bottom">
     <section class="intro_greeting">
         <h2 class="greeting">Jeff<br>Caldwell</h2>
         <h3 class="sub-greeting">Makes Websites.</h3>
-        <!-- <h3 class="sub-greeting">I make fast, accessible, great-looking websites.</h3> -->
     </section>
     <section class="flex-absolute-graphic">
         <img src="/MeIllustration.svg" alt="Illustration of Jeff Caldwell.">
@@ -25,7 +24,6 @@
         z-index: 100;
     }
 	.greeting {
-        // font-size: clamp(var(--size-900), 6vw, 7.478rem);
         font-size: clamp(var(--size-900), 8vw, 9.969rem);
         font-weight: 900;
         letter-spacing: .05em;
@@ -41,9 +39,9 @@
         margin: 0;
         z-index: 50;
         position: absolute;
-        bottom: calc(var(--space) * -1);
+        bottom: calc((var(--space) * -1) + 1rem);
         right: 0;
-        max-width: clamp(155px, 26vw, 595px);
+        max-width: clamp(155px, 25vw, 595px);
     }
     .message {
         font-size: clamp(var(--size-500), 3vw, var(--size-600));

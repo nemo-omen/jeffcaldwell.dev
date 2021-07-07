@@ -40,7 +40,7 @@
   </a>
   <a href="/hire" class="parent-link">
     <article class="card">
-      <section class="card-body flow">
+      <section class="card-body">
         <header>
           <h3>WordPress<br>Development</h3>
         </header>
@@ -55,6 +55,7 @@
       </section>
     </article>
   </a>
+
 </section>
 
 <style>
@@ -73,9 +74,17 @@
   .card {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    aspect-ratio: 4 / 5;
-    background: var(--red);
+    /* background: var(--red); */
+    box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.3);
+    border: 1px solid var(--darkwhitish);
+    background-color: var(--lightwhitish);
+    /* background-image: url('/papertexture.jpg'); */
+    transition: box-shadow 200ms ease-out, background-color 200ms ease-out;
+  }
+  
+  .card:hover {
+    box-shadow: 7px 7px 10px rgb(0, 0, 0, 0.3);
+    background-color: var(--lightlightwhitish);
   }
 
   .card-image {
@@ -91,23 +100,25 @@
   .card-body {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
     flex: 3;
     padding: var(--space-xsmall);
   }
 
   .card-body > * + *{
-    margin-top: var(--space-xsmall);
+    margin-top: 1rem;
   }
-  h3 {
-    color: #fff;
+  .card h3 {
+    color: var(--red);
     text-align: center;
     letter-spacing: 0.2em;
     font-weight: 900;
     font-size: clamp(var(--size-500), 3vw, var(--size-600));
-    font-weight: 700;
     text-align: center;
+    transition: color 300ms ease-out;
+  }
+
+  .card:hover h3 {
+    color: var(--darkblue);
   }
   p {
     color: var(--blackish);
