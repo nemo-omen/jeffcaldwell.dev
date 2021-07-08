@@ -40,6 +40,9 @@
         line-height: 1;
         margin-top: var(--space-small)
 	}
+    .greeting::selection {
+        color: var(--red);
+    }
     .sub-greeting {
         font-size: clamp(var(--size-600), 5vw, var(--size-900));
         font-weight: 900;
