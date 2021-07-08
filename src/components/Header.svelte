@@ -28,7 +28,7 @@
     background-color: var(--bg__primary);
     padding: 1rem;
     font-family: var(--sans);
-    border-bottom: 5px solid var(--red);
+    // border-bottom: 5px solid var(--red);
   }
   
   .site-head_inner {

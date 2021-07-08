@@ -2,14 +2,14 @@
 	
 </script>
 
-<section id="intro" class="flow space__outer_bottom">
+<section id="intro" class="flow">
     <section class="intro_greeting">
         <h2 class="greeting">Jeff<br>Caldwell</h2>
         <h3 class="sub-greeting">Makes Websites.</h3>
     </section>
-    <section class="flex-absolute-graphic">
+    <!-- <section class="flex-absolute-graphic">
         <img src="/MeIllustration.svg" alt="Illustration of Jeff Caldwell.">
-    </section>
+    </section> -->
 </section>
 
 
@@ -18,7 +18,12 @@
     #intro {
         position: relative;
         display: flex;
-        z-index: 125;
+        z-index: 20;
+        background-image: url('/MeIllustration.svg');
+        background-position: right bottom;
+        background-size: contain;
+        background-repeat: no-repeat;
+        padding-block: var(--space);
     }
     .intro_greeting {
         z-index: 100;
@@ -35,14 +40,18 @@
         font-weight: 900;
         letter-spacing: 0.25rem;
     }
-    .flex-absolute-graphic {
-        margin: 0;
-        z-index: 50;
-        position: absolute;
-        bottom: calc((var(--space) * -1) + 1rem);
-        right: 0;
-        max-width: clamp(155px, 25vw, 595px);
-    }
+    // .flex-absolute-graphic {
+    //     margin: 0;
+    //     z-index: 50;
+    //     position: absolute;
+    //     top: calc(var(--space) * -1);
+    //     // bottom: 0;
+    //     z-index: -1;
+    //     bottom: calc((var(--space) * -1) + 1rem);
+    //     right: 0;
+    //     // max-width: clamp(155px, 25vw, 595px);
+    //     max-width: 38%;
+    // }
     .message {
         font-size: clamp(var(--size-500), 3vw, var(--size-600));
         max-width: 50ch;
@@ -91,6 +100,8 @@
             justify-content: center;
             align-items: end;
             margin-inline: auto;
+            background-size: 35vw;
+            background-position: top right var(--space);
         }
         .flex-absolute-graphic {
             position: absolute;

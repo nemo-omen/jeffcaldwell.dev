@@ -7,7 +7,4 @@
 </section>
 
 <style>
-  section {
-    z-index: 150;
-  }
 </style>
