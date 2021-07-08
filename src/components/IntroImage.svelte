@@ -12,18 +12,20 @@
   .intro-image {
     margin: 0;
     z-index: 50;
-    position: absolute;
-    bottom: 0;
     z-index: 10;
-    right: 0;
-    max-width: 29vw;
+    flex: 1;
+    /* position: absolute; */
+    /* bottom: 0; */
+    /* right: 0; */
+    /* max-width: 30%; */
+    /* max-width: 29vw; */
     }
 
     .intro-image-border-top {
       z-index: -1;
-      border-top:8px solid var(--red);
+      border-top: calc(1vw / 3) solid var(--red);
       position: absolute;
-      top: var(--space);
+      top: var(--space-small);
       right: 0;
       left: 0;
       bottom: 0;
@@ -31,9 +33,9 @@
     .intro-image-border-bottom {
       position: absolute;
       z-index: 10;
-      border: 8px solid var(--red);
+      border: calc(1vw / 3) solid var(--red);
       border-top: none;
-      top: var(--space);
+      top: var(--space-small);
       right: 0;
       left: 0;
       bottom: 0;
@@ -50,17 +52,26 @@
         right: 10vw;
         max-width: 35vw;
         }
+        .intro-image-border-bottom, .intro-image-border-top {
+          border: none;
+        }
     }
 
     @media screen and (max-width: 603px) {
         .intro-image {
             max-width: 40vw;
         }
+        .intro-image-border-bottom, .intro-image-border-top {
+          border: none;
+        }
     }
 
     @media screen and (max-width: 769px) {
         .intro-image {
             max-width: 37vw;
+        }
+        .intro-image-border-bottom, .intro-image-border-top {
+          border: none;
         }
     }
 

@@ -2,7 +2,7 @@
     import IntroImage from '../../IntroImage.svelte'
 </script>
 
-<section id="intro" class="flow space__outer_block">
+<section id="intro" class="flow space__outer_bottom">
     <section class="intro_greeting">
         <h2 class="greeting">Jeff<br>Caldwell</h2>
         <h3 class="sub-greeting">Makes Websites.</h3>
@@ -19,20 +19,26 @@
     #intro {
         position: relative;
         display: flex;
+        justify-content: space-between;
+        align-items: center;
         z-index: 20;
-        padding-block: var(--space);
+        // padding-block: var(--space);
     }
     .intro_greeting {
         z-index: 100;
+        flex: 2;
+    }
+    .greeting, .sub-greeting {
+        margin-inline: var(--space-small);
     }
 	.greeting {
-        -webkit-text-stroke: 2px var(--red);
+        -webkit-text-stroke: calc(1vw / 4) var(--red);
         color: var(--whitish);
         font-size: clamp(var(--size-900), 8vw, 9.969rem);
-        font-weight: 900;
+        font-weight: 700;
         letter-spacing: .05em;
-        // color: var(--red);
         line-height: 1;
+        margin-top: var(--space-small)
 	}
     .sub-greeting {
         font-size: clamp(var(--size-600), 5vw, var(--size-900));
