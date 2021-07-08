@@ -13,7 +13,7 @@
 
 </script>
 <div class="logo" on:mouseenter={setHoverStyles} on:mouseleave={setHoverStyles}>
-  <div class="logo-border"></div>
+  <!-- <div class="logo-border"></div> -->
   <!-- Idle Logo -->
   <svg class="logo-svg" viewBox="0 0 49 36" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path class="letter" d="M41.478 26.7272L48.2113 30.3673C47.0642 31.9297 45.6261 33.1846 43.897 34.132C42.168 35.0795 40.281 35.5532 38.236 35.5532C35.9417 35.5532 33.8469 34.9631 31.9516 33.783C30.0729 32.6029 28.5683 31.0238 27.4377 29.0459C26.3238 27.0513 25.7668 24.849 25.7668 22.4388C25.7668 20.0121 26.3238 17.8015 27.4377 15.8069C28.5683 13.8123 30.0729 12.225 31.9516 11.0448C33.8469 9.86472 35.9417 9.27466 38.236 9.27466C40.281 9.27466 42.168 9.74837 43.897 10.6958C45.6261 11.6432 47.0642 12.9148 48.2113 14.5104L41.478 18.1505C40.547 17.2197 39.4663 16.7543 38.236 16.7543C37.2884 16.7543 36.4404 17.0203 35.6923 17.5521C34.9441 18.084 34.3456 18.7821 33.8967 19.6464C33.4645 20.5108 33.2483 21.4416 33.2483 22.4388C33.2483 23.4195 33.4645 24.342 33.8967 25.2063C34.3456 26.054 34.9441 26.7438 35.6923 27.2757C36.4404 27.8076 37.2884 28.0735 38.236 28.0735C39.4497 28.0735 40.5303 27.6247 41.478 26.7272Z" fill={isHovering ? red : whitish}/>
@@ -23,7 +23,6 @@
 
 <style lang="scss">
   .logo {
-    position: relative;
     height: clamp(3rem, 4vw, 5rem);
     width: clamp(3rem, 4vw, 5rem);
     display: flex;
@@ -32,13 +31,16 @@
     background-color: var(--red);
     border: 3px solid transparent;
     padding: 0.5rem;
-    transition: background 300ms ease-out;
+    transition: 
+      background 300ms ease-out,
+      border-color 300ms ease-out 100ms,
+      border-radius 200ms ease-out 100ms;
   }
 
   .logo:hover {
-    // border-color: var(--red);
+    border-color: var(--red);
     background-color: var(--whitish);
-    // border-radius: 50%;
+    border-radius: 50%;
   }
   .logo-svg {
     height: clamp(2.5rem, 3.5vw, 4.5rem);
