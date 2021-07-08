@@ -61,9 +61,9 @@
 <style>
   .switcher {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-    justify-content: space-between;
-    justify-items: space-between;
+    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+    /* justify-content: space-between;
+    justify-items: space-between; */
     grid-gap: var(--space-small);
   }
 
@@ -78,7 +78,6 @@
     box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.3);
     border: 1px solid var(--darkwhitish);
     background-color: var(--lightwhitish);
-    /* background-image: url('/papertexture.jpg'); */
     transition: box-shadow 200ms ease-out, background-color 200ms ease-out;
   }
   
@@ -86,12 +85,11 @@
     box-shadow: 7px 7px 10px rgb(0, 0, 0, 0.3);
     background-color: var(--lightlightwhitish);
   }
-
+  
   .card-image {
-    min-height: 200px;
-    max-height: 200px;
+    min-width: 100%;
     width: 100%;
-    border: 1px solid var(--whitish);
+    border: 1px solid var(--red);
     aspect-ratio: 16 / 9;
     flex: 2;
     padding: 0.5rem;
