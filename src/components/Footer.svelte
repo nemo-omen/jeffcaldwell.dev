@@ -44,8 +44,13 @@
    display: flex;
    justify-content: center;
    align-items: center;
-   gap: 2rem;
+   gap: var(--space);
    list-style-type: none;
+   margin: 0;
+   padding: 0;
+ }
+ .menu li {
+   line-height: 1;
    margin: 0;
    padding: 0;
  }
