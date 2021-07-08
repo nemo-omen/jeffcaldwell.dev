@@ -3,6 +3,8 @@
 </script>
 
 <section id="intro" class="flow space__outer_bottom">
+    <div class="intro-border-top"></div>
+
     <section class="intro_greeting">
         <h2 class="hero-callout">
             <span class="greeting">
@@ -13,6 +15,8 @@
         </h2>
     </section>
     <IntroImage />
+
+    <div class="intro-border-bottom"></div>
 </section>
 
 
@@ -24,6 +28,27 @@
         align-items: center;
         z-index: 20;
         font-family: var(--sans);
+    }
+
+    .intro-border-top {
+        z-index: -1;
+        border-top: calc(1vw / 3) solid var(--red);
+        position: absolute;
+        top: var(--space);
+        right: 0;
+        left: 0;
+        bottom: 0;
+        pointer-events: none;
+    }
+    .intro-border-bottom {
+      position: absolute;
+      z-index: 10;
+      border: calc(1vw / 3) solid var(--red);
+      border-top: none;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
     }
     .intro_greeting {
         z-index: 100;
@@ -74,32 +99,6 @@
 
     a:hover {
         text-decoration-thickness: 6px;
-    }
-
-    #cta {
-        display: flex;
-        justify-content: center;
-        margin-top: var(--space);
-    }
-    .cta-button {
-        background-color: var(--whitish);
-        color: var(--darkblue);
-        text-decoration: none;
-        padding: var(--space-xsmall);
-        border-radius: 0.5rem;
-        font-family: var(--sans);
-        font-weight: 700;
-        font-size: clamp(var(--size-400), 4vw, var(--size-500));
-        letter-spacing: 2px;
-        text-transform: uppercase;
-        border: 2px solid transparent;
-        transition: background 300ms ease-out, border-color 300ms ease-out, color 300ms ease-out;
-    }
-
-    .cta-button:hover {
-        background: var(--darkblue);
-        color: var(--whitish);
-        border-color: var(--whitish);
     }
 
     @media screen and (max-width: 463px) {
