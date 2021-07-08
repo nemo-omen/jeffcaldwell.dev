@@ -33,14 +33,12 @@
     padding: 0.5rem;
     transition: 
       background 300ms ease-out,
-      border-color 300ms ease-out 100ms,
-      border-radius 200ms ease-out 100ms;
+      border-color 300ms ease-out 100ms;
   }
 
   .logo:hover {
     border-color: var(--red);
     background-color: var(--whitish);
-    border-radius: 50%;
   }
   .logo-svg {
     height: clamp(2.5rem, 3.5vw, 4.5rem);
@@ -54,20 +52,20 @@
     position: relative;
   }
 
-  .logo-border {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border: 3px solid transparent;
-    transition: border-color 300ms ease-out, transform 300ms ease-out, border-radius 300ms ease-out 200ms;
-    transform-origin: center;
-    // background-color: var(--red);
-  }
-  .logo:hover > .logo-border {
-    border-color: var(--red);
-    transform: scale(1.2);
-    border-radius: 50%;
-  }
+  // .logo-border {
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   right: 0;
+  //   bottom: 0;
+  //   border: 3px solid transparent;
+  //   transition: border-color 300ms ease-out, transform 300ms ease-out, border-radius 300ms ease-out 200ms;
+  //   transform-origin: center;
+  //   // background-color: var(--red);
+  // }
+  // .logo:hover > .logo-border {
+  //   border-color: var(--red);
+  //   transform: scale(1.2);
+  //   border-radius: 50%;
+  // }
 </style>
