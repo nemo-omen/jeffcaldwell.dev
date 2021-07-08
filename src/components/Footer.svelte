@@ -9,5 +9,7 @@
 </footer>
 
 <style>
-
+ footer {
+  border-top: 5px solid var(--red);
+ }
 </style>

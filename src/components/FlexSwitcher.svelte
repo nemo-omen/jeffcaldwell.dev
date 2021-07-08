@@ -62,8 +62,6 @@
   .switcher {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
-    /* justify-content: space-between;
-    justify-items: space-between; */
     grid-gap: var(--space-small);
   }
 
