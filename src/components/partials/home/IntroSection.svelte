@@ -4,12 +4,14 @@
 
 <section id="intro" class="flow space__outer_bottom">
     <section class="intro_greeting">
-        <h2 class="greeting">Jeff<br>Caldwell</h2>
-        <h3 class="sub-greeting">Makes Websites.</h3>
+        <h2 class="hero-callout">
+            <span class="greeting">
+                Jeff<br>Caldwell
+            </span>
+            <br>
+            <span class="sub-greeting">Makes Websites.</span>
+        </h2>
     </section>
-    <!-- <section class="flex-absolute-graphic">
-        <img src="/MeIllustration.svg" alt="Illustration of Jeff Caldwell.">
-    </section> -->
     <IntroImage />
 </section>
 
@@ -19,26 +21,32 @@
     #intro {
         position: relative;
         display: flex;
-        justify-content: space-between;
         align-items: center;
         z-index: 20;
-        // padding-block: var(--space);
+        font-family: var(--sans);
     }
     .intro_greeting {
         z-index: 100;
         flex: 2;
+        justify-self: stretch;
     }
-    .greeting, .sub-greeting {
-        margin-inline: var(--space-small);
+    .hero-callout {
+        max-width: 60ch;
+        margin: var(--space-small);
+        padding: 0;
+        display: block;
+        line-height: 1;
+    }
+    .hero-callout * {
+        display: block;
     }
 	.greeting {
-        -webkit-text-stroke: calc(1vw / 4) var(--red);
+        -webkit-text-stroke: calc(1vw / 4.5) var(--red);
         color: var(--whitish);
-        font-size: clamp(var(--size-900), 8vw, 9.969rem);
+        font-size: clamp(var(--size-900), 6vw, 9.969rem);
         font-weight: 700;
         letter-spacing: .05em;
         line-height: 1;
-        margin-top: var(--space-small)
 	}
     .greeting::selection {
         color: var(--red);
@@ -47,8 +55,10 @@
         font-size: clamp(var(--size-600), 5vw, var(--size-900));
         font-weight: 900;
         letter-spacing: 0.25rem;
+        color: var(--darkblue);
+        margin-top: var(--space-small);
     }
-    
+
     .message {
         font-size: clamp(var(--size-500), 3vw, var(--size-600));
         max-width: 50ch;
@@ -102,6 +112,9 @@
         }
         .sub-greeting {
             text-align: center;
+        }
+        .greeting {
+            -webkit-text-stroke: calc(1vw / 3) var(--red);
         }
     }
 </style>
