@@ -17,7 +17,7 @@
   export let posts;
 </script>
 
-<section class="flow">
+<section class="flow space__outer_top">
   {#each posts as post}
   <PostItem {post} />
   {/each}

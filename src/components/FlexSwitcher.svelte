@@ -72,16 +72,23 @@
   .card {
     display: flex;
     flex-direction: column;
+    /* border-radius: 1rem; */
     /* background: var(--red); */
-    box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.3);
-    border: 1px solid var(--darkwhitish);
-    background-color: var(--lightwhitish);
+    /* box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.3); */
+    box-shadow: 3px 3px 3px #eeecdc, -3px -3px 3px var(--lightlightwhitish);
+    /* border: 1px solid var(--darkwhitish); */
+    /* background-color: var(--lightwhitish); */
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #dadada;
+    border-bottom: 1px solid #dadada;
     transition: box-shadow 200ms ease-out, background-color 200ms ease-out;
   }
   
   .card:hover {
-    box-shadow: 7px 7px 10px rgb(0, 0, 0, 0.3);
-    background-color: var(--lightlightwhitish);
+    box-shadow: 5px 5px 10px #eeecdc, -5px -5px 10px var(--lightlightwhitish);
+    /* box-shadow: 7px 7px 10px rgb(0, 0, 0, 0.3); */
+    /* background-color: var(--lightwhitish); */
   }
   
   .card-image {
