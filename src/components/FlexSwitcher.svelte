@@ -86,7 +86,7 @@
   }
   
   .card:hover {
-    box-shadow: 5px 5px 10px #eeecdc, -5px -5px 10px var(--lightlightwhitish);
+    box-shadow: 5px 5px 15px #eeecdc, -5px -5px 15px var(--lightlightwhitish);
     /* box-shadow: 7px 7px 10px rgb(0, 0, 0, 0.3); */
     /* background-color: var(--lightwhitish); */
   }
