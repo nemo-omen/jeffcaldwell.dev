@@ -26,6 +26,13 @@
   --bg_secondary: var(--red);
   --bg_tertiary: var(--yellow);
 
+  /* Type Scales */
+  --scale-small: 1.2;
+  --scale-medium: 1.279;
+  --scale-large: 1.333;
+  
+  --type-scale: var(--scale-small);
+
   /*Font sizes*/
   --size-300: 0.75rem;
   --size-400: 1rem;
@@ -311,4 +318,22 @@ h3 {
 
 .button {
   font-family: var(--sans);
+}
+
+@media screen and (max-width: 360px) {
+  :root {
+    --type-scale: --var(--scale-small);
+  }
+}
+
+@media screen and (max-width:1024px) {
+  :root {
+    --type-scale: var(--scale-medium);
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  :root {
+    --type-scale: var(--scale-large)
+  }
 }
