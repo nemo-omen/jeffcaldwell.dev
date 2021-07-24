@@ -38,7 +38,7 @@
   .card {
     display: flex;
     flex-direction: column;
-    box-shadow: var(--elevation-1);
+    box-shadow: var(--elevation-3);
     /* border-top: 1px solid rgb(var(--primary-rgb), 0.1);
     border-left: 1px solid rgb(var(--primary-rgb), 0.1); */
     border-right: 1px solid rgb(var(--primary-rgb), 0.2);
@@ -47,7 +47,7 @@
   }
   
   .card:hover {
-    box-shadow: var(--elevation-2);
+    box-shadow: var(--elevation-4);
   }
   
   .card-image, :global(.card-image img), .content-text {
@@ -71,7 +71,7 @@
     text-align: center;
     letter-spacing: 0.2em;
     font-weight: 900;
-    font-size: clamp(var(--size-500), 3vw, var(--size-600));
+    font-size: var(--font-size-medium);
     text-align: center;
     transition: color 300ms ease-out;
   }
@@ -93,14 +93,15 @@
   }
   .status {
     position: absolute;
-    top: calc(var(--space-small) * -1);
-    right: 1rem;
+    top: calc(var(--space-xsmall) * -1);
+    right: calc(var(--space-xsmall) * -1);
     font-size: var(--font-size-xsmall);
     color: var(--whitish);
     font-weight: 600;
     letter-spacing: 0.125rem;
     text-transform: uppercase;
-    border: 1px dashed var(--red);
+    border-left: 1px solid var(--red);
+    border-bottom: 1px solid var(--red);
     padding: 0.25rem;
     line-height: 1;
     background: var(--red);
@@ -117,5 +118,9 @@
       justify-content: center;
       padding-block: var(--space-small);
     }
+    :global(.card h3) {
+      font-size: var(--font-size-large);
+    }
+
   }
 </style>

@@ -49,6 +49,7 @@
       right: 0;
       left: 0;
       bottom: 0;
+      box-shadow: var(--elevation-3);
     }
     .intro_greeting {
         z-index: 100;
