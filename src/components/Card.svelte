@@ -2,6 +2,7 @@
   export let status = ""; // can also be "Ongoing" || "Complete";
   export let title;
   export let link;
+  export let subtitle;
 </script>
 
 <a href={link} class="parent-link">
@@ -14,6 +15,9 @@
 
         {#if title}
         <h3>{title}</h3>
+        {/if}
+        {#if subtitle}
+        <h4>{subtitle}</h4>
         {/if}
         <slot name="title"></slot>
       </header>
@@ -34,27 +38,22 @@
   .card {
     display: flex;
     flex-direction: column;
-    box-shadow: 3px 3px 3px #eeecdc, -3px -3px 3px var(--lightlightwhitish);
-    border-top: 1px solid rgb(var(--primary-rgb), 0.1);
-    border-left: 1px solid rgb(var(--primary-rgb), 0.1);
+    box-shadow: 3px 3px 3px #eeecdc;
+    /* border-top: 1px solid rgb(var(--primary-rgb), 0.1);
+    border-left: 1px solid rgb(var(--primary-rgb), 0.1); */
     border-right: 1px solid rgb(var(--primary-rgb), 0.2);
     border-bottom: 1px solid rgb(var(--primary-rgb), 0.2);
     transition: box-shadow 200ms ease-out, background-color 200ms ease-out;
   }
   
   .card:hover {
-    box-shadow: 5px 5px 15px #eeecdc, -5px -5px 15px var(--lightlightwhitish);
+    box-shadow: 5px 5px 15px #eeecdc;
   }
   
-  :global(.card-image) {
+  .card-image, :global(.card-image img), .content-text {
     min-width: 100%;
-    width: 100%;
-    /* border: 1px solid var(--red); */
-    flex: 2;
-    /* padding: 0.5rem; */
-  }
-  :global(.card-image img) {
-    min-width: 100%;
+    /* width: 100%; */
+    /* flex: 2; */
   }
 
   .card-body {
@@ -87,8 +86,10 @@
 
   header {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     position: relative;
+    gap: var(--space-xsmall);
   }
   .status {
     position: absolute;
@@ -105,5 +106,16 @@
     background: var(--red);
     transition: all 300ms ease-out;
     text-align: center;
+  }
+
+  @media screen and (min-width: 1024px) {
+    .card-image, :global(.card-image > img), :global(.content-text p) {
+      min-width: 50%;
+    }
+    .card-image, .content-text {
+      display: flex;
+      justify-content: center;
+      padding-block: var(--space-small);
+    }
   }
 </style>
