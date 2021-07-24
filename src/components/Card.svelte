@@ -46,13 +46,15 @@
     box-shadow: 5px 5px 15px #eeecdc, -5px -5px 15px var(--lightlightwhitish);
   }
   
-  .card-image {
+  :global(.card-image) {
     min-width: 100%;
     width: 100%;
-    border: 1px solid var(--red);
-    aspect-ratio: 16 / 9;
+    /* border: 1px solid var(--red); */
     flex: 2;
-    padding: 0.5rem;
+    /* padding: 0.5rem; */
+  }
+  :global(.card-image img) {
+    min-width: 100%;
   }
 
   .card-body {

@@ -16,6 +16,7 @@
       <p slot="content">
         This is a moderate amount of content that I'll use to take up some space temporarily.
       </p>
+      <img src="/FeedMe-Screenshot.png" alt="FeedMe front page interface." slot="image">
     </Card>
   </FlexSwitcher>
 </section>
