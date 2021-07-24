@@ -115,7 +115,7 @@
             // text-align: left;
             margin-top: 0;
             font-size: clamp(var(--size-400), 4vw, var(--size-700));
-            line-height: 0;
+            // line-height: 0;
         }
         .greeting {
             margin: 0;

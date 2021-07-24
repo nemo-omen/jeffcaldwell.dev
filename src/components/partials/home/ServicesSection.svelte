@@ -1,5 +1,6 @@
 <script>
   import FlexSwitcher from '../../FlexSwitcher.svelte';
+  import Card from '../../Card.svelte';
 </script>
 
 <section id="work" class="width__body">
@@ -7,57 +8,18 @@
     <h2 class="section-title">Services</h2>
   </header>
   <FlexSwitcher>
-    <a href="/hire" class="parent-link">
-      <article class="card">
-        <section class="card-body flow">
-          <header>
-            <h3>Web<br>Development</h3>
-          </header>
-          <section class="card-image">
-      
-          </section>
-          <section class="content-text">
-            <p>
-              This is a moderate amount of content that I'll use to take up some space temporarily.
-            </p>
-          </section>
-        </section>
-      </article>
-    </a>
-    <a href="/hire" class="parent-link">
-      <article class="card">
-        <section class="card-body flow">
-          <header>
-            <h3>Web<br>Design</h3>
-          </header>
-          <section class="card-image">
-      
-          </section>
-          <section class="content-text">
-            <p>
-              This is a moderate amount of content that I'll use to take up some space temporarily.
-            </p>
-          </section>
-        </section>
-      </article>
-    </a>
-    <a href="/hire" class="parent-link">
-      <article class="card">
-        <section class="card-body">
-          <header>
-            <h3>WordPress<br>Development</h3>
-          </header>
-          <section class="card-image">
-      
-          </section>
-          <section class="content-text">
-            <p>
-              This is a moderate amount of content that I'll use to take up some space temporarily.
-            </p>
-          </section>
-        </section>
-      </article>
-    </a>
+    <Card link="/services/web-development">
+      <h3 slot="title">Web<br>Development</h3>
+      <p slot="content">This is going to be a blurb about making awesome websites.</p>
+    </Card>
+    <Card link="/services/web-design">
+      <h3 slot="title">Web<br>Design</h3>
+      <p slot="content">This is going to be a blurb about making awesome websites.</p>
+    </Card>
+    <Card link="/services/wordpress-development">
+      <h3 slot="title">WordPress<br>Development</h3>
+      <p slot="content">This is going to be a blurb about making awesome websites.</p>
+    </Card>
   </FlexSwitcher>
 </section>
 

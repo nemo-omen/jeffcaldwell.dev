@@ -72,6 +72,7 @@
   --size-900: 4.2rem;
 
   /*Document-level vars*/
+  --font-size-xsmall: clamp(var(--size-300), 1vw, var(--size-400));
   --font-size-small: clamp(var(--size-400), 2vw, var(--size-500));
   --font-size-medium: clamp(var(--size-500), 2vw, var(--size-600));
   --font-size-large: clamp(var(--size-600), 3vw, var(--size-700));
