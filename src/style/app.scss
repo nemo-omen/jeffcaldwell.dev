@@ -79,6 +79,7 @@
   --font-size-xxl: clamp(var(--size-700), 5vw, var(--size-900));
 
   --space: clamp(2rem, 4vw, 5rem);
+  --space-large: clamp(3rem, 5vw, 7rem);
   --space-small: clamp(1rem, 3vw, 2rem);
   --space-xsmall: clamp(0.5rem, 2vw, 1rem);
 
@@ -86,6 +87,16 @@
 
   --width-body: clamp(16rem, 90vw, 80rem);
 
+}
+
+@media screen and (max-width: 350) {
+  :root {
+    --font-size-small: clamp(var(--size-300), 2vw, var(--size-400));
+    --font-size-medium: clamp(var(--size-400), 2vw, var(--size-500));
+    --font-size-large: clamp(var(--size-500), 3vw, var(--size-600));
+    --font-size-xl: clamp(var(--size-600), 4vw, var(--size-700));
+    --font-size-xxl: clamp(var(--size-700), 5vw, var(--size-800));
+  }
 }
 
 body {

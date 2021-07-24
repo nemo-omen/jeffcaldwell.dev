@@ -22,13 +22,20 @@
       pointer-events: all;
     }
 
-    @media screen and (max-width: 463px) {
+    @media screen and (max-width: 550px) {
       .intro-image {
         position: absolute;
-        top: var(--space-small);
-        right: 10vw;
-        max-width: 35vw;
+        top: calc(var(--space) * -1);
+        right: 50%;
+        transform: translateX(50%);
+        width: 24vw;
         }
+    }
+
+    @media screen and (max-width: 350px) {
+      .intro-image {
+        top: calc(var(--space-small) * -1);
+      }
     }
 
     @media screen and (max-width: 603px) {

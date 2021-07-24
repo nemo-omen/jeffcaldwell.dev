@@ -8,7 +8,7 @@
     <section class="intro_greeting">
         <h2 class="hero-callout">
             <span class="greeting">
-                Jeff<br>Caldwell
+                Jeff Caldwell
             </span>
             <br>
             <span class="sub-greeting">Makes Websites.</span>
@@ -67,8 +67,10 @@
     }
 	.greeting {
         -webkit-text-stroke: calc(1vw / 4.5) var(--red);
+        word-break: break-word;
+        max-width: 8ch;
         color: var(--whitish);
-        font-size: clamp(var(--size-900), 6vw, 9.969rem);
+        font-size: clamp(var(--size-900), 9vw, 9.969rem);
         font-weight: 700;
         letter-spacing: .05em;
         line-height: 1;
@@ -101,19 +103,27 @@
         text-decoration-thickness: 6px;
     }
 
-    @media screen and (max-width: 463px) {
+    @media screen and (max-width: 550px) {
         #intro {
             justify-content: center;
-            align-items: end;
+            // align-items: end;
             margin-inline: auto;
             background-size: 35vw;
             background-position: top right var(--space);
         }
         .sub-greeting {
-            text-align: center;
+            // text-align: left;
+            margin-top: var(--space-xsmall);
+            font-size: clamp(var(--size-400), 4vw, var(--size-700));
         }
         .greeting {
+            word-break: unset;
+            max-width: unset;
             -webkit-text-stroke: calc(1vw / 3) var(--red);
+            font-size: clamp(var(--size-700), 6vw, var(--size-800));
+        }
+        .hero-callout {
+            text-align: center;
         }
     }
 </style>
