@@ -38,7 +38,7 @@
   .card {
     display: flex;
     flex-direction: column;
-    box-shadow: 3px 3px 3px #eeecdc;
+    box-shadow: var(--elevation-1);
     /* border-top: 1px solid rgb(var(--primary-rgb), 0.1);
     border-left: 1px solid rgb(var(--primary-rgb), 0.1); */
     border-right: 1px solid rgb(var(--primary-rgb), 0.2);
@@ -47,7 +47,7 @@
   }
   
   .card:hover {
-    box-shadow: 5px 5px 15px #eeecdc;
+    box-shadow: var(--elevation-2);
   }
   
   .card-image, :global(.card-image img), .content-text {

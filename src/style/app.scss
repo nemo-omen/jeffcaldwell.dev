@@ -71,6 +71,12 @@
   --size-800: 3.15rem;
   --size-900: 4.2rem;
 
+  /* Elevations/Box-shadows*/
+
+  --elevation-1: 3px 3px 3px rgb(var(--darkblue-rgb), 0.4);
+  --elevation-2: 4px 4px 10px rgb(var(--darkblue-rgb), 0.3);
+  --elevation-3: 5px 5px 15px rgb(var(--darkblue-rgb), 0.3);
+
   /*Document-level vars*/
   --font-size-xsmall: clamp(var(--size-300), 1vw, var(--size-400));
   --font-size-small: clamp(var(--size-400), 2vw, var(--size-500));
@@ -106,6 +112,8 @@ body {
   font-family: var(--body);
   font-size: var(--font-size-medium);
   overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
 }
 
 a:not([class]) {
@@ -113,7 +121,7 @@ a:not([class]) {
 }
 
 :focus {
-  outline: 3px solid;
+  outline: 3px solid var(--accent-primary);
   outline-offset: 0.25rem;
 }
 
@@ -201,6 +209,32 @@ h1 {
 h2,
 h3 {
   max-width: 25ch;
+}
+
+button, input[type="submit"] {
+  background: var(--green);
+  color: var(--whitish);
+  line-height: 1;
+  border: none;
+  padding: 0.75rem;
+  font-weight: 700;
+  box-shadow: var(--elevation-1);
+  transition: box-shadow 300ms ease-out, background 300ms ease-out, color 300ms ease-out;
+  cursor: pointer;
+}
+
+button:hover, input[type="submit"]:hover {
+  box-shadow: var(--elevation-3);
+}
+
+button:focus, input[type="submit"]:focus {
+  outline: 2px solid var(--accent-primary);
+}
+
+textarea {
+  resize: none;
+  border: 1px solid var(--red);
+  // background: var(--whitish);
 }
 
 .post {

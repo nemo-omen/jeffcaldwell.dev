@@ -40,7 +40,7 @@ Good luck fixing it!
   
   <p class="message">{error.message}</p>
   <button on:click={toggleForm}>
-    {!formVisible ? 'Let Jeff Know' : 'Nevermind'}
+    {formVisible ?  'Nevermind' : 'Let Jeff Know'}
   </button>
 </div>
 

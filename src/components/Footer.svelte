@@ -2,7 +2,7 @@
   import Icon from './Icon.svelte';
 </script>
 
-<footer>
+<footer id="site-footer">
   <div class="footer-inner">
     <p class="footer-copy">
       &copy 2021 Jeff Caldwell
@@ -26,6 +26,7 @@
   background: var(--red);
   color: var(--whitish);
   padding: var(--space-small);
+  margin-top: auto;
  }
  .footer-inner {
    display: flex;

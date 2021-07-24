@@ -48,7 +48,7 @@
     text-decoration: none;
   }
   #site-logo:focus {
-    outline: 3px dashed var(--red);
+    // outline: 3px dashed var(--red);
     outline-offset: 0.25rem; 
   }
 
