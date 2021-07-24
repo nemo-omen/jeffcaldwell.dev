@@ -113,10 +113,12 @@
         }
         .sub-greeting {
             // text-align: left;
-            margin-top: var(--space-xsmall);
+            margin-top: 0;
             font-size: clamp(var(--size-400), 4vw, var(--size-700));
+            line-height: 0;
         }
         .greeting {
+            margin: 0;
             word-break: unset;
             max-width: unset;
             -webkit-text-stroke: calc(1vw / 3) var(--red);
