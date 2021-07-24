@@ -1,21 +1,24 @@
 <script>
     import Intro from '../components/partials/home/IntroSection.svelte';
-    import WorkSection from '../components/partials/home/WorkSection.svelte';
+    import ServicesSection from '../components/partials/home/ServicesSection.svelte';
+    import ProjectsSection from '../components/partials/home/ProjectsSection.svelte';
 
 </script>
 <section class="intro">
   <Intro />
 </section>
-<section class="work">
-  <WorkSection />
+<section class="projects">
+  <ProjectsSection />
+</section>
+<section class="services">
+  <ServicesSection />
 </section>
 
 <style>
   .intro {
     z-index: 10;
   }
-
-  .work {
-    z-index: 30;
+  .services {
+    margin-top: var(--space);
   }
 </style>

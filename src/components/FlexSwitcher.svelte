@@ -4,58 +4,7 @@
 </script>
 
 <section class="switcher">
-  <a href="/hire" class="parent-link">
-    <article class="card">
-      <section class="card-body flow">
-        <header>
-          <h3>Web<br>Development</h3>
-        </header>
-        <section class="card-image">
-    
-        </section>
-        <section class="content-text">
-          <p>
-            This is a moderate amount of content that I'll use to take up some space temporarily.
-          </p>
-        </section>
-      </section>
-    </article>
-  </a>
-  <a href="/hire" class="parent-link">
-    <article class="card">
-      <section class="card-body flow">
-        <header>
-          <h3>Web<br>Design</h3>
-        </header>
-        <section class="card-image">
-    
-        </section>
-        <section class="content-text">
-          <p>
-            This is a moderate amount of content that I'll use to take up some space temporarily.
-          </p>
-        </section>
-      </section>
-    </article>
-  </a>
-  <a href="/hire" class="parent-link">
-    <article class="card">
-      <section class="card-body">
-        <header>
-          <h3>WordPress<br>Development</h3>
-        </header>
-        <section class="card-image">
-    
-        </section>
-        <section class="content-text">
-          <p>
-            This is a moderate amount of content that I'll use to take up some space temporarily.
-          </p>
-        </section>
-      </section>
-    </article>
-  </a>
-
+  <slot></slot>
 </section>
 
 <style>
@@ -65,11 +14,11 @@
     grid-gap: var(--space-small);
   }
 
-  .parent-link {
+  :global(.switcher .parent-link) {
     text-decoration: none;
     display: flex;
   }
-  .card {
+  :global(.switcher .card) {
     display: flex;
     flex-direction: column;
     box-shadow: 3px 3px 3px #eeecdc, -3px -3px 3px var(--lightlightwhitish);
@@ -80,11 +29,11 @@
     transition: box-shadow 200ms ease-out, background-color 200ms ease-out;
   }
   
-  .card:hover {
+  :global(.switcher .card:hover) {
     box-shadow: 5px 5px 15px #eeecdc, -5px -5px 15px var(--lightlightwhitish);
   }
   
-  .card-image {
+  :global(.switcher .card-image) {
     min-width: 100%;
     width: 100%;
     border: 1px solid var(--red);
@@ -93,17 +42,17 @@
     padding: 0.5rem;
   }
 
-  .card-body {
+  :global(.card-body) {
     display: flex;
     flex-direction: column;
     flex: 3;
     padding: var(--space-xsmall);
   }
 
-  .card-body > * + *{
+  :global(.card-body > * + *){
     margin-top: 1rem;
   }
-  .card h3 {
+  :global(.card h3) {
     color: var(--red);
     text-align: center;
     letter-spacing: 0.2em;
@@ -113,10 +62,10 @@
     transition: color 300ms ease-out;
   }
 
-  .card:hover h3 {
+  :global(.card:hover h3) {
     color: var(--darkblue);
   }
-  p {
+  :global(p) {
     color: var(--blackish);
   }
 </style>

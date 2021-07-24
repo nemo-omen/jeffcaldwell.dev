@@ -8,17 +8,46 @@
 
   /*Colors*/
   --red: #ff6347;
+  --red-rgb: 255, 99, 71;
+
   --lightgreen: #74dda5;
-  --green: #388376;
+  --lightgreen-rgb: 116, 221, 165;
+
+  --green: #3891A6;
+  --green-rgb: 56, 145, 166;
+
+  --canary: #FFFD82;
+  --canary-rgb: 255, 253, 130;
+
   --darkblue: #373043;
+  --darkblue-rgb: 55, 48, 67;
+
   --darkdarkblue: #1c1922;
+  --darkdarkblue-rgb: 28, 25, 34;
+
+  --purple: #BC69AA;
+  --purple-rgb: 188, 105, 170;
+  
   --blackish: #131216;
   --lightblackish: #26242b;
   --lightlightblackish: #35333b;
-  --whitish: #fdfbea;
+  --whitish: #fffef5;
   --lightwhitish: #fffef0;
   --lightlightwhitish: #fffef4;
   --darkwhitish: #f7f5e5;
+
+  /* Secondary Color Definitions */
+  --primary: var(--darkblue);
+  --primary-rgb: var(--darkblue-rgb);
+
+  --secondary: var(--red);
+  --secondary-rgb: var(--red-rgb);
+
+  --accent-primary: var(--purple);
+  --accent-primary-rgb: var(--purple-rgb);
+
+  --accent-secondary: var(--canary);
+  --accent-secondary-rgb: var(--canary-rgb);
 
   /*Background*/
   --bg__primary: var(--whitish);
@@ -184,6 +213,35 @@ h3 {
 .post figure,
 .post figure + * {
   --flow-space: var(--size-900);
+}
+
+.landing-description {
+  font-size: var(--font-size-medium);
+  text-align: center;
+}
+
+.note {
+  display: block;
+  padding: 0.5rem;
+  font-size: var(--font-size-small);
+  color: var(--blackish);
+  text-align: center;
+  background-color: rgb(var(--accent-secondary-rgb), 0.3);
+  border: 2px dashed var(--secondary);
+}
+
+.section-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-small);
+}
+
+.section-title {
+  font-size: var(--font-size-xxl);
+  letter-spacing: 0.25rem;
+  text-align: center;
+  color: var(--darkblue);
 }
 
 @media (min-width: 45em) {
