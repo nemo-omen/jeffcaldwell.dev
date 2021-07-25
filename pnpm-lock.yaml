@@ -1,6 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
+  '@sveltejs/adapter-netlify': ^1.0.0-next.25
   '@sveltejs/adapter-static': ^1.0.0-next.13
   '@sveltejs/kit': next
   gh-pages: ^3.2.3
@@ -12,6 +13,7 @@ specifiers:
   svelte-preprocess: ^4.7.3
 
 devDependencies:
+  '@sveltejs/adapter-netlify': 1.0.0-next.25
   '@sveltejs/adapter-static': 1.0.0-next.13
   '@sveltejs/kit': 1.0.0-next.137_svelte@3.38.3
   gh-pages: 3.2.3
@@ -24,12 +26,23 @@ devDependencies:
 
 packages:
 
+  /@iarna/toml/2.2.5:
+    resolution: {integrity: sha512-trnsAYxU3xnS1gPHPyU961coFyLkh4gAD/0zQ5mymY4yOZ+CYvsPqUbOFSw0aDM4y0tV7tiFxL/1XfXPNC6IPg==}
+    dev: true
+
   /@rollup/pluginutils/4.1.1:
     resolution: {integrity: sha512-clDjivHqWGXi7u+0d2r2sBi4Ie6VLEAzWMIkvJLnDmxoOhBYOTfzGbOQBA32THHm11/LiJbd01tJUpJsbshSWQ==}
     engines: {node: '>= 8.0.0'}
     dependencies:
       estree-walker: 2.0.2
       picomatch: 2.3.0
+    dev: true
+
+  /@sveltejs/adapter-netlify/1.0.0-next.25:
+    resolution: {integrity: sha512-EMKPbQOPbgBH95XRSxk9huz11hszERxMJdGBsVNfvo6zweNAMQ2RBfHbla0kr/6lmEYoFWm8gW+3JvCnAm8itA==}
+    dependencies:
+      '@iarna/toml': 2.2.5
+      esbuild: 0.12.15
     dev: true
 
   /@sveltejs/adapter-static/1.0.0-next.13:
