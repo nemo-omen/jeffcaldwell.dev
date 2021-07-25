@@ -8,4 +8,4 @@ excerpt: "Getting started with a new project comes with a lot of considerations.
 tags: [SvelteKit, Web Dev, CSS, JavaScript, HTML, FeedMe]
 ---
 
-## Getting started with FeedMe
+This will, with any luck, be a good amount of useful content about the process of setting up SvelteKit and SupaBase. 
