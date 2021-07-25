@@ -58,7 +58,6 @@
     .hero-callout {
         max-width: 60ch;
         margin: var(--space-small);
-        padding: 0;
         line-height: 1;
     }
     .hero-callout * {
@@ -79,10 +78,10 @@
         color: var(--red);
     }
     .sub-greeting {
-        font-size: clamp(var(--size-600), 5vw, var(--size-900));
+        font-size: var(--font-size-xxl);
         letter-spacing: 0.25rem;
         color: var(--darkblue);
-        line-height: 2.5em;
+        line-height: 1.5em;
     }
 
     .message {
@@ -113,6 +112,8 @@
         .sub-greeting {
             margin-top: 0;
             font-size: var(--font-size-large);
+            // line-height: 2.5em;
+            padding-top: 1rem;
         }
         .greeting {
             margin: 0;
