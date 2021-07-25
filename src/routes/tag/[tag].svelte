@@ -24,9 +24,7 @@
       }
     }));
 
-    console.log('posts: ', posts);
-
-    posts.sort((a,b) => (a.created > b.created) ? 1 : -1);
+    posts.sort((a,b) => (new Date(a.created) > new Date(b.created)) ? -1 : 1);
 
     return {
       props: {
