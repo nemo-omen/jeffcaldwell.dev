@@ -292,6 +292,10 @@ textarea {
   color: var(--darkblue);
 }
 
+.featured {
+  min-width: 100%;
+}
+
 @media (min-width: 45em) {
   h1 {
     font-size: var(--size-900);

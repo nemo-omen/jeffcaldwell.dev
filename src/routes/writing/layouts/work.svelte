@@ -7,12 +7,13 @@
 
 <section class="work-section flow">
   <header class="work-header flow-small">
-    <h2>{name}</h2>
-    <h3>{tagline}</h3>
-    
     {#if featureImageUrl}
     <img src="{featureImageUrl}" alt="{featureImageDescription ? featureImageDescription : ''}">
     {/if}
+
+    <h2>{name}</h2>
+    <h3>{tagline}</h3>
+    
   </header>
   <slot></slot>
 </section>
