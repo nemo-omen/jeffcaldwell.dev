@@ -31,7 +31,7 @@
     }
 
     .intro-border-top {
-        z-index: -1;
+        z-index: 10;
         border-top: calc(1vw / 3) solid var(--red);
         position: absolute;
         top: var(--space);
@@ -39,17 +39,17 @@
         left: 0;
         bottom: 0;
         pointer-events: none;
+        box-shadow: var(--elevation-3);
     }
     .intro-border-bottom {
       position: absolute;
-      z-index: 10;
+      z-index: 60;
       border: calc(1vw / 3) solid var(--red);
       border-top: none;
       top: 0;
       right: 0;
       left: 0;
       bottom: 0;
-      box-shadow: var(--elevation-3);
     }
     .intro_greeting {
         z-index: 100;
@@ -69,19 +69,20 @@
 	.greeting {
         -webkit-text-stroke: calc(1vw / 4.5) var(--red);
         word-break: break-word;
-        max-width: 8ch;
+        word-wrap: break-word;
+        max-width: 10ch;
         color: var(--whitish);
         font-size: clamp(var(--size-900), 9vw, 9.969rem);
-        font-weight: 700;
         letter-spacing: .05em;
         line-height: 1;
+        text-shadow: var(--elevation-1);
 	}
     .greeting::selection {
         color: var(--red);
     }
     .sub-greeting {
         font-size: clamp(var(--size-600), 5vw, var(--size-900));
-        font-weight: 900;
+        // font-weight: 900;
         letter-spacing: 0.25rem;
         color: var(--darkblue);
         margin-top: var(--space-small);

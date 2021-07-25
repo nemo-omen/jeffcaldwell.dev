@@ -27,7 +27,7 @@
     justify-content: center;
     background-color: var(--bg__primary);
     padding: 1rem;
-    font-family: var(--sans);
+    font-family: var(--display);
     // border-bottom: 5px solid var(--red);
   }
   
@@ -66,7 +66,8 @@
         padding: 0;
         a {
           color: var(--red);
-          font-weight: 800;
+          // font-weight: 800;
+          letter-spacing: 0.125em;
           text-transform: uppercase;
           text-decoration: none;
           transition: color 300ms ease-out;
@@ -77,7 +78,7 @@
         a:hover {
           text-decoration: underline;
           color: var(--darkblue);
-          text-decoration-thickness: 3px;
+          text-decoration-thickness: 2px;
           text-underline-offset: 6px;
         }
       }

@@ -70,7 +70,7 @@
     color: var(--red);
     text-align: center;
     letter-spacing: 0.2em;
-    font-weight: 900;
+    /* font-weight: 900; */
     font-size: var(--font-size-medium);
     text-align: center;
     transition: color 300ms ease-out;

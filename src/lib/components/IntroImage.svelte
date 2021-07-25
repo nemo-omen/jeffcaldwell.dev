@@ -12,14 +12,17 @@
   .intro-image {
     margin: 0;
     z-index: 50;
-    z-index: 10;
     flex: 1;
     pointer-events: none;
+    overflow: hidden;
+    clip-path: polygon(0 0, 99% 0, 99% 99%, 0 99%);
   }
 
     img { 
       z-index: 5;
       pointer-events: all;
+      filter: drop-shadow(var(--elevation-05));
+      clip-path: view-box;
     }
 
     @media screen and (max-width: 550px) {
