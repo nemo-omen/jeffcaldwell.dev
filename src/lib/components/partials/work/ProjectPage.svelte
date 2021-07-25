@@ -8,9 +8,11 @@
 
 <section class="work-section flow">
   <header class="work-header flow-small">
-    {#if featuredImage}
-    <img src="{featuredImage.url}" alt="{featuredImage.description ? featuredImage.description : ''}" class="featured">
-    {/if}
+    <div class="project-image">
+      {#if featuredImage}
+      <img src="{featuredImage.url}" alt="{featuredImage.description ? featuredImage.description : ''}" class="featured" width="1442" height="881">
+      {/if}
+    </div>
   </header>
   <div class="work-body flow-small">
     <section class="name work-heading-group">
@@ -37,8 +39,10 @@
     </section>
   </div>
 
-  <h3>Blog Posts About {name}</h3>
-  <slot></slot>
+  <section class="work-related flow-small">
+    <h2>Posts About This Project</h2>
+    <slot></slot>
+  </section>
 </section>
 
 <style>
@@ -47,5 +51,23 @@
   }
   .work-heading-group > * + * {
     margin-top: var(--space-xsmall);
+  }
+  .project-image {
+    display: flex;
+    justify-content: center;
+  }
+  .featured {
+    width: 100%;
+    height: auto;
+    aspect-ratio: attr(width) / attr(height);
+  }
+  h2, h3 {
+    color: var(--secondary);
+  }
+
+  @media screen and (min-width: 768px) {
+    .work-body, .work-related {
+      margin-inline: var(--space);
+    }
   }
 </style>

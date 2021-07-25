@@ -27,7 +27,7 @@
   tagLine="An Easy RSS Reader"
   featuredImage={
     {
-      url: "/FeedMe-Screenshot.png", 
+      url: "/images/FeedMe_Feature.png",
       description: "FeedMe - An Easy RSS Reader"
       }
     }

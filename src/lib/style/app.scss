@@ -120,8 +120,13 @@ body {
   flex-direction: column;
 }
 
-a:not([class]) {
-  color: currentColor;
+a, a:visited {
+  color: var(--secondary);
+  transition: color 300ms ease-out;
+}
+
+a:hover {
+  color: var(--primary);
 }
 
 :focus {
@@ -134,7 +139,7 @@ main:focus {
 }
 
 [href]:hover {
-  color: var(--red);
+  color: var(--primary);
 }
 
 h1,
