@@ -3,9 +3,9 @@
 	"version": "0.0.1",
 	"scripts": {
 		"dev": "svelte-kit dev --host",
-		"build": "svelte-kit build",
+		"build": "rm -rf build && svelte-kit build && touch build/.nojekyll",
 		"preview": "svelte-kit preview",
-		"ghdeploy": "pnpm run build && pnpx gh-pages -d build",
+		"ghdeploy": "pnpm run build && pnpx gh-pages -d build -t true",
 		"lint": "prettier --check --plugin-search-dir=. .",
 		"format": "prettier --write --plugin-search-dir=. ."
 	},
