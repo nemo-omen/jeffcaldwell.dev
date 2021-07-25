@@ -22,7 +22,7 @@
   </div>
   <div class="feature-image">
     {#if image}
-    <img src="{image.url}" alt="{image.description}" width="1440" height="800">
+    <img src="{image.url}" alt="{image.description}" width="1440" height="800" loading="lazy">
     {/if}
   </div>
 </article>
@@ -47,8 +47,9 @@
     order: 1;
   }
   .feature-image img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
+    aspect-ratio: attr(width) / attr(height);
   }
   .feature-header {
     display: flex;

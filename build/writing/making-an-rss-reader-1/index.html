@@ -18,9 +18,10 @@
 		<link rel="modulepreload" href="/./_app/chunks/vendor-941e9029.js">
 		<link rel="modulepreload" href="/./_app/chunks/preload-helper-08cc8e69.js">
 		<link rel="modulepreload" href="/./_app/pages/__layout.svelte-4b8395b7.js">
-		<link rel="modulepreload" href="/./_app/pages/hire/index.svelte-df48cb4e.js">
+		<link rel="modulepreload" href="/./_app/pages/writing/making-an-rss-reader-1/index.svx-6f2cd7ed.js">
 		<link rel="stylesheet" href="/./_app/assets/start-a8cd1609.css">
 		<link rel="stylesheet" href="/./_app/assets/pages/__layout.svelte-9df56d59.css">
+		<link rel="stylesheet" href="/./_app/assets/pages/writing/making-an-rss-reader-1/index.svx-8540e16d.css">
 
 		<script type="module">
 			import { start } from "/./_app/start-c367bdf4.js";
@@ -37,11 +38,11 @@
 					error: null,
 					nodes: [
 						import("/./_app/pages/__layout.svelte-4b8395b7.js"),
-						import("/./_app/pages/hire/index.svelte-df48cb4e.js")
+						import("/./_app/pages/writing/making-an-rss-reader-1/index.svx-6f2cd7ed.js")
 					],
 					page: {
 						host: location.host, // TODO this is redundant
-						path: "/hire",
+						path: "/writing/making-an-rss-reader-1",
 						query: new URLSearchParams(""),
 						params: {}
 					}
@@ -63,7 +64,24 @@
         <li class="svelte-nprna9"><a href="/hire" class="svelte-nprna9">Hire</a></li></ul></nav></div>
 </header>
 
-<main role="main" tabindex="-1" class="svelte-wtju1t"></main>
+<main role="main" tabindex="-1" class="svelte-wtju1t"><section class="post-header svelte-10qchwx"><h2 class="title svelte-10qchwx">Making an RSS reader: Part 1</h2>
+  
+  <div class="sub-header svelte-10qchwx"><p class="post-meta svelte-10qchwx">by Jeff Caldwell on July, 24, 2021</p>
+    <nav class="nav-list svelte-10qchwx"><a href="/tag/SvelteKit" class="tag svelte-10qchwx">SvelteKit</a><a href="/tag/CSS" class="tag svelte-10qchwx">CSS</a><a href="/tag/JavaScript" class="tag svelte-10qchwx">JavaScript</a><a href="/tag/HTML" class="tag svelte-10qchwx">HTML</a><a href="/tag/FeedMe" class="tag svelte-10qchwx">FeedMe</a></nav></div></section>
+<section class="flow post"><p>Building projects to showcase on a portfolio is important, but it can be difficult to figure out what kind of project to devote the time to building. For a front-end developer, it’s a good idea to have projects that show off the different sub-disciplines within front-end development. This means you’ll want good examples of things like static sites (like this site), an app or site that fulfills all of the basics of CRUD (<strong>C</strong>reate, <strong>R</strong>ead, <strong>U</strong>pdate, <strong>D</strong>elete), and something that works with external APIs.</p>
+<p>An RSS reader can fulfill two of those skills at the same time. Pulling data from multiple RSS feeds is a great example of working with external APIs, while implementing the basic features of an RSS reader — subscribing to feeds, marking posts as ‘read’, favoriting posts, adding tags, etc. — are all achieved using all the techniques necessary for a CRUD app.</p>
+<p>So, I’m building an RSS reader. Along the way I’ll write about the process and, with any luck, it will be helpful and interesting enough to other developers who want to build something similar.</p>
+<p>It’s a good idea to have some goals in mind before starting a project, so let’s lay some out in writing before getting started.</p>
+<h3>Goals</h3>
+<ul><li><p>To start off I want to make sure to have the basic functionality of an RSS reader — to subscribe to and display the content of multiple RSS feeds. </p></li>
+<li><p><strong>Accessibility should be a main priority</strong>, and all content should be presented to users in a way that allows them to use the app fully. This means that things like keyboard/alternate device navigation should work flawlessly and present the user with controls and information in a sensible way.</p></li>
+<li><p>Once I have that done I can move on to adding additional features like favoriting, tagging, marking as ‘read’ etc.</p></li>
+<li><p>It should look really cool.</p></li></ul>
+<h3>Technology</h3>
+<p>This is a front-end application. There are so many frameworks and approaches to this that the mind boggles.</p>
+<p>Still, there’s nothing happening in the app that requires one framework over another, so I’m going to go with what I’m already familiar with — Svelte. I’ll be using <a href="https://kit.svelte.dev/" rel="nofollow">SvelteKit</a>, the framework built on top of Svelte for making apps. I’ve been using Svelte for a while now but I haven’tt built anything that’s not essentially a static site with SvelteKit. So this should allow me the comfort of using familiar technology while also learning about how to make a full-featured app work with SvelteKit.</p>
+<p>For persistence I’ll be using <a href="https://supabase.io" rel="nofollow">SupaBase</a>. SupaBase is a new real-time alternative to <a href="https://firebase.google.com" rel="nofollow">Firebase</a> that’s built on <a href="https://www.postgresql.org/" rel="nofollow">PostgreSQL</a>. I could choose to go with almost any database layer for this project but, honestly, I don’t know all that much about working with SQL of any kind and I’d like to get my toes wet before I start my Database Management class in the upcoming fall semester. (Also, I like the fact that someone’s making a good alternative to Firebase. Firebase is great and all, but I don’t want to use it for everything.)</p>
+</section></main>
 
 <footer id="site-footer" class="svelte-p3ukwr"><div class="footer-inner svelte-p3ukwr"><p class="footer-copy svelte-p3ukwr">© 2021 Jeff Caldwell
     </p>

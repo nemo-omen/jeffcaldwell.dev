@@ -1,7 +1,7 @@
 <script>
-
+  import ProjectsSection from '$lib/components/partials/home/ProjectsSection.svelte';
 </script>
 
 <section class="space__outer_top">
-  <h2>Work</h2>
+  <ProjectsSection />
 </section>

@@ -18,9 +18,15 @@
 		<link rel="modulepreload" href="/./_app/chunks/vendor-941e9029.js">
 		<link rel="modulepreload" href="/./_app/chunks/preload-helper-08cc8e69.js">
 		<link rel="modulepreload" href="/./_app/pages/__layout.svelte-4b8395b7.js">
-		<link rel="modulepreload" href="/./_app/pages/hire/index.svelte-df48cb4e.js">
+		<link rel="modulepreload" href="/./_app/pages/work/feedme/index.svelte-bf8440f2.js">
+		<link rel="modulepreload" href="/./_app/chunks/FlexSwitcher-65c54f3a.js">
+		<link rel="modulepreload" href="/./_app/chunks/PostItem-c7ae68e6.js">
 		<link rel="stylesheet" href="/./_app/assets/start-a8cd1609.css">
 		<link rel="stylesheet" href="/./_app/assets/pages/__layout.svelte-9df56d59.css">
+		<link rel="stylesheet" href="/./_app/assets/pages/work/feedme/index.svelte-699f787f.css">
+		<link rel="stylesheet" href="/./_app/assets/Card.svelte_svelte&type=style&lang-c9e5dc44.css">
+		<link rel="stylesheet" href="/./_app/assets/FlexSwitcher-3b945734.css">
+		<link rel="stylesheet" href="/./_app/assets/PostItem-dd4d3294.css">
 
 		<script type="module">
 			import { start } from "/./_app/start-c367bdf4.js";
@@ -37,11 +43,11 @@
 					error: null,
 					nodes: [
 						import("/./_app/pages/__layout.svelte-4b8395b7.js"),
-						import("/./_app/pages/hire/index.svelte-df48cb4e.js")
+						import("/./_app/pages/work/feedme/index.svelte-bf8440f2.js")
 					],
 					page: {
 						host: location.host, // TODO this is redundant
-						path: "/hire",
+						path: "/work/feedme",
 						query: new URLSearchParams(""),
 						params: {}
 					}
@@ -63,7 +69,23 @@
         <li class="svelte-nprna9"><a href="/hire" class="svelte-nprna9">Hire</a></li></ul></nav></div>
 </header>
 
-<main role="main" tabindex="-1" class="svelte-wtju1t"></main>
+<main role="main" tabindex="-1" class="svelte-wtju1t"><section class="work-section flow svelte-ztr0g"><header class="work-header flow-small"><img src="/FeedMe-Screenshot.png" alt="FeedMe - An Easy RSS Reader" class="featured"></header>
+  <div class="work-body flow-small"><section class="name work-heading-group svelte-ztr0g"><h2 class="svelte-ztr0g">FeedMe</h2>
+      <p class="svelte-ztr0g">July, 2021 (In-Progress)</p></section>
+    <section class="technology work-heading-group svelte-ztr0g"><h3 class="svelte-ztr0g">Technology
+      </h3>
+      <p class="svelte-ztr0g">HTML, CSS, JavaScript, SvelteKit, SupaBase, W3C Accessibility, Vite</p></section>
+    <section class="goal work-heading-group svelte-ztr0g"><h3 class="svelte-ztr0g">Goal
+      </h3>
+      <p class="svelte-ztr0g">To build an accessible, full-featured RSS reader that allows users to subscribe to feeds, and tag, favorite, and share posts.</p></section></div>
+
+  <h3>Blog Posts About FeedMe</h3>
+  <section class="switcher svelte-15vcgjd"><article class="post-item svelte-1rp94rm"><h3 class="svelte-1rp94rm"><a href="/writing/making-an-rss-reader-1" class="svelte-1rp94rm">Making an RSS reader: Part 1</a></h3> 
+    <h4 class="svelte-1rp94rm">July, 24, 2021</h4>
+  <p class="svelte-1rp94rm">Getting started with a new project comes with a lot of considerations. Luckily, modern tools make it easier than ever.</p>
+</article>
+</section>
+</section></main>
 
 <footer id="site-footer" class="svelte-p3ukwr"><div class="footer-inner svelte-p3ukwr"><p class="footer-copy svelte-p3ukwr">© 2021 Jeff Caldwell
     </p>
@@ -75,7 +97,7 @@
 
 
 
-	
+	<script type="application/json" data-type="svelte-data" data-url="/work/feedme.json">{"status":200,"statusText":"","headers":{"content-type":"application/json; charset=utf-8"},"body":"{\"posts\":[{\"author\":\"Jeff Caldwell\",\"created\":\"July, 24, 2021\",\"slug\":\"making-an-rss-reader-1\",\"subtitle\":\"First steps - Goals and Considerations\",\"title\":\"Making an RSS reader: Part 1\",\"excerpt\":\"Getting started with a new project comes with a lot of considerations. Luckily, modern tools make it easier than ever.\",\"tags\":[\"SvelteKit\",\"CSS\",\"JavaScript\",\"HTML\",\"FeedMe\"]}]}"}</script>
 
 	</body>
 </html>

@@ -10,9 +10,9 @@
 <section class="projects">
   <ProjectsSection />
 </section>
-<section class="services">
+<!-- <section class="services">
   <ServicesSection />
-</section>
+</section> -->
 
 <style>
   .intro {
