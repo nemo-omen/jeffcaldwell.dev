@@ -130,4 +130,10 @@
             text-align: center;
         }
     }
+
+    @media screen and (min-width: 2000px) {
+        .greeting {
+            -webkit-text-stroke: calc(1vw / 8) var(--red);
+        }
+    }
 </style>
