@@ -10,7 +10,6 @@
             <span class="greeting">
                 Jeff Caldwell
             </span>
-            <br>
             <span class="sub-greeting">Makes Websites.</span>
         </h2>
     </section>
@@ -60,7 +59,6 @@
         max-width: 60ch;
         margin: var(--space-small);
         padding: 0;
-        display: block;
         line-height: 1;
     }
     .hero-callout * {
@@ -82,10 +80,9 @@
     }
     .sub-greeting {
         font-size: clamp(var(--size-600), 5vw, var(--size-900));
-        // font-weight: 900;
         letter-spacing: 0.25rem;
         color: var(--darkblue);
-        margin-top: var(--space-small);
+        line-height: 2.5em;
     }
 
     .message {
@@ -114,17 +111,15 @@
             background-position: top right var(--space);
         }
         .sub-greeting {
-            // text-align: left;
             margin-top: 0;
-            font-size: clamp(var(--size-400), 4vw, var(--size-700));
-            // line-height: 0;
+            font-size: var(--font-size-large);
         }
         .greeting {
             margin: 0;
             word-break: unset;
             max-width: unset;
             -webkit-text-stroke: calc(1vw / 3) var(--red);
-            font-size: clamp(var(--size-700), 6vw, var(--size-800));
+            font-size: clamp(var(--size-800), 6vw, var(--size-900));
         }
         .hero-callout {
             text-align: center;
