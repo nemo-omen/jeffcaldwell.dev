@@ -1,5 +1,4 @@
-import { getWorkPosts } from '../../../utils/getWorkPosts.js'
-import { parse } from 'path';
+import { getWorkPosts } from '$lib/utils/getWorkPosts.js'
 export const get = async () => {
   const posts = await getWorkPosts('FeedMe');
 

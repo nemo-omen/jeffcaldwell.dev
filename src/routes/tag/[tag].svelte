@@ -37,7 +37,7 @@
 </script>
 
 <script>
-  import PostItem from '../../components/PostItem.svelte'
+  import PostItem from '$lib/components/PostItem.svelte'
   export let posts = [];
   export let tag;
   console.log(posts);

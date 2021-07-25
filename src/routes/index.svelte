@@ -1,7 +1,7 @@
 <script>
-    import Intro from '../components/partials/home/IntroSection.svelte';
-    import ServicesSection from '../components/partials/home/ServicesSection.svelte';
-    import ProjectsSection from '../components/partials/home/ProjectsSection.svelte';
+    import Intro from '$lib/components/partials/home/IntroSection.svelte';
+    import ServicesSection from '$lib/components/partials/home/ServicesSection.svelte';
+    import ProjectsSection from '$lib/components/partials/home/ProjectsSection.svelte';
 
 </script>
 <section class="intro">

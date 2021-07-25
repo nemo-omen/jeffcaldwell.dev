@@ -5,8 +5,6 @@
 
     const data = await response.json();
 
-    console.log('data: ', data);
-
     return {
       props: {
         posts: data.posts
@@ -16,6 +14,7 @@
 </script>
 
 <script>
+  import Card from '$lib/components/Card.svelte';
   export let posts;
 </script>
 

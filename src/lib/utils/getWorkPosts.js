@@ -1,7 +1,7 @@
 import { parse } from 'path';
 
 export const getWorkPosts = async(tagName) => {
-  const modules = import.meta.glob('../routes/writing/**/index.svx');
+  const modules = import.meta.glob('../../routes/writing/**/index.svx');
     console.log('modules: ', modules);
 
     let posts = [];

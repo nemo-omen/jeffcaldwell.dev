@@ -1,6 +1,6 @@
 <script>
-  import FlexSwitcher from '../../FlexSwitcher.svelte';
-  import Card from '../../Card.svelte';
+  import FlexSwitcher from '$lib/components/FlexSwitcher.svelte';
+  import Card from '$lib/components/Card.svelte';
 </script>
 
 <section id="work" class="width__body">

@@ -7,8 +7,8 @@ const config = {
     "dashes": "oldschool"
   },
   "layout": {
-    "writing": "./src/layouts/writing.svelte",
-    "work": "./src/layouts/work.svelte",
+    "writing": "./src/lib/layouts/writing.svelte",
+    "work": "./src/lib/layouts/work.svelte",
   },
 
   "remarkPlugins": [],
