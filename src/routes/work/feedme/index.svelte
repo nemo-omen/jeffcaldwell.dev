@@ -17,8 +17,10 @@
 <script>
   import Card from '$lib/components/Card.svelte';
   import FlexSwitcher from '$lib/components/FlexSwitcher.svelte';
+  import PostItem from '$lib/components/PostItem.svelte';
   import ProjectPage from '$lib/components/partials/work/ProjectPage.svelte';
   export let posts;
+  console.log('posts in FeedMe index: ', posts);
 </script>
 <ProjectPage 
   name="FeedMe" 
@@ -37,9 +39,7 @@
 {#if posts}
 <FlexSwitcher>
   {#each posts as post}
-  <Card title={post.title} subtitle={post.subtitle} link="http://localhost:3000/writing/{post.slug}">
-
-  </Card>
+  <PostItem {post}/>
   {/each}
 </FlexSwitcher>
 {/if}
