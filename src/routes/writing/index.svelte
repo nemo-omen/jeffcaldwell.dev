@@ -18,9 +18,9 @@
 </script>
 
 <section class="flow space__outer_top">
-  <header class="section-header">
+  <!-- <header class="section-header">
     <h2 class="section-title">Writing</h2>
-  </header>
+  </header> -->
   {#each posts as post}
   <PostItem {post} />
   {/each}
