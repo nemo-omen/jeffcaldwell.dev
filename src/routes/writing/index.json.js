@@ -3,7 +3,7 @@ import { parse } from 'path';
 export const get = async() => {
   const modules = import.meta.glob('./**/index.svx');
 
-  const posts = [];
+  let posts = [];
 
   await Promise.all(Object.entries(modules).map(async([file, module]) => {
     const { metadata } = await module();
@@ -19,7 +19,7 @@ export const get = async() => {
     });
   }));
 
-  posts.sort((a,b) => (a.created > b.created) ? 1 : -1);
+  posts = posts.sort((a,b) => (new Date(a.created) > new Date(b.created)) ? -1 : 1);
 
   return {
     body: {

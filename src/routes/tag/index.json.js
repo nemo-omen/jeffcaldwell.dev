@@ -2,8 +2,6 @@ import { parse } from 'path';
 
 const get = async ({ params }) => {
   const modules = import.meta.glob('../writing/**/index.svx');
-
-  console.log('params: ', params);
   
   const posts = [];
 
@@ -19,7 +17,7 @@ const get = async ({ params }) => {
     });
   }));
 
-  posts.sort((a,b) => (a.created > b.created) ? -1 : 1);
+  posts.sort((a,b) => (new Date(a.created) > new Date(b.created)) ? -1 : 1);
 
   return {
     body: {

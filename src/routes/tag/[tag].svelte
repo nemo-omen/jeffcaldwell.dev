@@ -9,8 +9,9 @@
 
     await Promise.all(Object.entries(modules).map(async([file, module]) => {
       const { metadata } = await module();
+      console.log('tags: ', metadata.tags);
 
-      if(metadata.tags.includes(tag)) {
+      if(metadata.tags && metadata.tags.includes(tag)) {
         posts.push({
           author: metadata.author,
           created: metadata.created,
