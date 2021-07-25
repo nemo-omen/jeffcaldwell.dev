@@ -37,9 +37,7 @@
   }
   .sub-header {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: var(--space-small);
+    flex-direction: column;
   }
   .post-meta {
     font-weight: 500;
