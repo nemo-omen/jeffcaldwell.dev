@@ -40,6 +40,7 @@
    line-height: 1;
    margin: 0;
    padding: 0;
+   color: var(--whitish);
  }
  .menu {
    display: flex;
