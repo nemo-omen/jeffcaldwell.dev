@@ -5,16 +5,19 @@
 		"dev": "svelte-kit dev --host",
 		"build": "svelte-kit build",
 		"preview": "svelte-kit preview",
+		"ghdeploy": "pnpm run build && pnpx gh-pages -d build",
 		"lint": "prettier --check --plugin-search-dir=. .",
 		"format": "prettier --write --plugin-search-dir=. ."
 	},
 	"devDependencies": {
+		"@sveltejs/adapter-static": "^1.0.0-next.13",
 		"@sveltejs/kit": "next",
+		"gh-pages": "^3.2.3",
+		"mdsvex": "^0.9.7",
 		"prettier": "~2.2.1",
 		"prettier-plugin-svelte": "^2.2.0",
-		"svelte": "^3.34.0",
-		"mdsvex": "^0.9.7",
 		"sass": "^1.35.1",
+		"svelte": "^3.34.0",
 		"svelte-preprocess": "^4.7.3"
 	},
 	"type": "module"
