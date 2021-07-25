@@ -13,6 +13,9 @@
   </div>
 </section>
 <section class="projects">
+  <header class="section-header">
+    <h2 class="section-title">My Work</h2>
+  </header>
   <ProjectsSection />
 </section>
 <!-- <section class="services">
