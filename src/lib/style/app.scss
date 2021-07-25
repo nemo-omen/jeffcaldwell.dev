@@ -129,8 +129,14 @@ a:hover {
   color: var(--primary);
 }
 
+a:focus {
+  text-decoration: none !important;
+  outline-offset: 0.125rem;
+  background: var(--whitish);
+}
+
 :focus {
-  outline: 3px solid var(--accent-primary);
+  outline: 2px solid var(--secondary);
   outline-offset: 0.25rem;
 }
 
