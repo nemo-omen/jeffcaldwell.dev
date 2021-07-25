@@ -4,9 +4,6 @@
 </script>
 
 <section id="work" class="width__body">
-  <header class="section-header">
-    <h2 class="section-title">Work</h2>
-  </header>
   <FlexSwitcher>
     <Feature
       image={{url: '/images/FeedMe_Feature.png', description: 'FeedMe front page interface.'}}

@@ -22,6 +22,7 @@
 <style>
   .intro {
     z-index: 10;
+    margin-top: var(--space);
     margin-bottom: var(--space);
   }
   .intro-message {
@@ -34,5 +35,10 @@
   }
   .services {
     margin-top: var(--space);
+  }
+  @media screen and (min-width: 768px) {
+    .intro {
+      margin-top: var(--space-xsmall);
+    }
   }
 </style>
