@@ -8,7 +8,6 @@ const config = {
   },
   "layout": {
     "writing": "./src/lib/layouts/writing.svelte",
-    "work": "./src/lib/layouts/work.svelte",
   },
 
   "remarkPlugins": [],

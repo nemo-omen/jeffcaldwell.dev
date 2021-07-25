@@ -5,7 +5,7 @@ created: July 7, 2021
 excerpt: "This is another excerpt in order to fill up some space."
 subtitle: ''
 slug: third-test
-tags: [one, two, three, SvelteKit, Web Dev, CSS, JavaScript, HTML]
+tags: [SvelteKit, Web Dev, CSS, JavaScript, HTML]
 ---
 
 Just more testing!

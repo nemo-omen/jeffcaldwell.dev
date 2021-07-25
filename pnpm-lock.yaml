@@ -2,6 +2,7 @@ lockfileVersion: 5.3
 
 specifiers:
   '@sveltejs/adapter-netlify': ^1.0.0-next.25
+  '@sveltejs/adapter-static': ^1.0.0-next.13
   '@sveltejs/kit': next
   mdsvex: ^0.9.7
   prettier: ~2.2.1
@@ -12,6 +13,7 @@ specifiers:
 
 devDependencies:
   '@sveltejs/adapter-netlify': 1.0.0-next.25
+  '@sveltejs/adapter-static': 1.0.0-next.13
   '@sveltejs/kit': 1.0.0-next.137_svelte@3.38.3
   mdsvex: 0.9.7_svelte@3.38.3
   prettier: 2.2.1
@@ -39,6 +41,10 @@ packages:
     dependencies:
       '@iarna/toml': 2.2.5
       esbuild: 0.12.15
+    dev: true
+
+  /@sveltejs/adapter-static/1.0.0-next.13:
+    resolution: {integrity: sha512-zaXJlWK9JfrjrE6nG5etB8kf4DSkbE3H8Ql6gmCk3WjdvpY85a60TMYBU9OK2iunkqpHnPYiMUGEnOGYmWlLYA==}
     dev: true
 
   /@sveltejs/kit/1.0.0-next.137_svelte@3.38.3:

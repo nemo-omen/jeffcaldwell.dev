@@ -23,7 +23,11 @@ export const getWorkPosts = async(tagName) => {
 
     }));
 
-    posts = posts.filter((post) =>post.tags.includes(tagName));
+    posts = posts.filter((post) => {
+      if(post.tags && post.tags.includes(tagName)) {
+        return post;
+      }
+    });
 
     posts.sort((a,b) => (a.created > b.created) ? 1 : -1);
 

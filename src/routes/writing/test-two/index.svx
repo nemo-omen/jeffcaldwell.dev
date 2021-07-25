@@ -5,7 +5,6 @@ created: July 6, 2021
 excerpt: "This is another excerpt in order to fill up some space."
 subtitle: ''
 slug: second-test
-tags: [one, two, three]
 ---
 
 Just more testing!

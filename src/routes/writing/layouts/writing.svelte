@@ -13,7 +13,7 @@
     <h2 class="title">{title}</h2>
     
     <div class="sub-header">
-      <h3 class="post-meta">by {author} on {created}</h3>
+      <p class="post-meta">by {author} on {created}</p>
       <nav class="nav-list">
         {#each tags as tag}
           <a href="/tag/{tag}" class="tag">{tag}</a>
