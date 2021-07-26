@@ -28,7 +28,6 @@
     background-color: var(--bg__primary);
     padding: 1rem;
     font-family: var(--display);
-    // border-bottom: 5px solid var(--red);
   }
   
   .site-head_inner {
