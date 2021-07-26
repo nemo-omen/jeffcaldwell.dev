@@ -2,8 +2,8 @@
     import IntroImage from '../../IntroImage.svelte'
 </script>
 
+<div class="intro-border-top"></div>
 <section id="intro" class="flow space__outer_bottom">
-    <div class="intro-border-top"></div>
 
     <section class="intro_greeting">
         <h2 class="hero-callout">
@@ -20,7 +20,7 @@
     </section>
     <IntroImage />
 
-    <div class="intro-border-bottom"></div>
+    <!-- <div class="intro-border-bottom"></div> -->
 </section>
 
 
@@ -29,24 +29,16 @@
     #intro {
         position: relative;
         display: flex;
-        align-items: center;
         z-index: 20;
-        // font-family: var(--sans);
-        // background-blend-mode: multiply;
-        // background-color: var(--whitish);
-        // background-image: url('/images/Grunge05.svg');
-        // background-repeat: no-repeat;
-        // background-size: contain;
-        // background-clip: content-box;
-        // background-position-y: var(--space);
-        // background-position-x:right;
+        border: calc(1vw / 3) solid var(--red);
+        margin-top: var(--space);
     }
 
     .intro-border-top {
         z-index: 10;
         border-top: calc(1vw / 3) solid var(--red);
         position: absolute;
-        top: calc(var(--space));
+        top: 0;
         right: 0;
         left: 0;
         bottom: 0;
@@ -58,7 +50,7 @@
       z-index: 60;
       border: calc(1vw / 3) solid var(--red);
       border-top: none;
-      top: 0;
+      top: var(--space);
       right: 0;
       left: 0;
       bottom: 0;
@@ -128,6 +120,7 @@
             margin-inline: auto;
             background-size: 35vw;
             background-position: top right var(--space);
+            margin-top: calc(var(--space-large) * 2);
         }
         .sub-greeting {
             margin-top: 0;

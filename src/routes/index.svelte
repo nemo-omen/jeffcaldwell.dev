@@ -31,13 +31,9 @@
   .intro-message {
     display: flex;
     justify-content: center;
-    margin-top: var(--space-large);
   }
   .intro-message p {
     font-size: var(--font-size-normal);
-  }
-  .services {
-    margin-top: var(--space);
   }
   @media screen and (min-width: 768px) {
     .intro {
