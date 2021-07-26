@@ -34,12 +34,12 @@
         // font-family: var(--sans);
         // background-blend-mode: multiply;
         // background-color: var(--whitish);
-        background-image: url('/images/Grunge05.svg');
-        background-repeat: no-repeat;
+        // background-image: url('/images/Grunge05.svg');
+        // background-repeat: no-repeat;
         // background-size: contain;
-        background-clip: content-box;
-        background-position-y: var(--space);
-        background-position-x:right;
+        // background-clip: content-box;
+        // background-position-y: var(--space);
+        // background-position-x:right;
     }
 
     .intro-border-top {
