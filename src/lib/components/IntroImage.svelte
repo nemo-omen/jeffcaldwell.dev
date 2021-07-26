@@ -29,7 +29,7 @@
     @media screen and (max-width: 550px) {
       .intro-image {
         position: absolute;
-        top: calc(var(--space) * -1);
+        top: calc(var(--space-large) * -1);
         right: 50%;
         transform: translateX(50%);
         width: 24vw;

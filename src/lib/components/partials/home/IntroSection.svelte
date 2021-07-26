@@ -64,7 +64,6 @@
     .hero-callout {
         display: flex;
         flex-direction: column;
-        gap: var(--space-small);
         max-width: 60ch;
         margin: var(--space-small);
         line-height: 1;
@@ -72,7 +71,10 @@
     .greeting-group {
         display: flex;
         flex-direction: column;
-        gap: var(--space-small);
+    }
+
+    .greeting-group > * + * {
+        margin-top: var(--space-small);
     }
 	.greeting {
         -webkit-text-stroke: .2vw var(--red);
@@ -92,6 +94,7 @@
         font-size: clamp(var(--size-700), 5vw, var(--size-1000));
         letter-spacing: 0.25rem;
         color: var(--darkblue);
+        margin-top: var(--space-small);
     }
 
     .message {
@@ -128,6 +131,10 @@
         .greeting-group {
             flex-direction: row;
             justify-content: center;
+        }
+
+        .greeting-group > * + * {
+            margin-top: unset;
         }
         .greeting {
             margin: 0;
