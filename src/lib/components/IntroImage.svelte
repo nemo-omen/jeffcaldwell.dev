@@ -59,4 +59,11 @@
             max-width: 32vw;
         }
     }
+
+    @media screen and (min-width: 2000px) {
+      .intro-image {
+        max-width: 20vw;
+        min-width: 20vw;
+      }
+    }
 </style>
