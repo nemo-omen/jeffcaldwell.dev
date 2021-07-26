@@ -16,6 +16,7 @@
     pointer-events: none;
     overflow: hidden;
     clip-path: polygon(0 0, 99% 0, 99% 99%, 0 99%);
+    min-width: 30vw;
   }
 
     img { 
@@ -35,7 +36,7 @@
         }
     }
 
-    @media screen and (max-width: 350px) {
+    @media screen and (max-width: 310px) {
       .intro-image {
         top: calc(var(--space-small) * -1);
       }

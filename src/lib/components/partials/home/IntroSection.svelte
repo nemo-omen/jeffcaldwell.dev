@@ -7,8 +7,13 @@
 
     <section class="intro_greeting">
         <h2 class="hero-callout">
-            <span class="greeting">
-                Jeff Caldwell
+            <span class="greeting-group">
+                <span class="greeting first">
+                    Jeff
+                </span>
+                <span class="greeting last">
+                    Caldwell
+                </span>
             </span>
             <span class="sub-greeting">Makes Websites.</span>
         </h2>
@@ -53,35 +58,40 @@
     .intro_greeting {
         z-index: 100;
         flex: 2;
-        justify-self: stretch;
+        display: flex;
+        flex-direction: column;
     }
     .hero-callout {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-small);
         max-width: 60ch;
         margin: var(--space-small);
         line-height: 1;
     }
-    .hero-callout * {
-        display: block;
+    .greeting-group {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-small);
     }
 	.greeting {
-        -webkit-text-stroke: calc(1vw / 4.5) var(--red);
+        -webkit-text-stroke: .2vw var(--red);
         word-break: break-word;
         word-wrap: break-word;
         max-width: 10ch;
         color: var(--whitish);
-        font-size: clamp(var(--size-900), 9vw, 9.969rem);
+        font-size: clamp(var(--size-900), 9vw, var(--size-1200));
         letter-spacing: .05em;
-        line-height: 1;
         text-shadow: var(--elevation-1);
+        line-height: 0.8;
 	}
     .greeting::selection {
         color: var(--red);
     }
     .sub-greeting {
-        font-size: var(--font-size-xxl);
+        font-size: clamp(var(--size-700), 5vw, var(--size-1000));
         letter-spacing: 0.25rem;
         color: var(--darkblue);
-        line-height: 1.5em;
     }
 
     .message {
@@ -115,16 +125,27 @@
             // line-height: 2.5em;
             padding-top: 1rem;
         }
+        .greeting-group {
+            flex-direction: row;
+            justify-content: center;
+        }
         .greeting {
             margin: 0;
             word-break: unset;
             max-width: unset;
-            -webkit-text-stroke: calc(1vw / 3) var(--red);
+            -webkit-text-stroke: 0.33vw var(--red);
             font-size: clamp(var(--size-800), 6vw, var(--size-900));
+            flex-direction: row;
         }
         .hero-callout {
             text-align: center;
         }
+    }
+
+    @media screen and (max-width: 310px) {
+      .greeting-group {
+        flex-direction: column;
+      }
     }
 
     @media screen and (min-width: 2000px) {
