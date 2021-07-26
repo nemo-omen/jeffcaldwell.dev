@@ -31,14 +31,20 @@
         display: flex;
         align-items: center;
         z-index: 20;
-        font-family: var(--sans);
+        // font-family: var(--sans);
+        // background-blend-mode: multiply;
+        // background-color: var(--whitish);
+        // background-image: url('/images/Grunge01.svg');
+        // background-repeat: repeat-x;
+        // background-clip: content-box;
+        // background-position-y: var(--space);
     }
 
     .intro-border-top {
         z-index: 10;
         border-top: calc(1vw / 3) solid var(--red);
         position: absolute;
-        top: var(--space);
+        top: calc(var(--space));
         right: 0;
         left: 0;
         bottom: 0;
@@ -117,7 +123,6 @@
     @media screen and (max-width: 550px) {
         #intro {
             justify-content: center;
-            // align-items: end;
             margin-inline: auto;
             background-size: 35vw;
             background-position: top right var(--space);
@@ -125,7 +130,6 @@
         .sub-greeting {
             margin-top: 0;
             font-size: var(--font-size-large);
-            // line-height: 2.5em;
             padding-top: 1rem;
         }
         .greeting-group {
