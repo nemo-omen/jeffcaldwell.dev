@@ -2,7 +2,7 @@
     import IntroImage from '../../IntroImage.svelte'
 </script>
 
-<div class="intro-border-top"></div>
+<!-- <div class="intro-border-top"></div> -->
 <section id="intro" class="flow space__outer_bottom">
 
     <section class="intro_greeting">
@@ -32,6 +32,9 @@
         z-index: 20;
         border: calc(1vw / 3) solid var(--red);
         margin-top: var(--space);
+        background-image: url('images/Grunge01_Red.svg');
+        background-repeat: repeat-x;
+
     }
 
     .intro-border-top {
@@ -93,6 +96,7 @@
     .sub-greeting {
         font-size: clamp(var(--size-700), 5vw, var(--size-1000));
         letter-spacing: 0.25rem;
+        text-shadow: var(--elevation-1);
         color: var(--darkblue);
         margin-top: var(--space-small);
     }
@@ -118,9 +122,6 @@
         #intro {
             justify-content: center;
             margin-inline: auto;
-            background-size: 35vw;
-            background-position: top right var(--space);
-            margin-top: calc(var(--space-large) * 2);
         }
         .sub-greeting {
             margin-top: 0;
