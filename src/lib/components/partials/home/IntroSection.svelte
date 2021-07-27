@@ -2,7 +2,6 @@
     import IntroImage from '../../IntroImage.svelte'
 </script>
 
-<!-- <div class="intro-border-top"></div> -->
 <section id="intro" class="flow space__outer_bottom">
 
     <section class="intro_greeting">
@@ -19,8 +18,6 @@
         </h2>
     </section>
     <IntroImage />
-
-    <!-- <div class="intro-border-bottom"></div> -->
 </section>
 
 
@@ -34,7 +31,7 @@
         margin-top: var(--space);
         background-image: url('images/Grunge01_Red.svg');
         background-repeat: repeat-x;
-
+        box-shadow: var(--elevation-4);
     }
 
     .intro-border-top {
