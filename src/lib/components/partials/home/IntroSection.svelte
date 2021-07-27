@@ -14,7 +14,7 @@
                     Caldwell
                 </span>
             </span>
-            <span class="sub-greeting">Makes Websites.</span>
+            <span class="sub-greeting"><a href="/work">Makes Websites</a></span>
         </h2>
     </section>
     <IntroImage />
@@ -76,6 +76,22 @@
         color: var(--darkblue);
         margin-top: var(--space-small);
     }
+    .sub-greeting a {
+        color: var(--primary);
+        text-decoration-thickness: 0.05em;
+        text-underline-offset: 0.125em;
+        transition: all 300ms ease-out;
+    }
+    .sub-greeting a:hover {
+        text-decoration-thickness: 0.075em;
+        color: var(--secondary);
+    }
+
+    .sub-greeting a:focus {
+        background-color: transparent;
+        outline-width: 3px;
+        text-decoration: none !important;
+    }
 
     .message {
         font-size: clamp(var(--size-500), 3vw, var(--size-600));
@@ -104,6 +120,7 @@
             margin-top: 0;
             font-size: var(--font-size-large);
             padding-top: 1rem;
+            text-shadow: var(--elevation-05);
         }
         .greeting-group {
             flex-direction: row;
@@ -120,6 +137,7 @@
             -webkit-text-stroke: 0.33vw var(--red);
             font-size: clamp(var(--size-800), 6vw, var(--size-900));
             flex-direction: row;
+            text-shadow: var(--elevation-05);
         }
         .hero-callout {
             text-align: center;
