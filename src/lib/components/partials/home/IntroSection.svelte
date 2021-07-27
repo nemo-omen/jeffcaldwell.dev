@@ -29,31 +29,10 @@
         z-index: 20;
         border: calc(1vw / 3) solid var(--red);
         margin-top: var(--space);
-        background-image: url('images/Grunge01_Red.svg');
+        background-image: url('images/Grunge01.svg');
         background-repeat: repeat-x;
         box-shadow: var(--elevation-4);
-    }
-
-    .intro-border-top {
-        z-index: 10;
-        border-top: calc(1vw / 3) solid var(--red);
-        position: absolute;
-        top: 0;
-        right: 0;
-        left: 0;
-        bottom: 0;
-        pointer-events: none;
-        box-shadow: var(--elevation-3);
-    }
-    .intro-border-bottom {
-      position: absolute;
-      z-index: 60;
-      border: calc(1vw / 3) solid var(--red);
-      border-top: none;
-      top: var(--space);
-      right: 0;
-      left: 0;
-      bottom: 0;
+        background-size: contain;
     }
     .intro_greeting {
         z-index: 100;
@@ -119,6 +98,7 @@
         #intro {
             justify-content: center;
             margin-inline: auto;
+            background-size: contain;
         }
         .sub-greeting {
             margin-top: 0;

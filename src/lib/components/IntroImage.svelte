@@ -12,41 +12,38 @@
   .intro-image {
     z-index: 50;
     flex: 1;
-    pointer-events: none;
-    overflow: hidden;
     min-width: 38%;
     max-width: 38%;
     position: absolute;
     bottom: 0;
     right: 0;
-    /* background: var(--accent-secondary); */
+    clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0);
   }
 
     img { 
       z-index: 5;
-      pointer-events: all;
-      /* filter: drop-shadow(var(--elevation-05)); */
-      clip-path: view-box;
     }
+
 
     @media screen and (max-width: 550px) {
       .intro-image {
         position: absolute;
-        top: calc(var(--space) * -4.5);
+        top: calc(var(--space) * -3);
         right: 50%;
         transform: translateX(50%);
-        width: 24vw;
+        min-width: 25%;
+        max-width: 25%;
       }
     }
     @media screen and (max-width: 360px) {
       .intro-image {
-        top: calc(var(--space) * -4);
+        top: calc(var(--space) * -3);
       }
     }
     
     @media screen and (max-width: 315px) {
       .intro-image {
-        top: calc(var(--space-small) * -7.5);
+        top: calc(var(--space-small) * -5.5);
       }
     }
 
