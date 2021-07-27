@@ -25,7 +25,6 @@
 <style lang="scss">
     #intro {
         position: relative;
-        display: flex;
         z-index: 20;
         border: calc(1vw / 3) solid var(--red);
         margin-top: var(--space);
@@ -36,7 +35,7 @@
     }
     .intro_greeting {
         z-index: 100;
-        flex: 2;
+        max-width: 63%;
         display: flex;
         flex-direction: column;
     }
@@ -112,9 +111,15 @@
 
     @media screen and (max-width: 550px) {
         #intro {
+            display: flex;
             justify-content: center;
             margin-inline: auto;
             background-size: contain;
+        }
+        .intro-greeting {
+            width: 100%;
+            max-width: 100%;
+            min-width: 100%;
         }
         .sub-greeting {
             margin-top: 0;
@@ -125,6 +130,9 @@
         .greeting-group {
             flex-direction: row;
             justify-content: center;
+        }
+        .first {
+            margin-right: 0.5rem !important;
         }
 
         .greeting-group > * + * {
