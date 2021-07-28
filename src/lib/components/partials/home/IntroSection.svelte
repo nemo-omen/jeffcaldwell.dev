@@ -73,23 +73,31 @@
         grid-row: 2 / 8;
         border: 0.4vw solid var(--red);
         padding: var(--space-small);
-        }
+    }
 
         .intro-message {
-            grid-column: 3 / 25;
+            grid-column: 4 / 26;
             grid-row: 7 / 11;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            background: var(--darkblue);
+            // background: var(--darkblue);
+            // background: var(--secondary);
+            background: var(--whitish);
+            background-image: url('images/Grunge01.svg');
+            // background-size: cover;
+            background-size: contain;
             font-family: var(--sans);
             font-weight: 700;
             letter-spacing: 0.1em;
             box-shadow: var(--elevation-3);
             z-index: 60;
+            border: 0.3vw solid var(--darkblue);
             p {
                 color: var(--whitish);
+                color: var(--secondary);
+                // color: var(--darkblue);
                 text-align: center;
                 font-size: var(--font-size-xxl);
             }
@@ -98,7 +106,7 @@
             }
         }
         .callout-area {
-            grid-row: 10 / 12;
+            grid-row: 11 / 13;
             grid-column: 1 / 29;
             display: flex;
             justify-content: center;
@@ -108,16 +116,24 @@
                 justify-content: center;
                 align-items: center;
                 font-family: var(--display);
-                margin-top: var(--space-small);
+                // margin-top: var(--space-small);
                 font-size: var(--font-size-xl);
                 letter-spacing: 0.075em;
-                color: var(--accent-secondary);
+                color: var(--whitish);
                 text-decoration: none;
                 background: var(--secondary);
-                padding: 0.25em;
+                padding: 0.55em;
+                // border: 0.25vw solid var(--whitish);
+                box-shadow: 5px 5px 0 rgb(var(--darkblue-rgb), 0.8);
+                transition: 
+                    background 300ms ease-out,
+                    box-shadow 200ms ease-out 200ms;
             }
             .callout-link:hover {
                 color: var(--whitish);
+                background: var(--green);
+                color: var(--whitish);
+                box-shadow: 10px 10px 0 rgb(var(--darkblue-rgb), 0.8);
             }
             .callout-link:focus {
                 background: transparent;
