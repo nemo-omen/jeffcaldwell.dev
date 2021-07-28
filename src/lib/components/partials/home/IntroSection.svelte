@@ -14,9 +14,18 @@
     </div>
     
     <div class="intro-message">
-        <p class="landing-description">
-            I make fast, accessible, great-looking websites and web applications. <a href="/hire">Get in touch</a> and let's talk about how I can help you build sites your users will love.
+        <p>
+            I make fast, accessible, great-looking websites.
         </p>
+        <!-- <p class="sub-message">
+            <a href="/hire" class="callout-link">Get in touch</a>
+            and let's talk about how I can help you build sites your users will love.
+        </p> -->
+    </div>
+    <div class="callout-area">
+        <a class="callout-link button" href="hire">
+            Let's Talk!
+        </a>
     </div>
 </section>
 
@@ -33,6 +42,10 @@
             repeat(28, 1fr);
             
         grid-template-rows:
+            var(--vu)
+            var(--vu)
+            var(--vu)
+            var(--vu)
             var(--vu)
             var(--vu)
             var(--vu)
@@ -63,16 +76,54 @@
         }
 
         .intro-message {
-            grid-column: 3 / 28;
+            grid-column: 3 / 25;
             grid-row: 7 / 11;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-            background: var(--whitish);
-            padding: var(--space-xsmall);
+            background: var(--darkblue);
+            font-family: var(--sans);
+            font-weight: 700;
+            letter-spacing: 0.1em;
             box-shadow: var(--elevation-3);
-            border: calc(1vw / 3) solid var(--darkblue);
             z-index: 60;
+            p {
+                color: var(--whitish);
+                text-align: center;
+                font-size: var(--font-size-xxl);
+            }
+            .sub-message {
+                font-size: var(--font-size-normal);
+            }
+        }
+        .callout-area {
+            grid-row: 10 / 12;
+            grid-column: 1 / 29;
+            display: flex;
+            justify-content: center;
+            .callout-link {
+                z-index: 60;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: var(--display);
+                margin-top: var(--space-small);
+                font-size: var(--font-size-xl);
+                letter-spacing: 0.075em;
+                color: var(--accent-secondary);
+                text-decoration: none;
+                background: var(--secondary);
+                padding: 0.25em;
+            }
+            .callout-link:hover {
+                color: var(--whitish);
+            }
+            .callout-link:focus {
+                background: transparent;
+                color: var(--whitish);
+                outline-color: var(--whitish);
+            }
         }
     .intro-greeting {
         width: 100%;
@@ -120,12 +171,6 @@
         background-color: transparent;
         outline-width: 3px;
         text-decoration: none !important;
-    }
-    .landing-description {
-        text-align: center;
-        font-size: var(--font-size-normal);
-        word-wrap: normal;
-        word-break: keep-all;
     }
     @media screen and (min-width: 550px) {
         #intro {

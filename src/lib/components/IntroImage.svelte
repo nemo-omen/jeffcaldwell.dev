@@ -64,9 +64,13 @@
 
 <style>
   .intro-image {
-    grid-column: 20 / 29;
+    grid-column: 19 / 29;
     grid-row: 1 / 9;
-    aspect-ratio: 1;
+    min-height: calc(var(--vu) * 8);
+    min-width: calc(var(--vu) * 8);
+    /* min-height: auto; */
+    aspect-ratio: 1 / 1;
+    /* min-height: calc(var(--vu) * 8); */
     overflow: hidden;
     display: flex;
     align-items: flex-end;
