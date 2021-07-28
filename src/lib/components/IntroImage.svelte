@@ -64,8 +64,8 @@
 
 <style>
   .intro-image {
-    grid-column: 8 / 11;
-    grid-row: 1 / 3;
+    grid-column: 20 / 29;
+    grid-row: 1 / 9;
     aspect-ratio: 1;
     overflow: hidden;
     display: flex;
@@ -75,7 +75,7 @@
     border-radius: 50%;
     align-items: flex-start;
     z-index: 50;
-    background-image: url('images/Grunge01.svg');
+    background-image: url('images/dots006.svg');
     background-size: cover;
   }
   /* @media screen and (min-width: 551px) {

@@ -4,19 +4,12 @@
 
 <section class="intro-section">
     <IntroImage />
-    <div id="intro" class="space__outer_bottom">
+    <div id="intro">
         <section class="intro_greeting">
-            <h2 class="hero-callout">
-                <span class="greeting-group">
-                    <span class="greeting first">
-                        Jeff
-                    </span>
-                    <span class="greeting last">
-                        Caldwell
-                    </span>
-                </span>
-                <span class="sub-greeting"><a href="/work">Makes Websites</a></span>
+            <h2 class="greeting">
+                Jeff Caldwell
             </h2>
+            <p class="sub-greeting"><a href="/work">Makes Websites</a></p>
         </section>
     </div>
     
@@ -31,11 +24,27 @@
 
 <style lang="scss">
     .intro-section {
+        --half-avatar: calc(25vw / 2);
+        --quarter-avatar: calc(25vw / 4);
+        --eighth-avatar: calc(25vw / 8);
         z-index: 10;
         display: grid;
-        grid-template-columns: repeat(10, 1fr);
-        grid-template-rows: repeat(20, 1fr);
-        align-items: end;
+        grid-template-columns: 
+            repeat(28, 1fr);
+            
+        grid-template-rows:
+            var(--vu)
+            var(--vu)
+            var(--vu)
+            var(--vu)
+            var(--vu)
+            var(--vu)
+            var(--vu)
+            var(--vu)
+            1fr 
+            auto;
+        // align-items: center;
+        grid-gap: 1rem;
     }
     #intro {
         display: flex;
@@ -47,14 +56,15 @@
         background-repeat: repeat-x;
         box-shadow: var(--elevation-4);
         background-size: contain;
-        grid-column: 1 / 10;
-        grid-row: 2 / 4;
+        grid-column: 1 / 26;
+        grid-row: 2 / 8;
         border: 0.4vw solid var(--red);
+        padding: var(--space-small);
         }
 
         .intro-message {
-            grid-column: 1 / 10;
-            grid-row: 4 / 10;
+            grid-column: 3 / 28;
+            grid-row: 7 / 11;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -62,34 +72,21 @@
             padding: var(--space-xsmall);
             box-shadow: var(--elevation-3);
             border: calc(1vw / 3) solid var(--darkblue);
+            z-index: 60;
         }
     .intro-greeting {
         width: 100%;
         max-width: 100%;
         min-width: 100%;
     }
-    .hero-callout {
-        display: flex;
-        flex-direction: column;
-        max-width: 60ch;
-        margin: var(--space-small);
-        line-height: 1;
-    }
-    .greeting-group {
-        display: flex;
-        // flex-direction: column;
-    }
 	.greeting {
         -webkit-text-stroke: .2vw var(--red);
-        word-break: break-word;
-        word-wrap: break-word;
-        max-width: 10ch;
         color: var(--whitish);
         letter-spacing: .05em;
         text-shadow: 0.075em 0.075em 0 rgb(var(--primary-rgb), 0.9);
         line-height: 0.8;
         z-index: 60;
-        font-size: clamp(var(--size-800), 7vw, var(--size-1100));
+        font-size: clamp(var(--size-700), 9vw, var(--size-1200));
 	}
     .greeting::selection {
         color: var(--red);
@@ -101,8 +98,8 @@
     .sub-greeting {
         letter-spacing: 0.25rem;
         color: var(--darkblue);
-        margin-top: var(--space-xsmall);
-        font-size: var(--font-size-medium);
+        font-family: var(--display);
+        font-size: clamp(var(--size-600), 7vw, var(--size-1100));
     }
     .sub-greeting a {
         color: var(--primary);
@@ -134,9 +131,6 @@
         #intro {
             flex-direction: row;
             justify-content: flex-start;
-        }
-        .sub-greeting {
-            font-size: clamp(var(--size-800), 5vw, var(--size-900));
         }
     }
 </style>

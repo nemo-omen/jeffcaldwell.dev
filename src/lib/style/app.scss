@@ -75,6 +75,16 @@
   --size-1100: 7.478rem;
   --size-1200: 9.969rem;
 
+  /* Custom Sizes */
+  --fourth-width: 25vw;
+  --third-width: 33vw;
+  --half-width: 50vw;
+  --two-thirds-width: 67vw;
+  --three-fourths-width: 75vw;
+  --full-width: 100vw;
+
+  --vu: calc(var(--fourth-width) / 8);
+
   /* Elevations/Box-shadows*/
 
   --elevation-05: 2px 2px 1px rgb(var(--darkblue-rgb), 0.4);
@@ -99,7 +109,7 @@
 
   --flow-space: var(--space);
 
-  --width-body: clamp(16rem, 90vw, 80rem);
+  --width-body: calc(var(--vu) * 28);
 
 }
 
