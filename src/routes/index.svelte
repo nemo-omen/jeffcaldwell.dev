@@ -4,40 +4,21 @@
     import ProjectsSection from '$lib/components/partials/home/ProjectsSection.svelte';
 
 </script>
-<section class="intro">
+
   <Intro />
-  <div class="intro-message">
-    <p class="landing-description">
-      I make fast, accessible, great-looking websites and web applications.<br> <a href="/hire">Get in touch</a> and let's talk about how I can help you build sites your users will love.
-    </p>
-  </div>
-</section>
-<section class="projects">
-  <header class="section-header">
-    <h2 class="section-title">My Work</h2>
-  </header>
+<section class="projects hero-section">
   <ProjectsSection />
 </section>
-<!-- <section class="services">
-  <ServicesSection />
-</section> -->
 
 <style>
-  .intro {
-    z-index: 10;
-    margin-top: var(--space);
-    margin-bottom: var(--space);
+  /* .landing-description a {
+    color: var(--accent-secondary);
   }
-  .intro-message {
-    display: flex;
-    justify-content: center;
-  }
-  .intro-message p {
-    font-size: var(--font-size-normal);
-  }
+
+  .landing-description a:hover {
+    color: var(--whitish);
+  } */
   @media screen and (min-width: 768px) {
-    .intro {
-      margin-top: var(--space-xsmall);
-    }
+    
   }
 </style>

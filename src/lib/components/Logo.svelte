@@ -32,12 +32,14 @@
     padding: 0.5rem;
     transition: 
       background 300ms ease-out,
-      border-color 300ms ease-out 100ms;
+      border-color 300ms ease-out 100ms,
+      box-shadow 200ms ease-out 200ms;
   }
 
   .logo:hover {
     border-color: var(--red);
     background-color: var(--whitish);
+    box-shadow: 0.5em 0.5em 0 var(--primary);
   }
   .logo-svg {
     height: clamp(2.5rem, 3.5vw, 4.5rem);

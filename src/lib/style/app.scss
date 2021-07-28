@@ -51,10 +51,10 @@
   --accent-secondary-rgb: var(--canary-rgb);
 
   /*Background*/
-  --bg__primary: var(--whitish);
-  --bg__dark: var(--darkblue);
-  --bg_secondary: var(--red);
-  --bg_tertiary: var(--yellow);
+  --bg-light: var(--whitish);
+  --bg-dark: var(--darkblue);
+  --bg-secondary: var(--red);
+  --bg-tertiary: var(--yellow);
 
   /* Type Scales */
   --scale-small: 1.2;
@@ -114,7 +114,7 @@
 }
 
 body {
-  background: var(--bg__primary);
+  background: var(--bg-light);
   color: var(--blackish);
   font-family: var(--body);
   font-size: var(--font-size-medium);
@@ -141,10 +141,6 @@ a:focus {
 :focus {
   outline: 2px solid var(--secondary);
   outline-offset: 0.25rem;
-}
-
-main:focus {
-  outline: none;
 }
 
 [href]:hover {
@@ -297,16 +293,18 @@ textarea {
 }
 
 .section-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: var(--space-small);
+  // display: flex;
+  // flex-direction: column;
+  // align-items: start;
+  // align-items: center;
+  // gap: var(--space-small);
 }
 
 .section-title {
   font-size: var(--font-size-xxl);
   letter-spacing: 0.25rem;
-  text-align: center;
+  text-align: left;
+  // text-align: center;
   color: var(--darkblue);
 }
 

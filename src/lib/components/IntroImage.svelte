@@ -64,64 +64,27 @@
 
 <style>
   .intro-image {
-    z-index: 50;
-    position: absolute;
-    min-width: 37%;
-    max-width: 37%;
-    bottom: 0;
-    right: 0;
+    grid-column: 8 / 11;
+    grid-row: 1 / 3;
+    aspect-ratio: 1;
+    overflow: hidden;
     display: flex;
     align-items: flex-end;
+    background-color: var(--whitish);
+    border: 0.4vw solid var(--red);
+    border-radius: 50%;
+    align-items: flex-start;
+    z-index: 50;
+    background-image: url('images/Grunge01.svg');
+    background-size: cover;
   }
-
-
-    @media screen and (max-width: 550px) {
-      .intro-image {
-        position: absolute;
-        top: calc(var(--space) * -3);
-        right: 50%;
-        transform: translateX(50%);
-        min-width: 25%;
-        max-width: 25%;
-        align-items: flex-start;
-      }
+  /* @media screen and (min-width: 551px) {
+    .intro-image {
+      min-width: 33vw;
+      max-width: 33vw;
+      grid-column: 9 / 13;
+      grid-row: 1 / 4;
+      transform: unset;
     }
-    @media screen and (max-width: 360px) {
-      .intro-image {
-        top: calc(var(--space) * -3);
-      }
-    }
-    
-    @media screen and (max-width: 315px) {
-      .intro-image {
-        top: calc(var(--space-small) * -5.5);
-      }
-    }
-
-    @media screen and (max-width: 603px) {
-        /* .intro-image {
-            max-width: 40vw;
-        } */
-    }
-
-    @media screen and (max-width: 769px) {
-        /* .intro-image {
-            max-width: 37vw;
-            min-width: 37vw;
-        } */
-    }
-
-    /* @media screen and (max-width: 1700px) { */
-        /* .intro-image {
-          min-width: 30vw;
-          max-width: 30vw;
-        }
-    } */
-
-    @media screen and (min-width: 2000px) {
-      .intro-image {
-        max-width: 20vw;
-        min-width: 20vw;
-      }
-    }
-</style>
+  } */
+  </style>

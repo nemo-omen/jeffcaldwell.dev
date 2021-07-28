@@ -19,4 +19,8 @@
     margin: 0 auto;
     margin-bottom: var(--space);
   }
+
+  main:focus {
+    outline: none;
+  }
 </style>
