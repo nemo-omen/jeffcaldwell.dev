@@ -11,13 +11,6 @@
 </section>
 
 <style>
-  /* .landing-description a {
-    color: var(--accent-secondary);
-  }
-
-  .landing-description a:hover {
-    color: var(--whitish);
-  } */
   @media screen and (min-width: 768px) {
     
   }

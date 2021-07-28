@@ -79,7 +79,7 @@
     border-radius: 50%;
     align-items: flex-start;
     z-index: 50;
-    background-image: url('images/dots006.svg');
+    background-image: url('./images/dots006.svg');
     background-size: cover;
   }
   .image {

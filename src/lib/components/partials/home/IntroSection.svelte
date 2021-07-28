@@ -17,10 +17,6 @@
         <p>
             I make fast, accessible, great-looking websites.
         </p>
-        <!-- <p class="sub-message">
-            <a href="/hire" class="callout-link">Get in touch</a>
-            and let's talk about how I can help you build sites your users will love.
-        </p> -->
     </div>
     <div class="callout-area">
         <a class="callout-link button" href="hire">
@@ -65,7 +61,7 @@
         background-size: contain;
         position: relative;
         z-index: 20;
-        background-image: url('images/Grunge01.svg');
+        background-image: url('./images/Grunge01.svg');
         background-repeat: repeat-x;
         box-shadow: var(--elevation-4);
         background-size: contain;
@@ -82,11 +78,8 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            // background: var(--darkblue);
-            // background: var(--secondary);
             background: var(--whitish);
-            background-image: url('images/Grunge01.svg');
-            // background-size: cover;
+            background-image: url('./images/Grunge01.svg');
             background-size: contain;
             font-family: var(--sans);
             font-weight: 700;
@@ -97,7 +90,6 @@
             p {
                 color: var(--whitish);
                 color: var(--secondary);
-                // color: var(--darkblue);
                 text-align: center;
                 font-size: var(--font-size-xxl);
             }
@@ -116,14 +108,12 @@
                 justify-content: center;
                 align-items: center;
                 font-family: var(--display);
-                // margin-top: var(--space-small);
                 font-size: var(--font-size-xl);
                 letter-spacing: 0.075em;
                 color: var(--whitish);
                 text-decoration: none;
                 background: var(--secondary);
                 padding: 0.55em;
-                // border: 0.25vw solid var(--whitish);
                 box-shadow: 5px 5px 0 rgb(var(--darkblue-rgb), 0.8);
                 transition: 
                     background 300ms ease-out,
@@ -171,14 +161,11 @@
     .sub-greeting a {
         color: var(--primary);
         text-shadow: 0.05em 0.05em 0 rgb(var(--primary-rgb), 0.4);
-        // text-shadow: var(--elevation-1);
-        // text-shadow: 0.05em 0.05em 0 var(--secondary);
         text-decoration-thickness: 0.05em;
         text-underline-offset: 0.125em;
         transition: all 300ms ease-out;
     }
     .sub-greeting a:hover {
-        // text-shadow: 0.05em 0.05em 0 var(--primary);
         text-decoration-thickness: 0.05em;
         color: var(--secondary);
     }
