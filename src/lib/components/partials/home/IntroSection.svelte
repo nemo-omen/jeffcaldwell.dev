@@ -61,7 +61,7 @@
         background-size: contain;
         position: relative;
         z-index: 20;
-        background-image: url('./images/Grunge01.svg');
+        background-image: url('/images/Grunge01.svg');
         background-repeat: repeat-x;
         box-shadow: var(--elevation-4);
         background-size: contain;
@@ -79,7 +79,7 @@
             justify-content: center;
             align-items: center;
             background: var(--whitish);
-            background-image: url('./images/Grunge01.svg');
+            background-image: url('/images/Grunge01.svg');
             background-size: contain;
             font-family: var(--sans);
             font-weight: 700;

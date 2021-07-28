@@ -79,20 +79,11 @@
     border-radius: 50%;
     align-items: flex-start;
     z-index: 50;
-    background-image: url('./images/dots006.svg');
+    background-image: url('/images/dots006.svg');
     background-size: cover;
   }
   .image {
     filter: 
       drop-shadow(7px 1px 0 rgb(var(--darkblue-rgb), 0.4));
   }
-  /* @media screen and (min-width: 551px) {
-    .intro-image {
-      min-width: 33vw;
-      max-width: 33vw;
-      grid-column: 9 / 13;
-      grid-row: 1 / 4;
-      transform: unset;
-    }
-  } */
   </style>
