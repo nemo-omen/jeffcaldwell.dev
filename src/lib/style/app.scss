@@ -84,6 +84,9 @@
   --full-width: 100vw;
 
   --vu: calc(var(--fourth-width) / 8);
+  --vu2: calc(var(--fourth-width) / 4);
+  --vu4: calc(var(--fourth-width) / 2);
+  --vu8: --fourth-width;
 
   /* Elevations/Box-shadows*/
 
@@ -261,6 +264,23 @@ textarea {
   resize: none;
   border: 1px solid var(--red);
   // background: var(--whitish);
+}
+
+.panel-caption {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+  padding: 0.25em;
+  margin: 0.5em;
+  background-color: var(--accent-secondary);
+  border: 0.125em solid var(--primary);
+  text-transform: uppercase;
+  font-family: var(--display);
+  letter-spacing: 0.075em;
+  text-align: center;
+  font-size: var(--font-size-small);
+  box-shadow: var(--elevation-1);
 }
 
 .post {

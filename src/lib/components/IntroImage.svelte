@@ -60,30 +60,40 @@
     <path d="M1411.97 2926.34C1413.22 2931.53 1413.96 2943.16 1406.99 2948.14" stroke="#373043" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     </svg>
     
+    <p id="main-image-caption" class="panel-caption">But who is he?</p>
 </section>
 
 <style>
   .intro-image {
-    grid-column: 19 / 29;
-    grid-row: 1 / 9;
+    position: relative;
     min-height: calc(var(--vu) * 8);
     min-width: calc(var(--vu) * 8);
-    /* min-height: auto; */
-    aspect-ratio: 1 / 1;
-    /* min-height: calc(var(--vu) * 8); */
     overflow: hidden;
     display: flex;
     align-items: flex-end;
+    justify-content: flex-end;
     background-color: var(--whitish);
-    border: 0.4vw solid var(--red);
-    border-radius: 50%;
-    align-items: flex-start;
-    z-index: 50;
+    border: 0.4vw solid var(--primary);
     background-image: url('/images/dots006.svg');
     background-size: cover;
+    box-shadow: var(--elevation-3);
   }
   .image {
     filter: 
-      drop-shadow(7px 1px 0 rgb(var(--darkblue-rgb), 0.4));
+      drop-shadow(var(--elevation-1));
+  }
+  #main-image-caption {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  @media screen and (max-width: 550px) {
+    #main-image-caption {
+      left: 0;
+      margin: 0;
+      border: none;
+      border-top: 0.125em solid var(--primary);
+    }
   }
   </style>

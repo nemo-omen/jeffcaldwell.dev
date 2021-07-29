@@ -3,7 +3,6 @@
 </script>
 
 <section class="intro-section">
-    <IntroImage />
     <div id="intro">
         <section class="intro_greeting">
             <h2 class="greeting">
@@ -12,68 +11,46 @@
             <p class="sub-greeting"><a href="/work">Makes Websites</a></p>
         </section>
     </div>
+    <IntroImage />
     
     <div class="intro-message">
         <p>
-            I make fast, accessible, great-looking websites.
+            I make fast, accessible, great-looking websites your users will love.
         </p>
     </div>
-    <div class="callout-area">
-        <a class="callout-link button" href="hire">
-            Let's Talk!
-        </a>
-    </div>
+    <a class="callout-link button" href="hire">
+        Let's Talk!
+    </a>
 </section>
 
 
 
 <style lang="scss">
     .intro-section {
-        --half-avatar: calc(25vw / 2);
-        --quarter-avatar: calc(25vw / 4);
-        --eighth-avatar: calc(25vw / 8);
         z-index: 10;
         display: grid;
-        grid-template-columns: 
-            repeat(28, 1fr);
-            
-        grid-template-rows:
-            var(--vu)
-            var(--vu)
-            var(--vu)
-            var(--vu)
-            var(--vu)
-            var(--vu)
-            var(--vu)
-            var(--vu)
-            var(--vu)
-            var(--vu)
-            var(--vu)
-            var(--vu)
-            1fr 
-            auto;
-        // align-items: center;
-        grid-gap: 1rem;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1vw;
     }
+
     #intro {
+        grid-column: 1 / 3;
         display: flex;
-        justify-content: start;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
         background-size: contain;
-        position: relative;
         z-index: 20;
         background-image: url('/images/Grunge01.svg');
         background-repeat: repeat-x;
-        box-shadow: var(--elevation-4);
-        background-size: contain;
-        grid-column: 1 / 26;
-        grid-row: 2 / 8;
-        border: 0.4vw solid var(--red);
+        box-shadow: var(--elevation-1);
+        background-size: cover;
+        border: 0.4vw solid var(--secondary);
         padding: var(--space-small);
     }
 
         .intro-message {
-            grid-column: 4 / 26;
-            grid-row: 7 / 11;
+            grid-column: 2 / 4;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -81,82 +58,74 @@
             background: var(--whitish);
             background-image: url('/images/Grunge01.svg');
             background-size: contain;
-            font-family: var(--sans);
-            font-weight: 700;
-            letter-spacing: 0.1em;
-            box-shadow: var(--elevation-3);
+            box-shadow: var(--elevation-1);
             z-index: 60;
             border: 0.3vw solid var(--darkblue);
+            padding: var(--space-small);
             p {
+                font-family: var(--sans);
+                text-transform: uppercase;
+                font-weight: 900;
+                letter-spacing: 0.1em;
                 color: var(--whitish);
-                color: var(--secondary);
                 text-align: center;
-                font-size: var(--font-size-xxl);
+                font-size: clamp(var(--size-400), 3vw, var(--size-700));;
+                line-height: 1.2;
+                text-shadow: var(--elevation-1);
+                -webkit-text-stroke: .05em var(--primary);
             }
             .sub-message {
                 font-size: var(--font-size-normal);
             }
         }
-        .callout-area {
-            grid-row: 11 / 13;
-            grid-column: 1 / 29;
+        .callout-link {
+            grid-column: 1;
+            grid-row: 2;
             display: flex;
             justify-content: center;
-            .callout-link {
-                z-index: 60;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font-family: var(--display);
-                font-size: var(--font-size-xl);
-                letter-spacing: 0.075em;
-                color: var(--whitish);
-                text-decoration: none;
-                background: var(--secondary);
-                padding: 0.55em;
-                box-shadow: 5px 5px 0 rgb(var(--darkblue-rgb), 0.8);
-                transition: 
-                    background 300ms ease-out,
-                    box-shadow 200ms ease-out 200ms;
-            }
-            .callout-link:hover {
-                color: var(--whitish);
-                background: var(--green);
-                color: var(--whitish);
-                box-shadow: 10px 10px 0 rgb(var(--darkblue-rgb), 0.8);
-            }
-            .callout-link:focus {
-                background: transparent;
-                color: var(--whitish);
-                outline-color: var(--whitish);
-            }
+            z-index: 60;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: var(--display);
+            font-size: var(--font-size-xl);
+            letter-spacing: 0.075em;
+            color: var(--whitish);
+            text-decoration: none;
+            background: var(--secondary);
+            padding: 0.55em;
+            box-shadow: var(--elevation-1);
+            transition: 
+                background 300ms ease-out;
         }
-    .intro-greeting {
-        width: 100%;
-        max-width: 100%;
-        min-width: 100%;
-    }
+        .callout-link:hover {
+            color: var(--whitish);
+            background: var(--green);
+            color: var(--whitish);
+        }
+        .callout-link:focus {
+            background: transparent;
+            color: var(--whitish);
+            outline-color: var(--whitish);
+        }
 	.greeting {
-        -webkit-text-stroke: .2vw var(--red);
+        -webkit-text-stroke: .2vw var(--secondary);
         color: var(--whitish);
         letter-spacing: .05em;
         text-shadow: 0.075em 0.075em 0 rgb(var(--primary-rgb), 0.9);
-        line-height: 0.8;
         z-index: 60;
-        font-size: clamp(var(--size-700), 9vw, var(--size-1200));
+        font-size: clamp(var(--size-600), 9vw, var(--size-1200));
+        text-align: center;
 	}
     .greeting::selection {
         color: var(--red);
     }
-
-    .first {
-            margin-right: 0.25em !important;
-        }
     .sub-greeting {
         letter-spacing: 0.25rem;
         color: var(--darkblue);
         font-family: var(--display);
-        font-size: clamp(var(--size-600), 7vw, var(--size-1100));
+        font-size: clamp(var(--size-400), 6vw, var(--size-1200));
+        text-align: center;
     }
     .sub-greeting a {
         color: var(--primary);
@@ -175,10 +144,19 @@
         outline-width: 3px;
         text-decoration: none !important;
     }
-    @media screen and (min-width: 550px) {
-        #intro {
-            flex-direction: row;
-            justify-content: flex-start;
+
+    @media screen and (max-width: 767px) {
+        .intro-message {
+            grid-column: 1 / 4;
+            grid-row: 2;
+            p {
+                color: var(--primary);
+                -webkit-text-stroke: unset;
+            }
+        }
+        .callout-link {
+            grid-row: unset;
+            grid-column: 1 / 4;
         }
     }
 </style>
