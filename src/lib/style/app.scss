@@ -114,6 +114,8 @@
 
   --width-body: calc(var(--vu) * 28);
 
+  --border-1: 0.4vw;
+
 }
 
 @media screen and (max-width: 350) {
@@ -211,7 +213,6 @@ blockquote {
   background: var(--darkblue);
 }
 
-
 .flow > * + * {
   margin-top: var(--flow-space);
 }
@@ -263,7 +264,6 @@ button:focus, input[type="submit"]:focus {
 textarea {
   resize: none;
   border: 1px solid var(--red);
-  // background: var(--whitish);
 }
 
 .panel-caption {

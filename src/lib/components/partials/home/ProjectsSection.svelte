@@ -4,7 +4,8 @@
   import Feature from '$lib/components/Feature.svelte';
 </script>
 
-<HeroSection id="work" title="Work">
+<HeroSection id="work" title="">
+
   <FlexSwitcher>
     <Feature
       image={{url: '/images/FeedMe_Feature.png', description: 'FeedMe front page interface.'}}
