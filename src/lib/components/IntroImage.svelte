@@ -60,7 +60,7 @@
     <path d="M1411.97 2926.34C1413.22 2931.53 1413.96 2943.16 1406.99 2948.14" stroke="#373043" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     </svg> -->
     <img src="/images/MeComicIllustration.png" alt="Illustration of Jeff Caldwell at a computer">
-    <p id="main-image-caption" class="panel-caption" width="856" height="1143">
+    <p id="main-image-caption" class="panel-caption" width="1163" height="1163">
       <a href="/about" class="panel-link">
         But who is he?
       </a>

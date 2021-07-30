@@ -45,7 +45,7 @@
         background-repeat: repeat-x;
         box-shadow: var(--panel-elevation);
         background-size: cover;
-        border: 0.4vw solid var(--secondary);
+        border: var(--border-1) solid var(--secondary);
         padding: var(--space-small);
     }
 
@@ -60,7 +60,7 @@
             background-size: contain;
             box-shadow: var(--panel-elevation);
             z-index: 60;
-            border: 0.3vw solid var(--darkblue);
+            border: var(--border-1) solid var(--darkblue);
             padding: var(--space-small);
             p {
                 font-family: var(--sans);
