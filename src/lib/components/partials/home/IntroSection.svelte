@@ -43,7 +43,7 @@
         z-index: 20;
         background-image: url('/images/Grunge01.svg');
         background-repeat: repeat-x;
-        box-shadow: var(--elevation-1);
+        box-shadow: var(--panel-elevation);
         background-size: cover;
         border: 0.4vw solid var(--secondary);
         padding: var(--space-small);
@@ -58,7 +58,7 @@
             background: var(--whitish);
             background-image: url('/images/Grunge01.svg');
             background-size: contain;
-            box-shadow: var(--elevation-1);
+            box-shadow: var(--panel-elevation);
             z-index: 60;
             border: 0.3vw solid var(--darkblue);
             padding: var(--space-small);
@@ -91,10 +91,11 @@
             font-size: var(--font-size-xl);
             letter-spacing: 0.075em;
             color: var(--whitish);
-            text-decoration: none;
+            // text-decoration: none;
+            text-underline-offset: 0.25em;
             background: var(--secondary);
             padding: 0.55em;
-            box-shadow: var(--elevation-1);
+            box-shadow: var(--panel-elevation);
             transition: 
                 background 300ms ease-out;
         }

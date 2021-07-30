@@ -116,6 +116,8 @@
 
   --border-1: 0.4vw;
 
+  --panel-elevation: var(--elevation-2);
+
 }
 
 @media screen and (max-width: 350) {
@@ -267,7 +269,7 @@ textarea {
 }
 
 .panel-caption {
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   line-height: 1;

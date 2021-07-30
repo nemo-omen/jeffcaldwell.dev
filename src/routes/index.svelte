@@ -22,11 +22,14 @@
 
   #projects {
     border: var(--border-1) solid var(--primary);
+    box-shadow: var(--panel-elevation);
+  }
+  .front-panel-caption {
+    background: var(--accent-secondary);
   }
   #work-caption {
     top: 0;
     left: 0;
-    padding-inline: none;
 
   }
   @media screen and (min-width: 768px) {
