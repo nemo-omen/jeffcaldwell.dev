@@ -16,7 +16,7 @@
 <style>
   #front {
     display: grid;
-    grid-template-rows: repeat(2, 1fr);
+    /* grid-template-rows: repeat(2, 1fr); */
     gap: 1rem;
   }
 
