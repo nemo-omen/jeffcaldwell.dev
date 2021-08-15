@@ -39,7 +39,7 @@
   .logo:hover {
     border-color: var(--red);
     background-color: var(--whitish);
-    box-shadow: 0.5em 0.5em 0 var(--primary);
+    box-shadow: 0.5em 0.5em 0 rgb(var(--primary-rgb), 0.9);
   }
   .logo-svg {
     height: clamp(2.5rem, 3.5vw, 4.5rem);
