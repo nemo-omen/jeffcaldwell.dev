@@ -190,7 +190,7 @@
             bottom: 0;
             z-index: -1;
             background-image: url('/images/Grunge05_White.svg');
-            clip-path: polygon(3% 30%, 0 100%, 97% 80%, 100% 0%);
+            clip-path: polygon(3% 30%, 0 100%, 97% 70%, 100% 0%);
             background-color: var(--accent-tertiary);
             background-repeat: repeat-x;
             background-size: contain;
@@ -203,7 +203,7 @@
             filter: drop-shadow(0.1em 0.1em 0 rgb(var(--primary-rgb), 0.5));
             .grunge-bg {
             background-color: var(--secondary);
-            clip-path: polygon(3% 5%, 0 100%, 97% 95%, 100% 0%);
+            clip-path: polygon(3% 0%, 0 100%, 97% 95%, 100% 0%);
         }
         }
     }
