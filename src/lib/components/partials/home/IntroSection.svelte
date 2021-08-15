@@ -195,6 +195,7 @@
             background-repeat: repeat-x;
             background-size: contain;
             // margin-inline: var(--space);
+            margin-inline: var(--space-xsmall);
             transition: clip-path 0.2s ease-out, background 0.3s ease-out;
         }
         &:hover {
