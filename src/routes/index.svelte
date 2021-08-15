@@ -21,6 +21,7 @@
 
   #projects {
     box-shadow: var(--panel-elevation);
+    background-color: var(--bg-light);
   }
   #work-caption {
     top: 0;

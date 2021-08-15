@@ -154,6 +154,7 @@
 	.greeting {
         font-family: var(--cover-alt-3);
         color: var(--accent-tertiary);
+        -webkit-text-stroke: 0.1vw rgb(var(--primary-rgb), 0.8);
         letter-spacing: .075em;
         text-shadow: 0.075em 0.075em 0 rgb(var(--primary-rgb), 0.9);
         z-index: 60;
@@ -195,9 +196,11 @@
             margin-inline: var(--space);
             transition: clip-path 0.2s ease-out, background 0.3s ease-out;
         }
-        &:hover .grunge-bg {
+        &:hover {
+            .grunge-bg {
             background-color: var(--secondary);
             clip-path: polygon(3% 5%, 0 100%, 97% 95%, 100% 0%);
+        }
         }
     }
     .sub-greeting:hover {
