@@ -100,7 +100,6 @@
             justify-content: center;
             align-items: center;
             background-size: contain;
-            // box-shadow: var(--panel-elevation);
             z-index: 60;
             padding: var(--space-small);
             p {
@@ -154,14 +153,12 @@
         }
 	.greeting {
         font-family: var(--cover-alt-3);
-        // -webkit-text-stroke: .02em var(--primary);
         color: var(--accent-tertiary);
         letter-spacing: .075em;
         text-shadow: 0.075em 0.075em 0 rgb(var(--primary-rgb), 0.9);
         z-index: 60;
         font-size: clamp(var(--size-600), 9vw, var(--size-1200));
         text-align: center;
-
 	}
     .greeting::selection {
         color: var(--red);
@@ -196,10 +193,11 @@
             background-repeat: repeat-x;
             background-size: contain;
             margin-inline: var(--space);
-            transition: all 0.3s ease-out;
+            transition: clip-path 0.2s ease-out, background 0.3s ease-out;
         }
         &:hover .grunge-bg {
             background-color: var(--secondary);
+            clip-path: polygon(3% 15%, 0 100%, 97% 90%, 100% 0%);
         }
     }
     .sub-greeting:hover {

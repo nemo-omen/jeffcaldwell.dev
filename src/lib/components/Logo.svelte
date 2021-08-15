@@ -22,8 +22,8 @@
 
 <style lang="scss">
   .logo {
-    height: clamp(3rem, 4vw, 5rem);
-    width: clamp(3rem, 4vw, 5rem);
+    height: clamp(3rem, 4vw, 4rem);
+    width: clamp(3rem, 4vw, 4rem);
     display: flex;
     justify-content: center;
     align-items: center;
