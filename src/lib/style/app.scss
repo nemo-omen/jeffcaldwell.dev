@@ -7,6 +7,21 @@
   helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
   --display: 'Zaio';
 
+  --cover: 'ccchillsregular';
+  --cover-2: 'ccchillsshadowsregular';
+  --cover-3: 'ccchillsbumpsregular';
+  --cover-4: 'ccchillsghostsregular';
+  --cover-5: 'ccchillswhispersregular';
+
+  --cover-alt: 'ccmonstermashregular';
+  --cover-alt-2: 'ccmonstermashoutlineregular';
+  --cover-alt-3: 'ccmonstermashwornregular';
+
+  --hand: 'ccscoundrelregular';
+  --hand-italic: 'ccscoundrelitalic';
+  --hand-bold: 'ccscoundrelbold';
+  --hand-bold-italic: 'ccscoundrelbold_italic';
+
   /*Colors*/
   --red: #ff6347;
   --red-rgb: 255, 99, 71;
@@ -17,8 +32,8 @@
   --green: #3891A6;
   --green-rgb: 56, 145, 166;
 
-  --canary: #FFFD82;
-  --canary-rgb: 255, 253, 130;
+  --canary: #faf86e;
+  --canary-rgb: 250, 248, 110;
 
   --darkblue: #373043;
   --darkblue-rgb: 55, 48, 67;
@@ -49,6 +64,9 @@
 
   --accent-secondary: var(--canary);
   --accent-secondary-rgb: var(--canary-rgb);
+
+  --accent-tertiary: var(--green);
+  --accent-tertiary-rgb: var(--green-rgb);
 
   /*Background*/
   --bg-light: var(--whitish);
@@ -115,6 +133,8 @@
   --width-body: calc(var(--vu) * 28);
 
   --border-1: 0.4vw;
+  --border-2: 0.3vw;
+  --border-3: 0.2vw;
 
   --panel-elevation: var(--elevation-2);
 
@@ -138,6 +158,7 @@ body {
   overflow-y: scroll;
   display: flex;
   flex-direction: column;
+  background-image: url('/images/Grunge05.svg');
 }
 
 a, a:visited {
@@ -243,24 +264,31 @@ h3 {
   max-width: 30ch;
 }
 
-button, input[type="submit"] {
-  background: var(--green);
+button, input[type="submit"], a.button {
+  background: var(--secondary);
   color: var(--whitish);
-  line-height: 1;
+  line-height: 0.8;
   border: none;
-  padding: 0.75rem;
+  padding: 1rem;
+  font-size: var(--font-size-small);
   font-weight: 700;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  text-transform: uppercase;
   box-shadow: var(--elevation-1);
   transition: box-shadow 300ms ease-out, background 300ms ease-out, color 300ms ease-out;
   cursor: pointer;
-}
+  border-radius: 3px;
 
-button:hover, input[type="submit"]:hover {
-  box-shadow: var(--elevation-3);
-}
+  &:hover {
+    box-shadow: var(--elevation-3);
+    background: var(--accent-tertiary);
+    color: var(--bg-light);
+  }
 
-button:focus, input[type="submit"]:focus {
-  outline: 2px solid var(--accent-primary);
+  &:focus {
+    outline: 2px solid var(--accent-primary);
+  }
 }
 
 textarea {
@@ -268,20 +296,29 @@ textarea {
   border: 1px solid var(--red);
 }
 
+.panel {
+  position: relative;
+  border: var(--border-3) solid var(--primary);
+  border-radius: 3px;
+}
+
+.panel > * {
+  border-radius: 2px;
+}
+
 .panel-caption {
   display: inline-flex;
   justify-content: center;
   align-items: center;
   line-height: 1;
-  padding: 0.25em;
+  padding: 0.5em;
   margin: 0.5em;
   background-color: var(--accent-secondary);
   border: 0.125em solid var(--primary);
   text-transform: uppercase;
-  font-family: var(--display);
-  letter-spacing: 0.075em;
+  font-family: var(--hand-bold);
   text-align: center;
-  font-size: var(--font-size-small);
+  font-size: var(--font-size-medium);
   box-shadow: var(--elevation-1);
 }
 
@@ -324,13 +361,6 @@ textarea {
   border: 2px dashed var(--secondary);
 }
 
-.section-header {
-  // display: flex;
-  // flex-direction: column;
-  // align-items: start;
-  // align-items: center;
-  // gap: var(--space-small);
-}
 
 .section-title {
   font-size: var(--font-size-xxl);
@@ -388,95 +418,14 @@ textarea {
   width: var(--width-body);
 }
 
-// margins and padding
-
-// normal spacing
-
-.space__inner {
-  padding: var(--space);
+.flex {
+  display: flex;
 }
 
-.space__outer {
-  margin: var(--space);
+.flex-column {
+  flex-direction: column;
 }
 
-.space__inner_block {
-  padding-block: var(--space);
-}
-
-.space__outer_block {
-  margin-block: var(--space);
-}
-
-.space__inner_inline {
-  padding-inline: var(--space);
-}
-
-.space__outer_inline {
-  margin-inline: var(--space);
-}
-
-.space__outer_top {
-  margin-top: var(--space);
-}
-
-.space__outer_bottom {
-  margin-bottom: var(--space);
-}
-
-.space__inner_top {
-  padding-top: var(--space);
-}
-
-.space__inner_bottom {
-  padding-bottom: var(--space);
-}
-
-// small spacing
-
-.space_small__inner {
-  padding: var(--space-small);
-}
-
-.space_small__outer {
-  margin: var(--space-small);
-}
-
-.space_small__inner_block {
-  padding-block: var(--space-small);
-}
-
-.space_small__outer_block {
-  margin-block: var(--space-small);
-}
-
-.space_small__inner_inline {
-  padding-inline: var(--space-small);
-}
-
-.space_small__outer_inline {
-  margin-inline: var(--space-small);
-}
-
-.space_small__outer_top {
-  margin-top: var(--space-small);
-}
-
-.space_small__outer_bottom {
-  margin-bottom: var(--space-small);
-}
-
-.space_small__inner_top {
-  padding-top: var(--space-small);
-}
-
-.space_small__inner_bottom {
-  padding-bottom: var(--space-small);
-}
-
-.button {
-  font-family: var(--sans);
-}
 
 @media screen and (max-width: 360px) {
   :root {

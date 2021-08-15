@@ -16,16 +16,11 @@
 <style>
   #front {
     display: grid;
-    /* grid-template-rows: repeat(2, 1fr); */
     gap: 1rem;
   }
 
   #projects {
-    border: var(--border-1) solid var(--primary);
     box-shadow: var(--panel-elevation);
-  }
-  .front-panel-caption {
-    background: var(--accent-secondary);
   }
   #work-caption {
     top: 0;
