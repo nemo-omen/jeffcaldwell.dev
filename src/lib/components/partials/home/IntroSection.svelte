@@ -176,10 +176,11 @@
         font-family: var(--display);
         font-size: clamp(var(--size-400), 6vw, var(--size-1200));
         text-align: center;
-        text-shadow: 0.05em 0.05em 0 rgb(var(--primary-rgb), 0.4);
+        text-shadow: 0.025em 0.025em 0 rgb(var(--primary-rgb), 0.4);
         text-decoration-thickness: 0.05em;
         text-underline-offset: 0.125em;
         transition: all 300ms ease-out;
+        filter: drop-shadow(0.05em 0.05em 0 rgb(var(--primary-rgb), 0.5));
         .grunge-bg {
             position: absolute;
             top: 0;
@@ -197,6 +198,8 @@
             transition: clip-path 0.2s ease-out, background 0.3s ease-out;
         }
         &:hover {
+            text-shadow: 0.05em 0.05em 0 rgb(var(--primary-rgb), 0.4);
+            filter: drop-shadow(0.1em 0.1em 0 rgb(var(--primary-rgb), 0.5));
             .grunge-bg {
             background-color: var(--secondary);
             clip-path: polygon(3% 5%, 0 100%, 97% 95%, 100% 0%);
