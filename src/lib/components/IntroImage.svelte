@@ -16,14 +16,13 @@
 <style lang="scss">
   .intro-image {
     position: relative;
-    min-height: calc(var(--vu) * 8);
-    min-width: calc(var(--vu) * 8);
     display: flex;
     align-items: flex-end;
     background-color: var(--whitish);
     background-image: url('/images/dots006.svg');
     background-size: cover;
     box-shadow: var(--panel-elevation);
+    margin-block: var(--space-small);
     img {
       width: 100%;
       height: auto;
