@@ -169,18 +169,19 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        letter-spacing: 0.25rem;
+        // letter-spacing: 0.25rem;
         line-height: 1;
         padding-bottom: 0.25em;
         color: var(--primary);
-        font-family: var(--display);
+        font-family: var(--cover-alt-4);
+        // font-family: var(--display);
         font-size: clamp(var(--size-400), 6vw, var(--size-1200));
         text-align: center;
         text-shadow: 0.025em 0.025em 0 rgb(var(--primary-rgb), 0.4);
         text-decoration-thickness: 0.05em;
         text-underline-offset: 0.125em;
         transition: all 300ms ease-out;
-        filter: drop-shadow(0.05em 0.05em 0 rgb(var(--primary-rgb), 0.5));
+        filter: drop-shadow(0.03em 0.03em 0 rgb(var(--primary-rgb), 0.5));
         .grunge-bg {
             position: absolute;
             top: 0;
@@ -188,13 +189,12 @@
             right: 0;
             bottom: 0;
             z-index: -1;
-            box-shadow: var(--elevation-2);
             background-image: url('/images/Grunge05_White.svg');
             clip-path: polygon(3% 30%, 0 100%, 97% 80%, 100% 0%);
             background-color: var(--accent-tertiary);
             background-repeat: repeat-x;
             background-size: contain;
-            margin-inline: var(--space);
+            // margin-inline: var(--space);
             transition: clip-path 0.2s ease-out, background 0.3s ease-out;
         }
         &:hover {
