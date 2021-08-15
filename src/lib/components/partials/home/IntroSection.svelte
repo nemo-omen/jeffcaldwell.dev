@@ -197,7 +197,7 @@
         }
         &:hover .grunge-bg {
             background-color: var(--secondary);
-            clip-path: polygon(3% 15%, 0 100%, 97% 90%, 100% 0%);
+            clip-path: polygon(3% 5%, 0 100%, 97% 95%, 100% 0%);
         }
     }
     .sub-greeting:hover {
