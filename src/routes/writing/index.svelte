@@ -17,7 +17,7 @@
   export let posts;
 </script>
 
-<section class="flow space__outer_top">
+<section class="flow">
   <!-- <header class="section-header">
     <h2 class="section-title">Writing</h2>
   </header> -->
@@ -27,5 +27,7 @@
 </section>
 
 <style>
-  
+  .flow {
+    margin-top: var(--space);
+  }
 </style>
