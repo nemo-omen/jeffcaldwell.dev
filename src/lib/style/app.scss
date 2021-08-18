@@ -160,7 +160,7 @@ body {
   overflow-y: scroll;
   display: flex;
   flex-direction: column;
-  background-image: url('/images/Grunge05.svg');
+  background-image: url('/images/Grunge05-faded.svg');
 }
 
 a, a:visited {
@@ -264,6 +264,10 @@ h1 {
 h2,
 h3 {
   max-width: 30ch;
+}
+
+pre {
+  font-size: var(--font-size-small);
 }
 
 button, input[type="submit"], a.button {

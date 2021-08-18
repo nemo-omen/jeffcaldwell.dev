@@ -1,0 +1,101 @@
+---
+title: "What is Svelte, Anyway?"
+author: Jeff Caldwell
+created: August, 18, 2021
+slug: what-is-svelte-anyway
+subtitle: What you should know about the framework everyone's finally talking about
+excerpt: "Learn more about the amazing disappearing framework."
+tags: [Svelte, SvelteKit, JavaScript, Frameworks]
+---
+
+<script>
+  import Button from './Button.svelte';
+</script>
+
+So, you've heard people talking about Svelte. Maybe you read a tweet from one of your favorite devs talking about how great the developer experience is. Maybe you've heard it through one of multiple podcasts in which one or more people rave about how much sense the framework makes. Maybe you just heard about it from Scott Tolinski (he loves it... like, a lot).
+
+Let's talk about Svelte and then dive into some code with a few simple examples.
+
+First, Svelte is a component-based framework. That's not saying much because pretty much every frontend JavaScript framework deals in components. Svelte, though, deals exclusively in _single file components_. One component, one file.
+
+That's not to say that you can't have one component inside another. Just remember that a component should, (more or less,) encapsulate everything it needs to work.
+
+Here's what a svelte component looks like.
+
+```svelte
+(Example.svelte)
+
+<script>
+  export let title;
+  $: count = 0;
+
+  function addOne() {
+    count = count +1;
+  }
+</script>
+
+<div class="example">
+  <p>You have clicked the button {count} times.</p>
+
+  <button on:click={addOne}>{title}</button>
+</div>
+
+<style>
+  .example {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+  }
+  button {
+    line-height: 0.5;
+    color: #fff;
+    background-color: tomato;
+    padding: 1rem;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.3);
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+</style>
+```
+
+And here's what that component looks like on a page (Go ahead and click the button, it works.):
+
+<div style="display: flex; justify-content: center;">
+  <Button title="Add One"/>
+</div>
+
+Notice that `.svelte` files are conventionally named starting with a capital letter. Honestly, you can probably name your `.svelte` files however you like. I find it easiest to go with the flow.
+
+If you've done web design or web development for some time you'll immediately recognize that Svelte components are very similar to a regular `.html` file. Sure, there's no `head` or `body` tags, but there are `script` and `style` tags and then there's the `html` you present to the user. It's pretty straightforward.
+
+Now, let's take a look at the different sections of the component, starting with the `<script>` tag.
+
+```svelte
+<script>
+  export let title;
+
+  function sayHello() {
+    console.log('Hello, world!);
+  }
+</script>
+```
+
+There's not all that much going on in this simple example, but you may have noticed some syntax that's not exactly standard JavaScript.
+
+```svelte
+export let title;
+```
+
+This is a `property`. It's how values are passed into a component. We'll get into how those values are passed into the component later. For now, just remember that adding the `export` keyword makes what was once a simple variable into a property.
+
+```svelte
+  function sayHello() {
+    console.log('Hello, world!);
+  }
+```
+
+Okay, this is just a function. It's exactly the sort of thing you might expect in the `<script>` of a regular `HTML` document. It doesn't do anything until a user interacts with things in the markup area.
+
+Let's get to the markup!
+

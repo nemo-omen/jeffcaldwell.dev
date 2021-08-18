@@ -1,4 +1,5 @@
 <script>
+  import '../style/prism-a11y-dark.css';
   export let title = '';
   export let author = 'Jeff Caldwell';
   export let created;
